@@ -17,7 +17,7 @@ lesson = 562181
 
 int main()                      // здесь начинается программа
 {
-    printf("Hello, world!\n");  // печать строки Hello, world!
+    printf("Hello, world!");    // печать строки Hello, world!
     
     return 0;                   // конец программы
 }

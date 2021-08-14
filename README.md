@@ -1,2 +1,22 @@
 # conline_new
-Course for C language on stepik.org (after split into 2 versions: by Derbysheva and by Ovsyannikova)
+
+Курс по языку С (как первый язык программирования) на https://stepik.org/course/57680
+
+Предназначен для студентов МФТИ 1 курса и всех желающих выучить С с нуля.
+
+## Оглавление
+
+* `0_welcome` - раздел приветствия
+    * пока пустой
+    
+* `1_prepare` - установка ПО
+    * `1_installation.md` - WSL, gcc + valgrind, VScode
+    
+* `2_terminal` - работа в командной строке UNIX, первая программа
+    * `1_compile.md` - что такое программирование, этапы сборки программы.
+    * `2_terminal.md` - файловая система UNIX, абсолютный и относительный путь, запуск терминала 
+    * `3_cd.md` - команды `pwd`, `ls`, `cd`, `cat`
+    * `4_gcc.md` - сборка программы `gcc`
+    
+* `3_int` - первые программы
+    * `1_hello.md` - построчный разбор программы `Hello, world!`
