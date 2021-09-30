@@ -1,0 +1,13 @@
+total 16
+lrwxrwxrwx 1 ejudge ejudge 50 Oct  1  2020 deliteli.xml -> /home/ejudge/ovs500009/recur/deliteli/deliteli.xml
+lrwxrwxrwx 1 ejudge ejudge 54 Oct  1  2020 deliteli_begin.c -> /home/ejudge/ovs500009/recur/deliteli/deliteli_begin.c
+lrwxrwxrwx 1 ejudge ejudge 39 Oct  1  2020 diafant.xml -> /home/ejudge/ovs500009/diaf/diafant.xml
+lrwxrwxrwx 1 ejudge ejudge 57 Oct  1  2020 for_7.html -> /home/ejudge/contests/c/for/for_homework/for_7/for_7.html
+lrwxrwxrwx 1 ejudge ejudge 68 Oct  1  2020 func_NOD_begin.c -> /home/ejudge/contests/c/func/func_homework/func_NOD/func_NOD_begin.c
+lrwxrwxrwx 1 ejudge ejudge 58 Oct  1  2020 func_fact.xml -> /home/ejudge/contests/c/func/func_m_fact/func_m_fact_c.xml
+lrwxrwxrwx 1 ejudge ejudge 70 Oct  1  2020 func_fact_begin.c -> /home/ejudge/contests/c/func/func_homework/func_fact/func_fact_begin.c
+lrwxrwxrwx 1 ejudge ejudge 65 Oct  1  2020 func_fib.html -> /home/ejudge/contests/c/func/func_homework/func_fib/func_fib.html
+lrwxrwxrwx 1 ejudge ejudge 68 Oct  1  2020 func_fib_begin.c -> /home/ejudge/contests/c/func/func_homework/func_fib/func_fib_begin.c
+lrwxrwxrwx 1 ejudge ejudge 46 Oct  1  2020 rusDel.xml -> /home/ejudge/ovs500009/recur/RusDel/rusDel.xml
+lrwxrwxrwx 1 ejudge ejudge 52 Oct  1  2020 rusDelRem.xml -> /home/ejudge/ovs500009/recur/RusDelRem/rusDelRem.xml
+lrwxrwxrwx 1 ejudge ejudge 48 Oct  1  2020 rusMult.xml -> /home/ejudge/ovs500009/recur/RusMult/rusMult.xml

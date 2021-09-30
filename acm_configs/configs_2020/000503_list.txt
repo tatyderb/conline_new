@@ -1,0 +1,22 @@
+total 52
+lrwxrwxrwx 1 ejudge ejudge 62 Aug 26  2020 C.xml -> /home/ejudge/contests/c/august_testing/div_table/div_table.xml
+lrwxrwxrwx 1 ejudge ejudge 60 Aug 26  2020 D.xml -> /home/ejudge/contests/c/august_testing/if_table/if_table.xml
+lrwxrwxrwx 1 ejudge ejudge 51 Aug 26  2020 E.xml -> /home/ejudge/contests/c/for/for_sum_7/for_sum_7.xml
+lrwxrwxrwx 1 ejudge ejudge 68 Aug 26  2020 F.xml -> /home/ejudge/contests/c/august_testing/arr_equalize/arr_equalize.xml
+lrwxrwxrwx 1 ejudge ejudge 64 Aug 26  2020 G.xml -> /home/ejudge/contests/c/august_testing/arr_triple/arr_triple.xml
+lrwxrwxrwx 1 ejudge ejudge 66 Aug 26  2020 H.xml -> /home/ejudge/contests/c/arr/arr_homework/arr_sudoku/arr_sudoku.xml
+lrwxrwxrwx 1 ejudge ejudge 73 Aug 26  2020 I.xml -> /home/ejudge/contests/c/august_testing/easy-palyndromes-sum/statement.xml
+lrwxrwxrwx 1 ejudge ejudge 58 Aug 26  2020 J.xml -> /home/ejudge/contests/c/august_testing/money/statement.xml
+lrwxrwxrwx 1 ejudge ejudge 70 Aug 26  2020 K.xml -> /home/ejudge/contests/c/august_testing/easy-min-triangle/statement.xml
+lrwxrwxrwx 1 ejudge ejudge 60 Aug 26  2020 L.xml -> /home/ejudge/contests/c/august_testing/max3mul/statement.xml
+lrwxrwxrwx 1 ejudge ejudge 63 Aug 26  2020 M.xml -> /home/ejudge/contests/c/august_testing/two-arrays/statement.xml
+lrwxrwxrwx 1 ejudge ejudge 57 Aug 26  2020 N.xml -> /home/ejudge/contests/c/august_testing/gaps/statement.xml
+lrwxrwxrwx 1 ejudge ejudge 58 Aug 26  2020 O.xml -> /home/ejudge/contests/c/august_testing/tiles/statement.xml
+lrwxrwxrwx 1 ejudge ejudge 58 Aug 26  2020 P.xml -> /home/ejudge/contests/c/august_testing/ropes/statement.xml
+lrwxrwxrwx 1 ejudge ejudge 61 Aug 26  2020 Q.xml -> /home/ejudge/contests/c/august_testing/dp-cubic/statement.xml
+lrwxrwxrwx 1 ejudge ejudge 59 Aug 26  2020 R.xml -> /home/ejudge/contests/c/august_testing/cakes2/statement.xml
+lrwxrwxrwx 1 ejudge ejudge 60 Aug 26  2020 S.xml -> /home/ejudge/contests/c/august_testing/repeats/statement.xml
+lrwxrwxrwx 1 ejudge ejudge 56 Aug 31  2020 c_lang.xml -> /home/ejudge/contests/c/august_testing/c_lang/c_lang.xml
+lrwxrwxrwx 1 ejudge ejudge 63 Aug 31  2020 c_lang_footer.cpp -> /home/ejudge/contests/c/august_testing/c_lang/c_lang_footer.cpp
+lrwxrwxrwx 1 ejudge ejudge 63 Aug 31  2020 c_lang_header.cpp -> /home/ejudge/contests/c/august_testing/c_lang/c_lang_header.cpp
+lrwxrwxrwx 1 ejudge ejudge 45 Aug 26  2020 sum_00.xml -> /home/ejudge/contests/c/int/sum_00/sum_00.xml

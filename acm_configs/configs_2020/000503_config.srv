@@ -1,0 +1,522 @@
+# -*- coding: utf-8 -*-
+# $Id$
+
+contest_time = 0
+score_system = kirov
+board_fog_time = 0
+board_unfog_time = 0
+standings_locale = "Russian"
+
+compile_dir = "../../compile/var/compile"
+
+team_enable_src_view
+team_enable_rep_view
+team_enable_ce_view
+team_show_judge_report
+report_error_code
+ignore_compile_errors
+prune_empty_users
+problem_navigation
+vertical_navigation
+notify_clar_reply
+
+
+max_run_size = 512K
+max_run_num = 256
+
+
+stand_fancy_style
+stand_extra_format = "%UMp1s %UMp1f, %UMp1g"
+stand_extra_legend = "Студент"
+
+rounding_mode = floor
+cr_serialization_key = 22723
+show_astr_time
+enable_runlog_merge
+secure_run
+detect_violations
+enable_memory_limit_error
+uuid_run_store
+enable_max_stack_size
+enable_l10n
+team_download_time = 0
+cpu_bogomips = 4800
+
+[language]
+id = 1
+short_name = "fpc"
+long_name = "Free Pascal 2.6.2"
+src_sfx = ".pas"
+
+[language]
+id = 2
+short_name = "gcc"
+long_name = "GNU C 4.8.3"
+src_sfx = ".c"
+
+[language]
+id = 3
+short_name = "g++"
+long_name = "GNU C++ 4.8.3"
+src_sfx = ".cpp"
+
+[language]
+id = 6
+short_name = "gfortran"
+long_name = "GNU Fortran 4.8.3"
+src_sfx = ".for"
+
+[language]
+id = 18
+short_name = "javac"
+long_name = "Java JDK 1.7.0_71"
+arch = "java"
+src_sfx = ".java"
+exe_sfx = ".jar"
+
+[language]
+id = 21
+short_name = "ruby"
+long_name = "Ruby 2.0.0p353"
+arch = "linux-shared"
+src_sfx = ".rb"
+
+[language]
+id = 23
+short_name = "python3"
+long_name = "Python3 3.3.2"
+arch = "linux-shared"
+src_sfx = ".py"
+
+[language]
+id = 28
+short_name = "gcc-vg"
+long_name = "GNU C (valgrind) 4.8.3"
+arch = "valgrind"
+src_sfx = ".c"
+
+[language]
+id = 29
+short_name = "g++-vg"
+long_name = "GNU C++ (valgrind) 4.8.3"
+arch = "valgrind"
+src_sfx = ".cpp"
+
+[problem]
+abstract
+short_name = "Generic"
+use_stdin
+use_stdout
+xml_file = "%Ps.xml"
+test_dir = "%Ps"
+test_sfx = ".dat"
+use_corr
+corr_dir = "%Ps"
+corr_sfx = ".ans"
+info_dir = "%Ps"
+tgz_dir = "%Ps"
+time_limit = 1
+real_time_limit = 10
+max_vm_size = 512M
+max_stack_size = 512M
+max_file_size = 512M
+max_open_file_count = 32
+max_process_count = 64
+test_score = 2
+open_tests = "1-5:full"
+check_cmd = "check_%Ps"
+lang_compiler_env = "gcc=EJUDGE_FLAGS=-Wall  -Werror=array-bounds  -Wextra -Werror=format -Werror=return-type -Werror=vla -Werror=uninitialized -Werror=maybe-uninitialized -Werror-implicit-function-declaration  -O3"
+lang_compiler_env = "g++=EJUDGE_FLAGS=-Wall  -Werror=array-bounds -Wextra -Werror=format -Werror=return-type -Werror=vla -Werror=uninitialized -Werror=maybe-uninitialized -O2"
+lang_compiler_env = "gcc-vg=EJUDGE_FLAGS=-Wall  -Werror=array-bounds -Wextra -Werror=format -Werror=return-type -Werror=vla -Werror=uninitialized -Werror=maybe-uninitialized -Werror-implicit-function-declaration -g -O1"
+lang_compiler_env = "g++-vg=EJUDGE_FLAGS=-Wall  -Werror=array-bounds -Wextra -Werror=format -Werror=return-type -Werror=vla -Werror=uninitialized -Werror=maybe-uninitialized -g -O1"
+lang_compiler_env = "clang=EJUDGE_FLAGS=-Wall  -Werror=array-bounds -Wextra -Werror=format -Werror=return-type -Werror=vla -Werror=uninitialized -Werror-implicit-function-declaration -fsanitize=address -fno-omit-frame-pointer -g -O2"
+lang_compiler_env = "clang++=EJUDGE_FLAGS=-Wall  -Werror=array-bounds -Wextra -Werror=format -Werror=return-type -Werror=vla -Werror=uninitialized -fsanitize=address -fno-omit-frame-pointer -g -O2"
+lang_compiler_env = "gcc-vg=EJUDGE_ASAN_FLAGS=-Wall  -Werror=array-bounds -Wextra -Werror=format -Werror=return-type -Werror=vla -Werror=uninitialized -Werror=maybe-uninitialized -Werror-implicit-function-declaration -fsanitize=address -fno-omit-frame-pointer -g -O3"
+lang_compiler_env = "g++-vg=EJUDGE_ASAN_FLAGS=-Wall  -Werror=array-bounds -Wextra -Werror=format -Werror=return-type -Werror=vla -Werror=uninitialized -Werror=maybe-uninitialized -fsanitize=address -fno-omit-frame-pointer -g -O2"
+start_env = "EJUDGE_VG_FLAGS=-q --track-origins=yes --malloc-fill=66 --free-fill=66 --error-exitcode=1 --leak-check=full"
+enable_text_form
+
+[problem]
+abstract
+short_name = "Generic_footer"
+use_stdin
+use_stdout
+xml_file = "%Ps.xml"
+test_dir = "%Ps"
+test_sfx = ".dat"
+use_corr
+corr_dir = "%Ps"
+corr_sfx = ".ans"
+info_dir = "%Ps"
+tgz_dir = "%Ps"
+time_limit = 1
+real_time_limit = 10
+max_vm_size = 512M
+max_stack_size = 512M
+max_file_size = 512M
+max_open_file_count = 32
+max_process_count = 64
+test_score = 2
+check_cmd = "check_%Ps"
+lang_compiler_env = "gcc=EJUDGE_FLAGS=-Wall  -Werror=array-bounds -Wextra -Werror=format -Werror=return-type -Werror=vla -Werror=uninitialized -Werror=maybe-uninitialized -Werror-implicit-function-declaration  -O3"
+lang_compiler_env = "g++=EJUDGE_FLAGS=-Wall  -Werror=array-bounds -Wextra -Werror=format -Werror=return-type -Werror=vla -Werror=uninitialized -Werror=maybe-uninitialized -O2"
+lang_compiler_env = "gcc-vg=EJUDGE_FLAGS=-Wall -Werror=array-bounds -Wextra -Werror=format -Werror=return-type -Werror=vla -Werror=uninitialized -Werror=maybe-uninitialized -Werror-implicit-function-declaration -g -O1"
+lang_compiler_env = "g++-vg=EJUDGE_FLAGS=-Wall  -Werror=array-bounds -Wextra -Werror=format -Werror=return-type -Werror=vla -Werror=uninitialized -Werror=maybe-uninitialized -g -O1"
+lang_compiler_env = "clang=EJUDGE_FLAGS=-Wall  -Werror=array-bounds -Wextra -Werror=format -Werror=return-type -Werror=vla -Werror=uninitialized -Werror-implicit-function-declaration -fsanitize=address -fno-omit-frame-pointer -g -O2"
+lang_compiler_env = "clang++=EJUDGE_FLAGS=-Wall  -Werror=array-bounds -Wextra -Werror=format -Werror=return-type -Werror=vla -Werror=uninitialized -fsanitize=address -fno-omit-frame-pointer -g -O2"
+lang_compiler_env = "gcc-vg=EJUDGE_ASAN_FLAGS=-Wall  -Werror=array-bounds -Wextra -Werror=format -Werror=return-type -Werror=vla -Werror=uninitialized -Werror=maybe-uninitialized -Werror-implicit-function-declaration -fsanitize=address -fno-omit-frame-pointer -g -O3"
+lang_compiler_env = "g++-vg=EJUDGE_ASAN_FLAGS=-Wall  -Werror=array-bounds -Wextra -Werror=format -Werror=return-type -Werror=vla -Werror=uninitialized -Werror=maybe-uninitialized -fsanitize=address -fno-omit-frame-pointer -g -O2"
+start_env = "EJUDGE_VG_FLAGS=-q --track-origins=yes --malloc-fill=66 --free-fill=66 --error-exitcode=1 --leak-check=full"
+enable_text_form
+source_header = "%Ps_begin.c"
+
+[problem]
+abstract
+short_name = "Generic_HTML"
+use_stdin
+use_stdout
+test_dir = "%Ps"
+test_sfx = ".dat"
+use_corr
+corr_dir = "%Ps"
+corr_sfx = ".ans"
+info_dir = "%Ps"
+tgz_dir = "%Ps"
+time_limit = 3
+real_time_limit = 10
+max_vm_size = 512M
+max_stack_size = 5128M
+max_file_size = 512M
+max_open_file_count = 64
+max_process_count = 256
+test_score = 2
+check_cmd = "check_%Ps"
+lang_compiler_env = "gcc=EJUDGE_FLAGS=-Wall  -Werror=array-bounds -Wextra -Werror=format -Werror=return-type -Werror=vla -Werror=uninitialized -Werror=maybe-uninitialized -Werror-implicit-function-declaration  -O3"
+lang_compiler_env = "g++=EJUDGE_FLAGS=-Wall  -Werror=array-bounds -Wextra -Werror=format -Werror=return-type -Werror=vla -Werror=uninitialized -Werror=maybe-uninitialized -O2"
+lang_compiler_env = "gcc-vg=EJUDGE_FLAGS=-Wall  -Werror=array-bounds -Wextra -Werror=format -Werror=return-type -Werror=vla -Werror=uninitialized -Werror=maybe-uninitialized -Werror-implicit-function-declaration -g -O1"
+lang_compiler_env = "g++-vg=EJUDGE_FLAGS=-Wall  -Werror=array-bounds -Wextra -Werror=format -Werror=return-type -Werror=vla -Werror=uninitialized -Werror=maybe-uninitialized -g -O1"
+lang_compiler_env = "clang=EJUDGE_FLAGS=-Wall  -Werror=array-bounds  -Wextra -Werror=format -Werror=return-type -Werror=vla -Werror=uninitialized -Werror-implicit-function-declaration -fsanitize=address -fno-omit-frame-pointer -g -O2"
+lang_compiler_env = "clang++=EJUDGE_FLAGS=-Wall  -Werror=array-bounds -Wextra -Werror=format -Werror=return-type -Werror=vla -Werror=uninitialized -fsanitize=address -fno-omit-frame-pointer -g -O2"
+lang_compiler_env = "gcc-vg=EJUDGE_ASAN_FLAGS=-Wall  -Werror=array-bounds -Wextra -Werror=format -Werror=return-type -Werror=vla -Werror=uninitialized -Werror=maybe-uninitialized -Werror-implicit-function-declaration -fsanitize=address -fno-omit-frame-pointer -g -O3"
+lang_compiler_env = "g++-vg=EJUDGE_ASAN_FLAGS=-Wall  -Werror=array-bounds -Wextra -Werror=format -Werror=return-type -Werror=vla -Werror=uninitialized -Werror=maybe-uninitialized -fsanitize=address -fno-omit-frame-pointer -g -O2"
+start_env = "EJUDGE_VG_FLAGS=-q --track-origins=yes --malloc-fill=66 --free-fill=66 --error-exitcode=1 --leak-check=full"
+enable_text_form
+
+statement_file = "%Ps.html"
+
+[problem]
+abstract
+short_name = "Generic_A"
+type = "select-one"
+xml_file = "%Ps.xml"
+test_dir = "%Ps"
+test_sfx = ".dat"
+full_score = 1
+run_penalty = 0
+disqualified_penalty = 1
+advance_to_next
+
+[problem]
+abstract
+short_name = "Generic_B"
+type = "short-answer"
+use_stdin
+use_stdout
+xml_file = "%Ps.xml"
+test_dir = "%Ps"
+test_sfx = ".dat"
+use_corr
+corr_dir = "%Ps"
+corr_sfx = ".ans"
+time_limit = 1
+real_time_limit = 1
+full_score = 1
+run_penalty = 0
+disqualified_penalty = 1
+check_cmd = "check_B"
+
+[problem]
+id = 11
+super = "Generic"
+short_name = "sum_00"
+long_name = "a+b"
+full_score = 20
+standard_checker = "cmp_file"
+
+[problem]
+id = 22
+super = "Generic"
+short_name = "C"
+long_name = "legs -> tables"
+full_score = 40
+test_score = 1
+standard_checker = "cmp_int_seq"
+
+[problem]
+id = 23
+super = "Generic"
+short_name = "D"
+long_name = "legs and cups -> tables"
+full_score = 40
+test_score = 1
+standard_checker = "cmp_int_seq"
+
+[problem]
+id = 25
+super = "Generic"
+short_name = "E"
+long_name = "divided by 7"
+full_score = 40
+test_score = 1
+standard_checker = "cmp_int_seq"
+
+[problem]
+id = 26
+super = "Generic"
+short_name = "c_lang"
+long_name = "язык С"
+full_score = 30
+test_score = 1
+standard_checker = "cmp_int_seq"
+enable_language = "gcc"
+enable_language = "g++"
+source_header = "c_lang_header.cpp"
+source_footer = "c_lang_footer.cpp"
+
+[problem]
+id = 27
+super = "Generic"
+short_name = "F"
+long_name = "take and get out"
+full_score = 50
+test_score = 2
+standard_checker = "cmp_int_seq"
+
+[problem]
+id = 30
+super = "Generic"
+short_name = "G"
+long_name = "3 seq"
+full_score = 60
+test_score = 3
+standard_checker = "cmp_int_seq"
+
+[problem]
+id = 33
+super = "Generic"
+short_name = "H"
+long_name = "sudoku"
+full_score = 80
+test_score = 3
+standard_checker = "cmp_yesno"
+
+[problem]
+id = 50
+super = "Generic"
+short_name = "I"
+long_name = "Сумма палиндромов"
+full_score = 60
+test_score = 3
+standard_checker = "cmp_huge_int"
+
+[problem]
+id = 55
+super = "Generic"
+short_name = "J"
+long_name = "Покупка"
+test_pat = "%02d"
+corr_pat = "%02d.a"
+full_score = 70
+test_score = 3
+standard_checker = "cmp_huge_int"
+
+[problem]
+id = 60
+super = "Generic"
+short_name = "K"
+long_name = "Минимальный треугольник"
+test_pat = "%02d"
+corr_pat = "%02d.a"
+time_limit = 2
+full_score = 80
+test_score = 3
+standard_checker = "cmp_double_seq"
+checker_env = "EPS=1e-4"
+
+[problem]
+id = 65
+super = "Generic"
+short_name = "L"
+long_name = "Максимальная тройка"
+test_pat = "%02d"
+corr_pat = "%02d.a"
+time_limit = 2
+full_score = 80
+test_score = 3
+standard_checker = "cmp_huge_int"
+
+[problem]
+id = 70
+super = "Generic"
+short_name = "M"
+long_name = "Два массива"
+test_pat = "%02d"
+corr_pat = "%02d.a"
+time_limit = 2
+full_score = 80
+test_score = 3
+standard_checker = "cmp_int"
+
+[problem]
+id = 75
+super = "Generic"
+short_name = "N"
+long_name = "Далекие произведения"
+test_pat = "%02d"
+corr_pat = "%02d.a"
+time_limit = 2
+full_score = 90
+test_score = 3
+standard_checker = "cmp_huge_int"
+
+[problem]
+id = 80
+super = "Generic"
+short_name = "O"
+long_name = "Стенд для грамот"
+test_pat = "%02d"
+corr_pat = "%02d.a"
+time_limit = 2
+full_score = 100
+test_score = 3
+standard_checker = "cmp_huge_int"
+
+[problem]
+id = 85
+super = "Generic"
+short_name = "P"
+long_name = "Веревочки"
+test_pat = "%02d"
+corr_pat = "%02d.a"
+time_limit = 2
+full_score = 110
+test_score = 3
+standard_checker = "cmp_huge_int"
+
+[problem]
+id = 90
+super = "Generic"
+short_name = "Q"
+long_name = "Броски кубика"
+test_pat = "%02d"
+corr_pat = "%02d.a"
+time_limit = 2
+full_score = 110
+test_score = 3
+standard_checker = "cmp_double_seq"
+checker_env = "EPS=1e-4"
+
+[problem]
+id = 95
+super = "Generic"
+short_name = "R"
+long_name = "Блины"
+test_pat = "%02d"
+corr_pat = "%02d.a"
+time_limit = 2
+full_score = 120
+test_score = 3
+standard_checker = "cmp_int_seq"
+
+[problem]
+id = 100
+super = "Generic"
+short_name = "S"
+long_name = "Повторяющаяся строка"
+test_pat = "%02d"
+corr_pat = "%02d.a"
+time_limit = 2
+full_score = 130
+test_score = 3
+standard_checker = "cmp_huge_int"
+
+[tester]
+name = Generic
+arch = ""
+abstract
+no_core_dump
+enable_memory_limit_error
+kill_signal = KILL
+memory_limit_type = "default"
+secure_exec_type = "static"
+clear_env
+start_env = "PATH=/usr/local/bin:/usr/bin:/bin"
+start_env = "HOME"
+check_dir = "work-disk/work"
+
+[tester]
+name = Linux-shared
+arch = "linux-shared"
+abstract
+no_core_dump
+enable_memory_limit_error
+kill_signal = KILL
+memory_limit_type = "default"
+secure_exec_type = "dll"
+clear_env
+start_env = "PATH=/usr/local/bin:/usr/bin:/bin"
+start_env = "HOME"
+check_dir = "work-disk/work"
+
+[tester]
+name = Linux-java
+arch = "java"
+abstract
+no_core_dump
+kill_signal = TERM
+memory_limit_type = "java"
+secure_exec_type = "java"
+start_cmd = "runjava"
+start_env = "LANG=C"
+start_env = "EJUDGE_PREFIX_DIR"
+check_dir = "work-disk/work"
+
+[tester]
+name = Valgrind
+arch = "valgrind"
+abstract
+no_core_dump
+kill_signal = TERM
+memory_limit_type = "valgrind"
+secure_exec_type = "valgrind"
+start_cmd = "runvg"
+clear_env
+start_env = "PATH=/usr/local/bin:/usr/bin:/bin"
+start_env = "LANG=C"
+start_env = "HOME"
+check_dir = "work-disk/work"
+
+[tester]
+any
+super = Generic
+
+[tester]
+any
+super = Linux-shared
+arch = linux-shared
+
+[tester]
+any
+super = Linux-java
+arch = java
+
+[tester]
+any
+super = Valgrind
+arch = valgrind
+
+# audit: created 2020/08/26 11:44:10 1 (ejudge) 83.149.21.72
+# audit: edited 2020/08/26 12:35:05 1 (ejudge) 83.149.21.72
+# audit: edited 2020/08/26 21:02:54 1 (ejudge) 83.149.21.72
+# audit: edited 2020/08/31 14:57:40 1 (ejudge) 93.175.29.42
+# audit: edited 2020/09/01 14:21:38 1 (ejudge) 85.26.165.234

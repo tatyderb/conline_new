@@ -1,0 +1,21 @@
+total 52
+lrwxrwxrwx 1 ejudge ejudge 62 Sep  7  2020 f_distance.xml -> /home/ejudge/contests/c/func_conline/f_distance/f_distance.xml
+lrwxrwxrwx 1 ejudge ejudge 66 Sep  7  2020 f_distance_begin.c -> /home/ejudge/contests/c/func_conline/f_distance/f_distance_begin.c
+lrwxrwxrwx 1 ejudge ejudge 56 Sep  7  2020 f_dsum1.xml -> /home/ejudge/contests/c/func_conline/f_dsum1/f_dsum1.xml
+lrwxrwxrwx 1 ejudge ejudge 60 Sep  7  2020 f_dsum1_begin.c -> /home/ejudge/contests/c/func_conline/f_dsum1/f_dsum1_begin.c
+lrwxrwxrwx 1 ejudge ejudge 58 Sep 14  2020 f_middle.xml -> /home/ejudge/contests/c/func_conline/funcp_13/f_middle.xml
+lrwxrwxrwx 1 ejudge ejudge 62 Sep 14  2020 f_middle_begin.c -> /home/ejudge/contests/c/func_conline/funcp_13/f_middle_begin.c
+lrwxrwxrwx 1 ejudge ejudge 64 Sep  7  2020 f_printTime.xml -> /home/ejudge/contests/c/func_conline/f_printTime/f_printTime.xml
+lrwxrwxrwx 1 ejudge ejudge 68 Sep  7  2020 f_printTime_begin.c -> /home/ejudge/contests/c/func_conline/f_printTime/f_printTime_begin.c
+lrwxrwxrwx 1 ejudge ejudge 58 Sep  7  2020 f_shifr1.xml -> /home/ejudge/contests/c/func_conline/f_shifr1/f_shifr1.xml
+lrwxrwxrwx 1 ejudge ejudge 62 Sep  7  2020 f_shifr1_begin.c -> /home/ejudge/contests/c/func_conline/f_shifr1/f_shifr1_begin.c
+lrwxrwxrwx 1 ejudge ejudge 58 Sep  7  2020 f_shifr2.xml -> /home/ejudge/contests/c/func_conline/f_shifr2/f_shifr2.xml
+lrwxrwxrwx 1 ejudge ejudge 62 Sep  7  2020 f_shifr2_begin.c -> /home/ejudge/contests/c/func_conline/f_shifr2/f_shifr2_begin.c
+lrwxrwxrwx 1 ejudge ejudge 58 Sep  7  2020 f_temper.xml -> /home/ejudge/contests/c/func_conline/f_temper/f_temper.xml
+lrwxrwxrwx 1 ejudge ejudge 62 Sep  7  2020 f_temper_begin.c -> /home/ejudge/contests/c/func_conline/f_temper/f_temper_begin.c
+lrwxrwxrwx 1 ejudge ejudge 54 Sep  7  2020 f_tret.xml -> /home/ejudge/contests/c/func_conline/f_tret/f_tret.xml
+lrwxrwxrwx 1 ejudge ejudge 58 Sep  7  2020 f_tret_begin.c -> /home/ejudge/contests/c/func_conline/f_tret/f_tret_begin.c
+lrwxrwxrwx 1 ejudge ejudge 67 Sep  7  2020 func_m_geron.html -> /home/ejudge/contests/c/func_conline/func_m_geron/func_m_geron.html
+lrwxrwxrwx 1 ejudge ejudge 70 Sep  7  2020 funcp_mirror1_c.xml -> /home/ejudge/contests/c/func_conline/funcp_mirror1/funcp_mirror1_c.xml
+lrwxrwxrwx 1 ejudge ejudge 70 Sep  7  2020 funcp_mirror2_c.xml -> /home/ejudge/contests/c/func_conline/funcp_mirror2/funcp_mirror2_c.xml
+lrwxrwxrwx 1 ejudge ejudge 78 Sep  7  2020 funcp_rotateC.xml -> /home/ejudge/contests/c/func_conline/funcp_rotateC_int/funcp_rotateC_int_c.xml

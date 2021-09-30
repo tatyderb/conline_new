@@ -1,0 +1,329 @@
+# -*- coding: utf-8 -*-
+# $Id$
+
+contest_time = 0
+score_system = kirov
+board_fog_time = 0
+board_unfog_time = 0
+standings_locale = "ru"
+
+compile_dir = "../../compile/var/compile"
+
+team_enable_src_view
+team_enable_rep_view
+team_enable_ce_view
+team_show_judge_report
+report_error_code
+ignore_compile_errors
+prune_empty_users
+problem_navigation
+vertical_navigation
+
+
+max_run_size = 32K
+max_run_num = 256
+
+
+stand_use_login
+stand_extra_format = "%UMp1s %UMp1f %UMp1g"
+
+rounding_mode = floor
+cr_serialization_key = 22723
+show_astr_time
+enable_runlog_merge
+secure_run
+detect_violations
+enable_memory_limit_error
+uuid_run_store
+enable_l10n
+team_download_time = 0
+cpu_bogomips = 4800
+
+[language]
+id = 2
+short_name = "gcc"
+long_name = "GNU C 4.7.2"
+src_sfx = ".c"
+
+[language]
+id = 3
+short_name = "g++"
+long_name = "GNU C++ 4.8.3"
+src_sfx = ".cpp"
+
+[problem]
+abstract
+short_name = "Generic"
+use_stdin
+use_stdout
+test_dir = "%Ps"
+test_sfx = ".dat"
+use_corr
+corr_dir = "%Ps"
+corr_sfx = ".ans"
+info_dir = "%Ps"
+tgz_dir = "%Ps"
+time_limit = 4
+real_time_limit = 10
+max_vm_size = 64M
+max_stack_size = 64M
+max_file_size = 64M
+max_open_file_count = 32
+max_process_count = 32
+full_score = 1
+check_cmd = "check_%Ps"
+start_env = "EJUDGE_VG_FLAGS=-q --track-origins=yes --malloc-fill=66 --free-fill=66 --error-exitcode=1 --leak-check=full"
+disable_user_submit = 0
+disable_submit_after_ok = 0
+enable_text_form
+
+statement_file = "%Ps.html"
+
+[problem]
+abstract
+short_name = "Generic_XML"
+use_stdin
+use_stdout
+xml_file = "%Ps.xml"
+test_dir = "%Ps"
+test_sfx = ".dat"
+use_corr
+corr_dir = "%Ps"
+corr_sfx = ".ans"
+info_dir = "%Ps"
+tgz_dir = "%Ps"
+time_limit = 4
+real_time_limit = 10
+max_vm_size = 64M
+max_stack_size = 64M
+max_file_size = 64M
+max_open_file_count = 32
+max_process_count = 32
+full_score = 1
+check_cmd = "check_%Ps"
+start_env = "EJUDGE_VG_FLAGS=-q --track-origins=yes --malloc-fill=66 --free-fill=66 --error-exitcode=1 --leak-check=full"
+disable_user_submit = 0
+disable_submit_after_ok = 0
+enable_text_form
+
+[problem]
+abstract
+short_name = "Generic_A"
+type = "select-one"
+xml_file = "%Ps.xml"
+test_dir = "%Ps"
+test_sfx = ".dat"
+full_score = 1
+run_penalty = 0
+disqualified_penalty = 1
+advance_to_next
+
+[problem]
+abstract
+short_name = "Generic_B"
+type = "short-answer"
+use_stdin
+use_stdout
+xml_file = "%Ps.xml"
+test_dir = "%Ps"
+test_sfx = ".dat"
+use_corr
+corr_dir = "%Ps"
+corr_sfx = ".ans"
+time_limit = 1
+real_time_limit = 1
+full_score = 1
+run_penalty = 0
+disqualified_penalty = 1
+check_cmd = "check_B"
+
+[problem]
+id = 100
+super = "Generic_XML"
+short_name = "Bloop_path2"
+long_name = ""
+full_score = 10
+standard_checker = "cmp_int_seq"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 101
+super = "Generic_XML"
+short_name = "Bloop_path3"
+long_name = ""
+full_score = 10
+standard_checker = "cmp_int_seq"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 102
+super = "Generic_XML"
+short_name = "Bloop_path4"
+long_name = ""
+full_score = 10
+standard_checker = "cmp_int_seq"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 103
+super = "Generic"
+short_name = "Bloop_path5"
+long_name = ""
+full_score = 30
+standard_checker = "cmp_int_seq"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 104
+super = "Generic"
+short_name = "Bloop_money4"
+long_name = ""
+full_score = 30
+standard_checker = "cmp_int_seq"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 110
+super = "Generic_XML"
+short_name = "Bfor_sum"
+long_name = ""
+full_score = 20
+standard_checker = "cmp_int_seq"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 111
+super = "Generic_XML"
+short_name = "Bfor_sum_even"
+long_name = ""
+full_score = 30
+standard_checker = "cmp_int_seq"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 112
+super = "Generic_XML"
+short_name = "Bfor_count_even"
+long_name = ""
+full_score = 30
+standard_checker = "cmp_int_seq"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 120
+super = "Generic"
+short_name = "for_4"
+long_name = "n!"
+full_score = 30
+standard_checker = "cmp_unsigned_long_long_seq"
+valuer_cmd = ""
+style_checker_cmd = "formatter"
+
+[problem]
+id = 121
+super = "Generic_XML"
+short_name = "trassa"
+long_name = "trassa"
+full_score = 40
+standard_checker = "cmp_unsigned_long_long_seq"
+valuer_cmd = ""
+style_checker_cmd = "formatter"
+
+[problem]
+id = 122
+super = "Generic"
+short_name = "for_7"
+long_name = "NOD NOK"
+full_score = 40
+standard_checker = "cmp_unsigned_long_long_seq"
+valuer_cmd = ""
+style_checker_cmd = "formatter"
+
+[problem]
+id = 124
+super = "Generic"
+short_name = "for_10"
+long_name = "revers"
+full_score = 40
+standard_checker = "cmp_int_seq"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 126
+super = "Generic"
+short_name = "for_60"
+long_name = ""
+full_score = 40
+standard_checker = "cmp_int_seq"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 127
+super = "Generic"
+short_name = "for_6"
+long_name = ""
+full_score = 40
+standard_checker = "cmp_int_seq"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 128
+super = "Generic_XML"
+short_name = "int_palindr"
+long_name = ""
+full_score = 50
+standard_checker = "cmp_yesno"
+
+[problem]
+id = 129
+super = "Generic_XML"
+short_name = "stepen_ch"
+long_name = ""
+full_score = 50
+standard_checker = "cmp_long_long_seq"
+
+[problem]
+id = 130
+super = "Generic_XML"
+short_name = "Abmyax"
+long_name = "сверим часы"
+full_score = 70
+standard_checker = "cmp_file"
+
+[problem]
+id = 131
+super = "Generic"
+short_name = "Aknight"
+long_name = "вар0: true or false"
+full_score = 70
+standard_checker = "cmp_int_seq"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 132
+super = "Generic_XML"
+short_name = "BookOfBooks"
+long_name = "страницы книги"
+full_score = 70
+standard_checker = "cmp_file"
+style_checker_cmd = "formatter"
+
+[tester]
+name = Generic
+arch = ""
+abstract
+no_core_dump
+enable_memory_limit_error
+kill_signal = KILL
+memory_limit_type = "default"
+secure_exec_type = "static"
+clear_env
+start_env = "PATH=/usr/local/bin:/usr/bin:/bin"
+start_env = "HOME"
+check_dir = "work-disk/work"
+
+[tester]
+any
+super = Generic
+
+# audit: created 2020/10/05 20:39:41 1 (ejudge) 85.26.233.212

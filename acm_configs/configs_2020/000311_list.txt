@@ -1,0 +1,8 @@
+total 28
+lrwxrwxrwx 1 ejudge ejudge 62 Feb  1  2021 stack_1.html -> /home/ejudge/contests/c/data_struct/stack/stack_1/stack_1.html
+lrwxrwxrwx 1 ejudge ejudge 65 Feb  1  2021 stack_1_begin.c -> /home/ejudge/contests/c/data_struct/stack/stack_1/stack_1_begin.c
+lrwxrwxrwx 1 ejudge ejudge 64 Feb  1  2021 stack_31.html -> /home/ejudge/contests/c/data_struct/stack/stack_31/stack_31.html
+lrwxrwxrwx 1 ejudge ejudge 67 Feb  1  2021 stack_31_begin.c -> /home/ejudge/contests/c/data_struct/stack/stack_31/stack_31_begin.c
+lrwxrwxrwx 1 ejudge ejudge 74 Feb  1  2021 stack_postfix.html -> /home/ejudge/contests/c/data_struct/stack/stack_postfix/stack_postfix.html
+lrwxrwxrwx 1 ejudge ejudge 82 Feb  1  2021 stack_postfix_log.html -> /home/ejudge/contests/c/data_struct/stack/stack_postfix_log/stack_postfix_log.html
+lrwxrwxrwx 1 ejudge ejudge 72 Feb  1  2021 stack_skobki.html -> /home/ejudge/contests/c/data_struct/stack/stack_skobki/stack_skobki.html

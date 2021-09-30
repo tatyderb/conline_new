@@ -1,0 +1,364 @@
+# -*- coding: utf-8 -*-
+# $Id$
+
+contest_time = 0
+score_system = kirov
+board_fog_time = 0
+board_unfog_time = 0
+standings_locale = "ru"
+
+compile_dir = "../../compile/var/compile"
+
+team_enable_src_view
+team_enable_rep_view
+team_enable_ce_view
+team_show_judge_report
+report_error_code
+ignore_compile_errors
+prune_empty_users
+problem_navigation
+vertical_navigation
+
+
+max_run_size = 32K
+max_run_num = 256
+
+
+stand_fancy_style
+stand_extra_format = "%UMp1s %UMp1f %UMp1g"
+
+rounding_mode = floor
+cr_serialization_key = 22723
+show_astr_time
+enable_runlog_merge
+secure_run
+detect_violations
+enable_memory_limit_error
+uuid_run_store
+enable_l10n
+team_download_time = 0
+cpu_bogomips = 4800
+
+[language]
+id = 2
+short_name = "gcc"
+long_name = "GNU C 4.7.2"
+src_sfx = ".c"
+
+[language]
+id = 3
+short_name = "g++"
+long_name = "GNU C++ 4.8.3"
+src_sfx = ".cpp"
+
+[problem]
+abstract
+short_name = "Generic"
+use_stdin
+use_stdout
+test_dir = "%Ps"
+test_sfx = ".dat"
+use_corr
+corr_dir = "%Ps"
+corr_sfx = ".ans"
+info_dir = "%Ps"
+tgz_dir = "%Ps"
+time_limit = 4
+real_time_limit = 10
+max_vm_size = 64M
+max_stack_size = 64M
+max_file_size = 64M
+max_open_file_count = 32
+max_process_count = 32
+full_score = 1
+check_cmd = "check_%Ps"
+start_env = "EJUDGE_VG_FLAGS=-q --track-origins=yes --malloc-fill=66 --free-fill=66 --error-exitcode=1 --leak-check=full"
+disable_user_submit = 0
+disable_submit_after_ok = 0
+enable_text_form
+
+statement_file = "%Ps.html"
+
+[problem]
+abstract
+short_name = "Generic_XML"
+use_stdin
+use_stdout
+xml_file = "%Ps.xml"
+test_dir = "%Ps"
+test_sfx = ".dat"
+use_corr
+corr_dir = "%Ps"
+corr_sfx = ".ans"
+info_dir = "%Ps"
+tgz_dir = "%Ps"
+time_limit = 4
+real_time_limit = 10
+max_vm_size = 64M
+max_stack_size = 64M
+max_file_size = 64M
+max_open_file_count = 32
+max_process_count = 32
+full_score = 1
+check_cmd = "check_%Ps"
+start_env = "EJUDGE_VG_FLAGS=-q --track-origins=yes --malloc-fill=66 --free-fill=66 --error-exitcode=1 --leak-check=full"
+disable_user_submit = 0
+disable_submit_after_ok = 0
+enable_text_form
+
+[problem]
+abstract
+short_name = "Generic_A"
+type = "select-one"
+xml_file = "%Ps.xml"
+test_dir = "%Ps"
+test_sfx = ".dat"
+full_score = 1
+run_penalty = 0
+disqualified_penalty = 1
+advance_to_next
+
+[problem]
+abstract
+short_name = "Generic_B"
+type = "short-answer"
+use_stdin
+use_stdout
+xml_file = "%Ps.xml"
+test_dir = "%Ps"
+test_sfx = ".dat"
+use_corr
+corr_dir = "%Ps"
+corr_sfx = ".ans"
+time_limit = 1
+real_time_limit = 1
+full_score = 1
+run_penalty = 0
+disqualified_penalty = 1
+check_cmd = "check_B"
+
+[problem]
+id = 10
+super = "Generic"
+short_name = "func_max"
+long_name = "Минимальное из двух"
+full_score = 30
+standard_checker = "cmp_int"
+source_header = "func_max_begin.c"
+
+[problem]
+id = 20
+super = "Generic"
+short_name = "func_pos"
+long_name = "Абсолютное значение"
+full_score = 30
+standard_checker = "cmp_int"
+source_header = "func_pos_begin.c"
+
+[problem]
+id = 21
+super = "Generic"
+short_name = "struct_51"
+long_name = "max rect area"
+full_score = 30
+standard_checker = "cmp_int_seq"
+source_header = "struct_51_begin.c"
+
+[problem]
+id = 23
+super = "Generic_XML"
+short_name = "struct_6"
+long_name = "rect normalize"
+full_score = 30
+standard_checker = "cmp_int_seq"
+source_header = "struct_6_begin.c"
+
+[problem]
+id = 30
+super = "Generic"
+short_name = "if_3"
+long_name = "[-25, 37)"
+full_score = 30
+standard_checker = "cmp_yesno"
+
+[problem]
+id = 40
+super = "Generic"
+short_name = "if_4"
+long_name = "intervals"
+full_score = 30
+standard_checker = "cmp_yesno"
+
+[problem]
+id = 50
+super = "Generic"
+short_name = "if_6"
+long_name = "Високосный год"
+full_score = 30
+standard_checker = "cmp_yesno"
+
+[problem]
+id = 55
+super = "Generic"
+short_name = "if_7"
+long_name = "Ладья"
+full_score = 30
+standard_checker = "cmp_yesno"
+
+[problem]
+id = 60
+super = "Generic_XML"
+short_name = "if_10eps"
+long_name = "Сравнение дробных чисел"
+full_score = 30
+standard_checker = "cmp_yesno"
+
+[problem]
+id = 70
+super = "Generic_XML"
+short_name = "Sif_13eps"
+long_name = "Почти попал"
+full_score = 30
+standard_checker = "cmp_yesno"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 72
+super = "Generic_XML"
+short_name = "Sif_m_log5"
+long_name = "Соревнования"
+full_score = 40
+standard_checker = "cmp_int_seq"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 75
+super = "Generic_XML"
+short_name = "Rif_rect"
+long_name = "Точка и прямоугольник"
+full_score = 40
+standard_checker = "cmp_yesno"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 80
+super = "Generic_XML"
+short_name = "Rif_A"
+long_name = "В треугольнике?"
+full_score = 50
+standard_checker = "cmp_yesno"
+
+[problem]
+id = 85
+super = "Generic"
+short_name = "Rif_tri"
+long_name = "Треугольник?"
+full_score = 50
+standard_checker = "cmp_yesno"
+style_checker_cmd = "formatter"
+source_header = "Rif_tri_begin.c"
+
+[problem]
+id = 90
+super = "Generic_XML"
+short_name = "Rif_buses"
+long_name = "Автобусы"
+full_score = 50
+standard_checker = "cmp_file"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 95
+super = "Generic_XML"
+short_name = "Rif_boat"
+long_name = "Переправа"
+full_score = 50
+standard_checker = "cmp_yesno"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 100
+super = "Generic_XML"
+short_name = "Zif_chinaTime"
+long_name = "восточное время"
+full_score = 40
+standard_checker = "cmp_file"
+
+[problem]
+id = 109
+super = "Generic_XML"
+short_name = "sort2"
+long_name = "sort 2"
+full_score = 20
+standard_checker = "cmp_int_seq"
+source_header = "sort2_begin.c"
+
+[problem]
+id = 110
+super = "Generic_XML"
+short_name = "funcp_sort3"
+long_name = "sort 3"
+full_score = 40
+standard_checker = "cmp_int_seq"
+source_header = "funcp_sort3_begin.c"
+
+[problem]
+id = 120
+super = "Generic_XML"
+short_name = "Zif_11palochek"
+long_name = "11 палочек"
+full_score = 50
+standard_checker = "cmp_int"
+
+[problem]
+id = 130
+super = "Generic_XML"
+short_name = "Rif_interval1"
+long_name = "объединение интервалов времени"
+full_score = 50
+standard_checker = "cmp_int_seq"
+
+[problem]
+id = 140
+super = "Generic_XML"
+short_name = "Rif_interval3"
+long_name = "пересечение интервалов времени"
+full_score = 50
+standard_checker = "cmp_int_seq"
+
+[problem]
+id = 150
+super = "Generic_XML"
+short_name = "Rif_interval2"
+long_name = "вычитание интервалов времени"
+full_score = 60
+standard_checker = "cmp_int_seq"
+
+[problem]
+id = 160
+super = "Generic_XML"
+short_name = "Zif_romashka"
+long_name = "Любит - не любит"
+full_score = 50
+standard_checker = "cmp_int"
+
+[tester]
+name = Generic
+arch = ""
+abstract
+no_core_dump
+enable_memory_limit_error
+kill_signal = KILL
+memory_limit_type = "default"
+secure_exec_type = "static"
+clear_env
+start_env = "PATH=/usr/local/bin:/usr/bin:/bin"
+start_env = "HOME"
+check_dir = "work-disk/work"
+
+[tester]
+any
+super = Generic
+
+# audit: created 2019/09/27 20:27:53 1 (ejudge) 95.143.216.192
+# audit: edited 2020/09/29 23:30:28 1 (ejudge) 176.109.94.203

@@ -1,0 +1,25 @@
+total 24
+lrwxrwxrwx 1 ejudge ejudge 54 Nov  9  2020 Points.xml -> /home/ejudge/contests/c/ovsyannikova/Points/Points.xml
+lrwxrwxrwx 1 ejudge ejudge 58 Nov 20  2020 bin_file_num.xml -> /home/ejudge/contests/c/file/bin_file_num/bin_file_num.xml
+lrwxrwxrwx 1 ejudge ejudge 58 Nov  1  2020 elong_add2.xml -> /home/ejudge/contests/c/elong/elong_03/elong_03_mem0_c.xml
+lrwxrwxrwx 1 ejudge ejudge 60 Nov  1  2020 elong_add2_begin.c -> /home/ejudge/contests/c/elong/elong_03/elong_03_mem0_begin.c
+lrwxrwxrwx 1 ejudge ejudge 57 Nov  1  2020 elong_add3.xml -> /home/ejudge/contests/c/elong/elong_03/elong_03_mem_c.xml
+lrwxrwxrwx 1 ejudge ejudge 59 Nov  1  2020 elong_add3_begin.c -> /home/ejudge/contests/c/elong/elong_03/elong_03_mem_begin.c
+lrwxrwxrwx 1 ejudge ejudge 44 Nov  1  2020 mem_1.html -> /home/ejudge/contests/c/ram/mem_1/mem_1.html
+lrwxrwxrwx 1 ejudge ejudge 47 Nov  1  2020 mem_1_begin.c -> /home/ejudge/contests/c/ram/mem_1/mem_1_begin.c
+lrwxrwxrwx 1 ejudge ejudge 44 Nov  1  2020 mem_4.html -> /home/ejudge/contests/c/ram/mem_4/mem_4.html
+lrwxrwxrwx 1 ejudge ejudge 58 Nov  9  2020 points_begin.c -> /home/ejudge/contests/c/ovsyannikova/Points/points_begin.c
+lrwxrwxrwx 1 ejudge ejudge 44 Nov  1  2020 ptr_1.html -> /home/ejudge/contests/c/ram/ptr_1/ptr_1.html
+lrwxrwxrwx 1 ejudge ejudge 47 Nov  1  2020 ptr_1_begin.c -> /home/ejudge/contests/c/ram/ptr_1/ptr_1_begin.c
+lrwxrwxrwx 1 ejudge ejudge 45 Nov  1  2020 ptr_1_end.c -> /home/ejudge/contests/c/ram/ptr_1/ptr_1_end.c
+lrwxrwxrwx 1 ejudge ejudge 44 Nov  1  2020 ptr_4.html -> /home/ejudge/contests/c/ram/ptr_4/ptr_4.html
+lrwxrwxrwx 1 ejudge ejudge 47 Nov  1  2020 ptr_4_begin.c -> /home/ejudge/contests/c/ram/ptr_4/ptr_4_begin.c
+lrwxrwxrwx 1 ejudge ejudge 45 Nov  1  2020 ptr_4_end.c -> /home/ejudge/contests/c/ram/ptr_4/ptr_4_end.c
+lrwxrwxrwx 1 ejudge ejudge 44 Nov  1  2020 ptr_5.html -> /home/ejudge/contests/c/ram/ptr_5/ptr_5.html
+lrwxrwxrwx 1 ejudge ejudge 47 Nov  1  2020 ptr_5_begin.c -> /home/ejudge/contests/c/ram/ptr_5/ptr_5_begin.c
+lrwxrwxrwx 1 ejudge ejudge 45 Nov  1  2020 ptr_5_end.c -> /home/ejudge/contests/c/ram/ptr_5/ptr_5_end.c
+lrwxrwxrwx 1 ejudge ejudge 96 Nov  1  2020 str_bomb5_mem.xml -> /home/ejudge/contests/c/class/class_m_string/5class_m_string_bomb/5class_m_string_bomb_mem_c.xml
+lrwxrwxrwx 1 ejudge ejudge 98 Nov  1  2020 str_bomb5_mem_begin.c -> /home/ejudge/contests/c/class/class_m_string/5class_m_string_bomb/5class_m_string_bomb_mem_begin.c
+lrwxrwxrwx 1 ejudge ejudge 66 Nov  1  2020 toLongN.xml -> /home/ejudge/contests/c/str/str_homework/to_long_digit/toLongN.xml
+lrwxrwxrwx 1 ejudge ejudge 70 Nov  1  2020 toLongN_begin.c -> /home/ejudge/contests/c/str/str_homework/to_long_digit/toLongN_begin.c
+lrwxrwxrwx 1 ejudge ejudge 68 Nov  1  2020 toLongN_end.c -> /home/ejudge/contests/c/str/str_homework/to_long_digit/toLongN_end.c

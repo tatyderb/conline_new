@@ -1,0 +1,503 @@
+# -*- coding: utf-8 -*-
+# $Id$
+
+contest_time = 0
+score_system = kirov
+board_fog_time = 0
+board_unfog_time = 0
+standings_locale = "ru"
+
+compile_dir = "../../compile/var/compile"
+
+team_enable_src_view
+team_enable_rep_view
+team_enable_ce_view
+team_show_judge_report
+report_error_code
+ignore_compile_errors
+prune_empty_users
+problem_navigation
+vertical_navigation
+
+
+max_run_size = 32K
+max_run_num = 256
+
+
+#stand_fancy_style
+stand_use_login
+stand_extra_format = "%UMp1s %UMp1f %UMp1g"
+
+rounding_mode = floor
+cr_serialization_key = 22723
+show_astr_time
+enable_runlog_merge
+secure_run
+detect_violations
+enable_memory_limit_error
+uuid_run_store
+enable_l10n
+team_download_time = 0
+cpu_bogomips = 4800
+
+
+#[language]
+#id = 2
+#short_name = "gcc"
+#long_name = "GNU C 4.8.3"
+#src_sfx = ".c"
+#disabled
+
+[language]
+id = 28
+short_name = "gcc-vg"
+long_name = "GNU C (valgrind) 4.8.3"
+arch = "valgrind"
+src_sfx = ".c"
+#disabled
+
+[problem]
+abstract
+short_name = "Generic"
+use_stdin
+use_stdout
+test_dir = "%Ps"
+test_sfx = ".dat"
+use_corr
+corr_dir = "%Ps"
+corr_sfx = ".ans"
+info_dir = "%Ps"
+tgz_dir = "%Ps"
+time_limit = 4
+real_time_limit = 10
+max_vm_size = 64M
+max_stack_size = 64M
+max_file_size = 64M
+max_open_file_count = 64
+max_process_count = 64
+full_score = 1
+check_cmd = "check_%Ps"
+start_env = "EJUDGE_VG_FLAGS=-q --track-origins=yes --malloc-fill=66 --free-fill=66 --error-exitcode=1 --leak-check=full"
+disable_user_submit = 0
+disable_submit_after_ok = 0
+enable_text_form
+
+statement_file = "%Ps.html"
+
+[problem]
+abstract
+short_name = "Generic_XML"
+use_stdin
+use_stdout
+xml_file = "%Ps.xml"
+test_dir = "%Ps"
+test_sfx = ".dat"
+use_corr
+corr_dir = "%Ps"
+corr_sfx = ".ans"
+info_dir = "%Ps"
+tgz_dir = "%Ps"
+time_limit = 4
+real_time_limit = 10
+max_vm_size = 64M
+max_stack_size = 64M
+max_file_size = 64M
+max_open_file_count = 64
+max_process_count = 64
+full_score = 1
+check_cmd = "check_%Ps"
+start_env = "EJUDGE_VG_FLAGS=-q --track-origins=yes --malloc-fill=66 --free-fill=66 --error-exitcode=1 --leak-check=full"
+disable_user_submit = 0
+disable_submit_after_ok = 0
+enable_text_form
+
+[problem]
+abstract
+short_name = "Generic_A"
+type = "select-one"
+xml_file = "%Ps.xml"
+test_dir = "%Ps"
+test_sfx = ".dat"
+full_score = 1
+run_penalty = 0
+disqualified_penalty = 1
+advance_to_next
+
+[problem]
+abstract
+short_name = "Generic_B"
+type = "short-answer"
+use_stdin
+use_stdout
+xml_file = "%Ps.xml"
+test_dir = "%Ps"
+test_sfx = ".dat"
+use_corr
+corr_dir = "%Ps"
+corr_sfx = ".ans"
+time_limit = 1
+real_time_limit = 1
+full_score = 1
+run_penalty = 0
+disqualified_penalty = 1
+check_cmd = "check_B"
+
+[problem]
+id = 10
+super = "Generic_XML"
+short_name = "Barr_3"
+long_name = "x2"
+full_score = 20
+standard_checker = "cmp_int_seq"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 20
+super = "Generic_XML"
+short_name = "Barr_5"
+long_name = "from k to n"
+full_score = 20
+standard_checker = "cmp_int_seq"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 30
+super = "Generic_XML"
+short_name = "Barr_6"
+long_name = "i"
+full_score = 30
+standard_checker = "cmp_int_seq"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 40
+super = "Generic_XML"
+short_name = "Barr_7"
+long_name = "a[i]"
+full_score = 30
+standard_checker = "cmp_int_seq"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 50
+super = "Generic_XML"
+short_name = "Barr_9"
+long_name = ""
+full_score = 30
+standard_checker = "cmp_int_seq"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 60
+super = "Generic_XML"
+short_name = "Barr_12"
+long_name = ""
+full_score = 30
+standard_checker = "cmp_int_seq"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 70
+super = "Generic"
+short_name = "L_arr_00"
+long_name = "and again"
+full_score = 20
+standard_checker = "cmp_int_seq"
+#style_checker_cmd = "formatter"
+
+[problem]
+id = 80
+super = "Generic"
+short_name = "L_arr_01"
+long_name = "even-odd"
+full_score = 20
+standard_checker = "cmp_int_seq"
+#style_checker_cmd = "formatter"
+
+[problem]
+id = 90
+super = "Generic"
+short_name = "L_arr_1"
+long_name = "revers"
+full_score = 20
+standard_checker = "cmp_int_seq"
+#style_checker_cmd = "formatter"
+
+[problem]
+id = 99
+super = "Generic_XML"
+short_name = "L_arr_02"
+long_name = "первый индекс"
+full_score = 20
+standard_checker = "cmp_int"
+#style_checker_cmd = "formatter"
+
+
+[problem]
+id = 100
+super = "Generic_XML"
+short_name = "L_arr_02_1"
+long_name = "первый индекс или -1"
+full_score = 25
+standard_checker = "cmp_int_seq"
+#style_checker_cmd = "formatter"
+
+
+[problem]
+id = 120
+super = "Generic"
+short_name = "L_arr_10"
+long_name = "vector add"
+full_score = 30
+standard_checker = "cmp_int_seq"
+#style_checker_cmd = "formatter"
+
+[problem]
+id = 130
+super = "Generic"
+short_name = "L_arr_11"
+long_name = "vector scalar mul"
+full_score = 30
+standard_checker = "cmp_int_seq"
+#style_checker_cmd = "formatter"
+
+[problem]
+id = 140
+super = "Generic_XML"
+short_name = "L_arr_counter"
+long_name = "array as counter"
+full_score = 30
+standard_checker = "cmp_int_seq"
+#style_checker_cmd = "formatter"
+
+[problem]
+id = 150
+super = "Generic_XML"
+short_name = "R_kupec"
+long_name = "купец"
+full_score = 50
+standard_checker = "cmp_int_seq"
+#style_checker_cmd = "formatter"
+
+[problem]
+id = 160
+super = "Generic_XML"
+short_name = "R_decimal_fract"
+long_name = "десятичная дробь"
+full_score = 50
+standard_checker = "cmp_file"
+
+
+
+[problem]
+id = 170
+super = "Generic"
+short_name = "R_arr_pascal"
+long_name = "Pascal triangle"
+full_score = 50
+standard_checker = "cmp_int_seq"
+#style_checker_cmd = "formatter"
+
+[problem]
+id = 180
+super = "Generic"
+short_name = "R_arr_4"
+long_name = "Sieve of Eratosthenes"
+full_score = 50
+standard_checker = "cmp_int_seq"
+#style_checker_cmd = "formatter"
+
+[problem]
+id = 190
+super = "Generic"
+short_name = "R_arr_5"
+long_name = "dividers"
+full_score = 50
+standard_checker = "cmp_int_seq"
+#style_checker_cmd = "formatter"
+
+
+[problem]
+id = 210
+super = "Generic_XML"
+short_name = "R_arr_12"
+long_name = "razmen"
+full_score = 40
+standard_checker = "cmp_int_seq"
+style_checker_cmd = "formatter"
+
+
+
+[problem]
+id = 220
+super = "Generic_XML"
+short_name = "B_2Darr_1"
+long_name = "matrix: read and print"
+full_score = 20
+standard_checker = "cmp_int_seq"
+style_checker_cmd = "formatter"
+
+
+[problem]
+id = 224
+super = "Generic_XML"
+short_name = "B_2Darr_6"
+long_name = "matrix: sum row"
+full_score = 20
+standard_checker = "cmp_int_seq"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 225
+super = "Generic_XML"
+short_name = "B_2Darr_61"
+long_name = "matrix: sum col"
+full_score = 20
+standard_checker = "cmp_int_seq"
+style_checker_cmd = "formatter"
+
+
+[problem]
+id = 230
+super = "Generic_XML"
+short_name = "L_2Darr_7"
+long_name = "diag sum"
+full_score = 40
+standard_checker = "cmp_int_seq"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 240
+super = "Generic_XML"
+short_name = "L_2Darr_8"
+long_name = "diag sum 2"
+full_score = 40
+standard_checker = "cmp_int_seq"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 250
+super = "Generic_XML"
+short_name = "R_black_cells"
+long_name = "Черные клетки"
+full_score = 50
+standard_checker = "cmp_file"
+#style_checker_cmd = "formatter"
+open_tests="1-2:full"
+
+[problem]
+id = 260
+super = "Generic_XML"
+short_name = "R_2Darr_13"
+long_name = "magic"
+full_score = 60
+standard_checker = "cmp_file"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 270
+super = "Generic"
+short_name = "R_arr_sudoku"
+long_name = "sudoku"
+full_score = 50
+standard_checker = "cmp_yesno"
+style_checker_cmd = "formatter"
+
+[problem]
+id = 280
+super = "Generic_XML"
+short_name = "Z_rectangles"
+long_name = "Прямоугольники"
+full_score = 50
+standard_checker = "cmp_int"
+
+
+[problem]
+id = 290
+super = "Generic_XML"
+short_name = "Z_Points"
+long_name = "Точки на плоскости"
+full_score = 70
+input_file = "input.dat"
+use_stdin = 0
+combined_stdin = 0
+output_file = "output.dat"
+use_stdout = 0
+combined_stdout = 0
+standard_checker = "cmp_file"
+source_header = "Z_points_begin.c"
+
+[problem]
+id = 300
+super = "Generic_XML"
+short_name = "Z_EgiptFr"
+long_name = "Египетские дроби"
+full_score = 100
+check_cmd = "/home/judges/500009/check/eg.py"
+
+
+[problem]
+id = 350
+super = "Generic_XML"
+short_name = "arr_log_uniq"
+long_name = "сколько разных клиентов"
+full_score = 40
+standard_checker = "cmp_int_seq"
+
+[problem]
+id = 355
+super = "Generic_XML"
+short_name = "struct_card"
+long_name = "пиковая дама"
+full_score = 40
+standard_checker = "cmp_file"
+source_header = "struct_card_begin.c"
+
+[problem]
+id = 360
+super = "Generic_XML"
+short_name = "elong_add"
+long_name = "большие числа"
+full_score = 100
+standard_checker = "cmp_file"
+source_header = "elong_add_begin.c"
+
+[tester]
+name = Generic
+arch = ""
+abstract
+no_core_dump
+enable_memory_limit_error
+kill_signal = KILL
+memory_limit_type = "default"
+secure_exec_type = "static"
+clear_env
+start_env = "PATH=/usr/local/bin:/usr/bin:/bin"
+start_env = "HOME"
+check_dir = "work-disk/work"
+
+[tester]
+name = Valgrind
+arch = "valgrind"
+abstract
+no_core_dump
+kill_signal = TERM
+memory_limit_type = "valgrind"
+secure_exec_type = "valgrind"
+start_cmd = "runvg"
+clear_env
+start_env = "PATH=/usr/local/bin:/usr/bin:/bin"
+start_env = "LANG=C"
+start_env = "HOME"
+check_dir = "work-disk/work"
+
+[tester]
+any
+super = Generic
+
+[tester]
+any
+super = Valgrind
+arch = valgrind
+
+# audit: created 2018/10/22 10:12:39 1 (ejudge) 95.143.216.192

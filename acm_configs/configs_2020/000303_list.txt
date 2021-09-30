@@ -1,0 +1,15 @@
+total 56
+lrwxrwxrwx 1 ejudge ejudge 72 Sep 14  2020 TicTacFunc.xml -> /home/ejudge/contests/c/struct/struct_homework/time_funct/TicTacFunc.xml
+lrwxrwxrwx 1 ejudge ejudge 74 Sep 14  2020 TicTacFunc_begin.c -> /home/ejudge/contests/c/struct/struct_homework/time_funct/time_try_begin.c
+lrwxrwxrwx 1 ejudge ejudge 72 Sep 14  2020 TicTacFunc_end.c -> /home/ejudge/contests/c/struct/struct_homework/time_funct/time_try_end.c
+lrwxrwxrwx 1 ejudge ejudge 69 Sep 14  2020 struct_2.html -> /home/ejudge/contests/c/struct/struct_homework/struct_2/struct_2.html
+lrwxrwxrwx 1 ejudge ejudge 72 Sep 14  2020 struct_2_begin.c -> /home/ejudge/contests/c/struct/struct_homework/struct_2/struct_2_begin.c
+lrwxrwxrwx 1 ejudge ejudge 78 Sep 14  2020 struct_colors.xml -> /home/ejudge/contests/c/struct/struct_homework/struct_colors/struct_colors.xml
+lrwxrwxrwx 1 ejudge ejudge 82 Sep 14  2020 struct_colors_begin.c -> /home/ejudge/contests/c/struct/struct_homework/struct_colors/struct_colors_begin.c
+lrwxrwxrwx 1 ejudge ejudge 74 Sep 14  2020 struct_getY.xml -> /home/ejudge/contests/c/struct/struct_homework/struct_getY/struct_getY.xml
+lrwxrwxrwx 1 ejudge ejudge 86 Sep 14  2020 struct_line_0rotR.xml -> /home/ejudge/contests/c/struct/struct_homework/struct_line_0rotR/struct_line_0rotR.xml
+lrwxrwxrwx 1 ejudge ejudge 78 Sep 21  2020 struct_moving.xml -> /home/ejudge/contests/c/struct/struct_homework/struct_moving/struct_moving.xml
+lrwxrwxrwx 1 ejudge ejudge 82 Sep 21  2020 struct_moving_begin.c -> /home/ejudge/contests/c/struct/struct_homework/struct_moving/struct_moving_begin.c
+lrwxrwxrwx 1 ejudge ejudge 82 Sep 14  2020 struct_scanLine.xml -> /home/ejudge/contests/c/struct/struct_homework/struct_scanLine/struct_scanLine.xml
+lrwxrwxrwx 1 ejudge ejudge 80 Sep 21  2020 struct_seasons.xml -> /home/ejudge/contests/c/struct/struct_homework/struct_seasons/struct_seasons.xml
+lrwxrwxrwx 1 ejudge ejudge 84 Sep 21  2020 struct_seasons_begin.c -> /home/ejudge/contests/c/struct/struct_homework/struct_seasons/struct_seasons_begin.c

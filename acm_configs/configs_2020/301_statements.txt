@@ -1,0 +1,18 @@
+total 16
+lrwxrwxrwx 1 ejudge ejudge 43 Aug 27  2020 bonus.xml -> /home/ejudge/contests/c/int/bonus/bonus.xml
+lrwxrwxrwx 1 ejudge ejudge 43 Aug 27  2020 dozen.xml -> /home/ejudge/contests/c/int/dozen/dozen.xml
+lrwxrwxrwx 1 ejudge ejudge 59 Aug 27  2020 float_int_run.xml -> /home/ejudge/contests/c/int/float_int_run/float_int_run.xml
+lrwxrwxrwx 1 ejudge ejudge 39 Aug 27  2020 hex.xml -> /home/ejudge/contests/c/int/hex/hex.xml
+lrwxrwxrwx 1 ejudge ejudge 43 Aug 29  2020 int_3.xml -> /home/ejudge/contests/c/int/int_3/int_3.xml
+lrwxrwxrwx 1 ejudge ejudge 58 Aug 28  2020 int_clock.html -> /home/ejudge/contests/c/int/int_m/int_clock/int_clock.html
+lrwxrwxrwx 1 ejudge ejudge 60 Aug 28  2020 int_clock3.html -> /home/ejudge/contests/c/int/int_m/int_clock3/int_clock3.html
+lrwxrwxrwx 1 ejudge ejudge 60 Aug 28  2020 int_clock4.html -> /home/ejudge/contests/c/int/int_m/int_clock4/int_clock4.html
+lrwxrwxrwx 1 ejudge ejudge 65 Aug 27  2020 int_ksg_diff.xml -> /home/ejudge/contests/c/int/int_ksg/int_ksg_diff/int_ksg_diff.xml
+lrwxrwxrwx 1 ejudge ejudge 63 Aug 27  2020 int_ksg_sum.xml -> /home/ejudge/contests/c/int/int_ksg/int_ksg_sum/int_ksg_sum.xml
+lrwxrwxrwx 1 ejudge ejudge 45 Aug 28  2020 kupec.xml -> /home/ejudge/contests/c/int/kupec1/kupec1.xml
+lrwxrwxrwx 1 ejudge ejudge 47 Aug 27  2020 mondays.xml -> /home/ejudge/contests/c/int/mondays/monday1.xml
+lrwxrwxrwx 1 ejudge ejudge 51 Aug 29  2020 rect_zero.xml -> /home/ejudge/contests/c/int/rect_zero/rect_zero.xml
+lrwxrwxrwx 1 ejudge ejudge 45 Aug 27  2020 shifr1.xml -> /home/ejudge/contests/c/int/shifr1/shifr1.xml
+lrwxrwxrwx 1 ejudge ejudge 45 Aug 27  2020 shifr2.xml -> /home/ejudge/contests/c/int/shifr2/shifr2.xml
+lrwxrwxrwx 1 ejudge ejudge 44 Aug 29  2020 sum_2.html -> /home/ejudge/contests/c/int/sum_2/sum_2.html
+lrwxrwxrwx 1 ejudge ejudge 54 Aug 27  2020 town_clock.xml -> /home/ejudge/contests/c/int/town_clock/town_clock0.xml

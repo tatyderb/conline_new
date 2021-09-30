@@ -1,0 +1,198 @@
+# -*- coding: utf-8 -*-
+# $Id$
+
+contest_time = 0
+score_system = kirov
+board_fog_time = 0
+board_unfog_time = 0
+standings_locale = "ru"
+
+compile_dir = "../../compile/var/compile"
+
+team_enable_src_view
+team_enable_rep_view
+team_enable_ce_view
+team_show_judge_report
+report_error_code
+ignore_compile_errors
+prune_empty_users
+problem_navigation
+vertical_navigation
+
+
+max_run_size = 32K
+max_run_num = 256
+
+
+stand_use_login
+stand_extra_format = "%UMp1s %UMp1f %UMp1g"
+
+rounding_mode = floor
+cr_serialization_key = 22723
+show_astr_time
+enable_runlog_merge
+secure_run
+detect_violations
+enable_memory_limit_error
+uuid_run_store
+enable_l10n
+team_download_time = 0
+cpu_bogomips = 4800
+
+[language]
+id = 28
+short_name = "gcc-vg"
+long_name = "GNU C (valgrind) 4.8.3"
+arch = "valgrind"
+src_sfx = ".c"
+
+[problem]
+abstract
+short_name = "Generic"
+use_stdin
+use_stdout
+test_dir = "%Ps"
+test_sfx = ".dat"
+use_corr
+corr_dir = "%Ps"
+corr_sfx = ".ans"
+info_dir = "%Ps"
+tgz_dir = "%Ps"
+time_limit = 6
+real_time_limit = 14
+max_vm_size = 64M
+max_stack_size = 64M
+max_file_size = 64M
+max_open_file_count = 32
+max_process_count = 64
+full_score = 1
+check_cmd = "check_%Ps"
+start_env = "EJUDGE_VG_FLAGS=-q --track-origins=yes --malloc-fill=66 --free-fill=66 --error-exitcode=1 --leak-check=full"
+disable_user_submit = 0
+disable_submit_after_ok = 0
+enable_text_form
+
+statement_file = "%Ps.html"
+
+[problem]
+abstract
+short_name = "Generic_XML"
+use_stdin
+use_stdout
+xml_file = "%Ps.xml"
+test_dir = "%Ps"
+test_sfx = ".dat"
+use_corr
+corr_dir = "%Ps"
+corr_sfx = ".ans"
+info_dir = "%Ps"
+tgz_dir = "%Ps"
+time_limit = 6
+real_time_limit = 14
+max_vm_size = 64M
+max_stack_size = 64M
+max_file_size = 64M
+max_open_file_count = 32
+max_process_count = 64
+full_score = 1
+check_cmd = "check_%Ps"
+start_env = "EJUDGE_VG_FLAGS=-q --track-origins=yes --malloc-fill=66 --free-fill=66 --error-exitcode=1 --leak-check=full"
+disable_user_submit = 0
+disable_submit_after_ok = 0
+enable_text_form
+
+[problem]
+abstract
+short_name = "Generic_A"
+type = "select-one"
+xml_file = "%Ps.xml"
+test_dir = "%Ps"
+test_sfx = ".dat"
+full_score = 1
+run_penalty = 0
+disqualified_penalty = 1
+advance_to_next
+
+[problem]
+abstract
+short_name = "Generic_B"
+type = "short-answer"
+use_stdin
+use_stdout
+xml_file = "%Ps.xml"
+test_dir = "%Ps"
+test_sfx = ".dat"
+use_corr
+corr_dir = "%Ps"
+corr_sfx = ".ans"
+time_limit = 1
+real_time_limit = 1
+full_score = 1
+run_penalty = 0
+disqualified_penalty = 1
+check_cmd = "check_B"
+
+[problem]
+id = 30
+super = "Generic"
+short_name = "list_02"
+long_name = "single linked list"
+full_score = 60
+standard_checker = "cmp_file"
+enable_language = "gcc-vg"
+source_header = "list_02_begin.c"
+
+[problem]
+id = 31
+super = "Generic"
+short_name = "list_01"
+long_name = "single linked list"
+full_score = 60
+standard_checker = "cmp_file"
+enable_language = "gcc-vg"
+source_header = "list_01_begin.c"
+
+[problem]
+id = 33
+super = "Generic"
+short_name = "list_2"
+long_name = "cicled double linked list"
+full_score = 60
+standard_checker = "cmp_file"
+enable_language = "gcc-vg"
+source_header = "list_2_begin.c"
+source_footer = "list_2_end.c"
+
+[problem]
+id = 39
+super = "Generic"
+short_name = "list_3"
+long_name = "list game"
+time_limit = 10
+real_time_limit = 20
+full_score = 60
+standard_checker = "cmp_file"
+style_checker_cmd = "formatter"
+enable_language = "gcc-vg"
+
+[tester]
+name = Valgrind
+arch = "valgrind"
+abstract
+no_core_dump
+kill_signal = TERM
+memory_limit_type = "valgrind"
+secure_exec_type = "valgrind"
+start_cmd = "runvg"
+clear_env
+start_env = "PATH=/usr/local/bin:/usr/bin:/bin"
+start_env = "LANG=C"
+start_env = "HOME"
+check_dir = "work-disk/work"
+
+[tester]
+any
+super = Valgrind
+arch = valgrind
+
+# audit: created 2021/02/08 12:44:30 1 (ejudge) 85.26.232.89

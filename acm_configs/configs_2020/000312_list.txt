@@ -1,0 +1,16 @@
+total 4
+lrwxrwxrwx 1 ejudge ejudge 39 Feb  7  2021 Message.xml -> /home/ejudge/ovs500009/mess/Message.xml
+lrwxrwxrwx 1 ejudge ejudge 44 Feb  7  2021 bit_0.html -> /home/ejudge/contests/c/bit/bit_0/bit_0.html
+lrwxrwxrwx 1 ejudge ejudge 44 Feb  7  2021 bit_1.html -> /home/ejudge/contests/c/bit/bit_1/bit_1.html
+lrwxrwxrwx 1 ejudge ejudge 44 Feb  7  2021 bit_2.html -> /home/ejudge/contests/c/bit/bit_2/bit_2.html
+lrwxrwxrwx 1 ejudge ejudge 44 Feb  7  2021 bit_3.html -> /home/ejudge/contests/c/bit/bit_3/bit_3.html
+lrwxrwxrwx 1 ejudge ejudge 44 Feb  7  2021 bit_4.html -> /home/ejudge/contests/c/bit/bit_4/bit_4.html
+lrwxrwxrwx 1 ejudge ejudge 44 Feb  7  2021 bit_5.html -> /home/ejudge/contests/c/bit/bit_5/bit_5.html
+lrwxrwxrwx 1 ejudge ejudge 48 Feb  7  2021 bit_rwx.html -> /home/ejudge/contests/c/bit/bit_rwx/bit_rwx.html
+lrwxrwxrwx 1 ejudge ejudge 40 Feb  7  2021 cpu.html -> /home/ejudge/contests/c/bit/cpu/cpu.html
+lrwxrwxrwx 1 ejudge ejudge 60 Feb  7  2021 ip_broadcast.html -> /home/ejudge/contests/c/bit/bit_broadcast/bit_broadcast.html
+lrwxrwxrwx 1 ejudge ejudge 50 Feb  7  2021 pdp_load.html -> /home/ejudge/contests/c/bit/pdp_load/pdp_load.html
+lrwxrwxrwx 1 ejudge ejudge 51 Feb  7  2021 pdp_load_end.c -> /home/ejudge/contests/c/bit/pdp_load/pdp_load_end.c
+lrwxrwxrwx 1 ejudge ejudge 46 Feb  7  2021 pdp_rw.html -> /home/ejudge/contests/c/bit/pdp_rw/pdp_rw.html
+lrwxrwxrwx 1 ejudge ejudge 47 Feb  7  2021 pdp_rw_end.c -> /home/ejudge/contests/c/bit/pdp_rw/pdp_rw_end.c
+lrwxrwxrwx 1 ejudge ejudge 53 Feb  7  2021 real_fract.xml -> /home/ejudge/contests/c/bit/real_fract/real_fract.xml

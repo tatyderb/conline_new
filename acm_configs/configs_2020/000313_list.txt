@@ -1,0 +1,27 @@
+total 56
+lrwxrwxrwx 1 ejudge ejudge 61 Nov 23  2020 list_01.html -> /home/ejudge/contests/c/data_struct/list/list_01/list_01.html
+lrwxrwxrwx 1 ejudge ejudge 64 Nov 23  2020 list_01_begin.c -> /home/ejudge/contests/c/data_struct/list/list_01/list_01_begin.c
+lrwxrwxrwx 1 ejudge ejudge 61 Nov 23  2020 list_02.html -> /home/ejudge/contests/c/data_struct/list/list_02/list_02.html
+lrwxrwxrwx 1 ejudge ejudge 64 Nov 23  2020 list_02_begin.c -> /home/ejudge/contests/c/data_struct/list/list_02/list_02_begin.c
+lrwxrwxrwx 1 ejudge ejudge 59 Nov 23  2020 list_2.html -> /home/ejudge/contests/c/data_struct/list/list_2/list_2.html
+lrwxrwxrwx 1 ejudge ejudge 62 Nov 23  2020 list_2_begin.c -> /home/ejudge/contests/c/data_struct/list/list_2/list_2_begin.c
+lrwxrwxrwx 1 ejudge ejudge 60 Nov 23  2020 list_2_end.c -> /home/ejudge/contests/c/data_struct/list/list_2/list_2_end.c
+lrwxrwxrwx 1 ejudge ejudge 59 Nov 23  2020 list_3.html -> /home/ejudge/contests/c/data_struct/list/list_3/list_3.html
+lrwxrwxrwx 1 ejudge ejudge 62 Nov 23  2020 stack_1.html -> /home/ejudge/contests/c/data_struct/stack/stack_1/stack_1.html
+lrwxrwxrwx 1 ejudge ejudge 65 Nov 23  2020 stack_1_begin.c -> /home/ejudge/contests/c/data_struct/stack/stack_1/stack_1_begin.c
+lrwxrwxrwx 1 ejudge ejudge 64 Nov 23  2020 stack_31.html -> /home/ejudge/contests/c/data_struct/stack/stack_31/stack_31.html
+lrwxrwxrwx 1 ejudge ejudge 67 Nov 23  2020 stack_31_begin.c -> /home/ejudge/contests/c/data_struct/stack/stack_31/stack_31_begin.c
+lrwxrwxrwx 1 ejudge ejudge 74 Nov 23  2020 stack_postfix.html -> /home/ejudge/contests/c/data_struct/stack/stack_postfix/stack_postfix.html
+lrwxrwxrwx 1 ejudge ejudge 82 Nov 23  2020 stack_postfix_log.html -> /home/ejudge/contests/c/data_struct/stack/stack_postfix_log/stack_postfix_log.html
+lrwxrwxrwx 1 ejudge ejudge 72 Nov 23  2020 stack_skobki.html -> /home/ejudge/contests/c/data_struct/stack/stack_skobki/stack_skobki.html
+lrwxrwxrwx 1 ejudge ejudge 47 Nov 23  2020 tree_1.html -> /home/ejudge/contests/c/tree/tree_1/tree_1.html
+lrwxrwxrwx 1 ejudge ejudge 49 Nov 23  2020 tree_11.html -> /home/ejudge/contests/c/tree/tree_11/tree_11.html
+lrwxrwxrwx 1 ejudge ejudge 52 Nov 23  2020 tree_11_begin.c -> /home/ejudge/contests/c/tree/tree_11/tree_11_begin.c
+lrwxrwxrwx 1 ejudge ejudge 50 Nov 23  2020 tree_1_begin.c -> /home/ejudge/contests/c/tree/tree_1/tree_1_begin.c
+lrwxrwxrwx 1 ejudge ejudge 47 Nov 23  2020 tree_2.html -> /home/ejudge/contests/c/tree/tree_2/tree_2.html
+lrwxrwxrwx 1 ejudge ejudge 47 Nov 23  2020 tree_3.html -> /home/ejudge/contests/c/tree/tree_3/tree_3.html
+lrwxrwxrwx 1 ejudge ejudge 47 Nov 23  2020 tree_4.html -> /home/ejudge/contests/c/tree/tree_4/tree_4.html
+lrwxrwxrwx 1 ejudge ejudge 47 Nov 23  2020 tree_5.html -> /home/ejudge/contests/c/tree/tree_5/tree_5.html
+lrwxrwxrwx 1 ejudge ejudge 47 Nov 23  2020 tree_7.html -> /home/ejudge/contests/c/tree/tree_7/tree_7.html
+lrwxrwxrwx 1 ejudge ejudge 68 Nov 23  2020 tree_lvl.xml -> /home/ejudge/contests/c/tree/tree_kr/tree_lvle_prn/tree_lvle_prn.xml
+lrwxrwxrwx 1 ejudge ejudge 50 Nov 23  2020 valgrind.html -> /home/ejudge/contests/c/ram/valgrind/valgrind.html
