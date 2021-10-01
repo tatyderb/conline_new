@@ -47,13 +47,13 @@ int main() {
     return 0;
 }
 ```
-A. `x=3 y=7 a=3 y=7`
+A. `x=3 y=7 a=3 b=7`
 
-B. `x=3 y=7 a=7 y=3`
+B. `x=3 y=7 a=7 b=3`
 
-C. `x=7 y=3 a=7 y=3`
+C. `x=7 y=3 a=7 b=3`
 
-D. `x=7 y=3 a=3 y=7`
+D. `x=7 y=3 a=3 b=7`
 
 ANSWER: D
 
