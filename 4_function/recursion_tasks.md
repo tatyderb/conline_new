@@ -257,7 +257,7 @@ void printFactor(unsigned int last, unsigned int n);
 int main()
 {
     unsigned int a;
-    scanf("%u\n", &a);
+    scanf("%u", &a);
     simpleFactors(a, 2, 0);
     
     return 0;
@@ -338,7 +338,7 @@ void simpleFactors(unsigned int a, unsigned int last, unsigned int n);
 int main()
 {
     unsigned int a;
-    scanf("%u\n", &a);
+    scanf("%u", &a);
     simpleFactors(a, 2, 0);
     
     return 0;
