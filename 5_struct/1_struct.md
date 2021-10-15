@@ -67,7 +67,7 @@ struct Student {
 
 ```cpp
 int x;                  // объявили переменную `x` типа `int`
-stuct Student gusev;    // объявили переменную `ivanov` типа `struct Student`
+stuct Student gusev;    // объявили переменную `gusev` типа `struct Student`
 ```
 С явной идентификацией переменной:
 ```cpp
