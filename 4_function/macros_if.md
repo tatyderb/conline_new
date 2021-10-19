@@ -174,6 +174,21 @@ int main(void)
 
 Использование макроса: `mm = time2min(1, 25);`
 
+При проверке будет использован следующий код:
+```cpp
+int h, m, mm;
+scanf("%d:%d", &h, &m);
+
+mm = time2min(h, m);
+printf("%d\n", mm);
+
+mm = time2min(h, m)*2;
+printf("%d\n", mm);
+
+mm = time2min(h+1, m+5);
+printf("%d\n", mm);
+```
+
 FOOTER
 #include <stdio.h>
 
@@ -214,6 +229,18 @@ TEST
 Напишите макрос `min2time(mm,h,m)`, который из `mm` минуты с 0:00 вычисляет часы `h` и минуты `m` для циферблата часов.
 
 Использование макроса: `min2time(125, hres, mres);`
+
+При проверке будет использован этот код:
+```cpp
+int h, m, mm;
+scanf("%d", &mm);
+
+min2time(mm, h, m);
+printf("%02d:%02d\n", h, m);
+
+min2time(mm+65, h, m);
+printf("%02d:%02d\n", h, m);
+```
 
 FOOTER
 #include <stdio.h>
