@@ -30,7 +30,7 @@ int main()
     
     struct Segment m;
     scanf("%d", &m.start);  // читаем 
-    scanf("%d", &m.start);
+    scanf("%d", &m.finish);
                             // печатаем
     printf("m = [%d, %d]\n", m.start, m.finish);
 }
