@@ -1,0 +1,59 @@
+L_arr_00.html -> /home/ejudge/contests/c/arr/arr_homework/arr_00/arr_00.html
+L_arr_01.html -> /home/ejudge/contests/c/arr/arr_homework/arr_01/arr_01.html
+L_arr_02.xml -> /home/ejudge/contests/c/arr/arr_homework/arr_02/arr_02.xml
+L_arr_02_1.xml -> /home/ejudge/contests/c/arr/arr_homework/arr_02/arr_02_1.xml
+L_arr_1.html -> /home/ejudge/contests/c/arr/arr_homework/arr_1/arr_1.html
+L_arr_10.html -> /home/ejudge/contests/c/arr/arr_homework/arr_10/arr_10.html
+L_arr_11.html -> /home/ejudge/contests/c/arr/arr_homework/arr_11/arr_11.html
+L_arr_counter.xml -> /home/ejudge/contests/c/arr/arr_homework/arr_counter/arr_counter.xml
+R_2Darr_13.xml -> /home/ejudge/contests/c/arr/arr_m/arr_m_lesson3/arr_m3_13/arr_m3_13.xml
+R_arr_12.xml -> /home/ejudge/contests/c/arr/arr_homework/arr_12_rasmen/arr_12_rasmen.xml
+R_arr_4.html -> /home/ejudge/contests/c/arr/arr_homework/arr_4/arr_4.html
+R_arr_5.html -> /home/ejudge/contests/c/arr/arr_homework/arr_5/arr_5.html
+R_black_cells.xml -> /home/ejudge/contests/c/arr/arr_ovsyannikova/black_cells/black_cells.xml
+R_decimal_fract.xml -> /home/ejudge/contests/c/arr/arr_ovsyannikova/decimal_fract/decimal_fract.xml
+Z_Points.xml -> /home/ejudge/contests/c/arr/arr_ovsyannikova/Points/Points.xml
+Z_rectangles.xml -> /home/ejudge/contests/c/arr/arr_ovsyannikova/rectangles/rectangles.xml
+
+Начинающие:
+Barr_3.xml -> /home/ejudge/ovs500009/check/ready/statements/Barr_3.xml
+Barr_5.xml -> /home/ejudge/ovs500009/check/ready/statements/Barr_5.xml
+Barr_6.xml -> ../../../ejudge/ovs500009/check/ready/statements/Barr_6.xml
+Barr_7.xml -> /home/ejudge/ovs500009/check/ready/statements/Barr_7.xml
+Barr_9.xml -> /home/ejudge/ovs500009/check/ready/statements/Barr_9.xml
+Barr_12.xml -> /home/ejudge/ovs500009/check/ready/statements/Barr_12.xml
+
+Все:
+R_kupec.xml -> /home/ejudge/contests/c/arr/arr_ovsyannikova/kupec-1/kupec-1.xml
+
+Продолжающие:
+arr_counter.xml -> /home/ejudge/contests/c/arr/arr_homework/arr_counter/arr_counter.xml
+arr_log_uniq.xml -> /home/ejudge/contests/c/arr/arr_log/arr_log_bet_client_uniq/arr_log_bet_client_uniq.xml
+R_arr_pascal.xml -> /home/ejudge/ovs500009/check/ready/statements/arr_6.xml
+
+
+структуры:
+elong_print - 
+elong_set_x - 
+elong_add.xml -> /home/ejudge/contests/c/elong/elong_03/elong_03_noptr.xml
+elong_add_mem.xml -> /home/ejudge/contests/c/elong/elong_03/elong_03_mem_c.xml
+дама пик struct_card.xml -> /home/ejudge/contests/c/struct/struct_kr/struct_card_queen/struct_card_queen.xml
+
+Подумать:
+Z_EgiptFr.xml -> /home/ejudge/contests/c/arr/arr_ovsyannikova/egipt_dr/EgiptFr.xml
+
+2D
+Начинающие:
+B2Darr_5.xml -> /home/ejudge/contests/c/arr/arr_m/arr_m_lesson3/arr_m3_5/arr_m3_5.xml
+B2Darr_6.xml -> /home/ejudge/contests/c/arr/arr_m/arr_m_lesson3/arr_m3_6/arr_m3_6.xml
+B_2Darr_1.xml -> /home/ejudge/contests/c/arr/arr_m/arr_m_lesson3/arr_m3_1/arr_m3_1_c.xml
+B_2Darr_6.xml -> /home/ejudge/contests/c/arr/arr_m/arr_m_lesson3/arr_m3_6/arr_m3_6.xml
+B_2Darr_61.xml -> /home/ejudge/contests/c/arr/arr_m/arr_m_lesson3/arr_m3_61/arr_m3_61.xml
+
+Продолжающие:
+L_2Darr_7.xml -> /home/ejudge/contests/c/arr/arr_m/arr_m_lesson3/arr_m3_7/arr_m3_7.xml
+L_2Darr_8.xml -> /home/ejudge/contests/c/arr/arr_m/arr_m_lesson3/arr_m3_8/arr_m3_8.xml
+
+R_arr_sudoku.xml -> /home/ejudge/contests/c/arr/arr_homework/arr_sudoku/arr_sudoku.xml
+Подумать:
+? Z_arr_sudoku_zone.html -> /home/ejudge/contests/c/arr/arr_homework/arr_sudoku_zone/arr_sudoku_zone.html
