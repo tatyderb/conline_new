@@ -1,0 +1,49 @@
+подумать
+Abmyax.xml -> /home/judges/500009/statements/BMyax.xml
+Aknight.html -> /home/ejudge/contests/c/for/for_homework/knight/knight.html
+? trassa.xml -> /home/ejudge/contests/c/for/for_ovsyannikova/trassa/robot_car.xml
+BookOfBooks.xml -> /home/ejudge/ovs500009/BookofBooks/BookOfBooks.xml
+
+Begin
+
+Bloop_path2.xml -> /home/ejudge/contests/c/for/for_myanmar/loop_path2/loop_path2_c.xml
+Bloop_path3.xml -> /home/ejudge/contests/c/for/for_myanmar/loop_path3/loop_path3_c.xml
+Bloop_path4.xml -> /home/ejudge/contests/c/for/for_myanmar/loop_path4/loop_path4_c.xml
+Bloop_path5.html -> /home/ejudge/contests/c/for/for_myanmar/loop_path5/loop_path5.html
+Bloop_money4.html -> /home/ejudge/contests/c/for/for_myanmar/loop_money4/loop_money4.html
+revers for_10.html -> /home/ejudge/contests/c/for/for_homework/for_10/for_10.html
+
+- Bfor_sum.xml -> /home/ejudge/contests/c/for/for_myanmar/for_sum/for_sum_c.xml
+Bfor_sum_even.xml -> /home/ejudge/contests/c/for/for_myanmar/for_sum_odd/for_sum_odd.xml
+Bfor_count_even.xml -> /home/ejudge/contests/c/for/for_myanmar/for_count_odd/for_count_odd.xml
+Bfor_min.xml -> /home/ejudge/contests/c/for/for_myanmar/for_min/for_min_c.xml
+
+Base:
+n! for_4.html -> /home/ejudge/contests/c/for/for_homework/for_4/for_4.html
+Bfor_min.xml -> /home/ejudge/contests/c/for/for_myanmar/for_min/for_min_c.xml
+int_palindr.xml -> /home/ejudge/ovs500009/int_palindr/int_palindr.xml
+stepen_ch.xml -> /home/ejudge/ovs500009/stepen_ch/PowerOfNumber.xml
+for_60.html -> /home/ejudge/contests/c/for/for_homework/for_60/for_60.html
+for_6.html -> /home/ejudge/contests/c/for/for_homework/for_6/for_6.html
+скобки for_14.html -> /home/ejudge/contests/c/for/for_homework/for_14/for_14.html
+
+Out:
+Bfor0.xml -> /home/ejudge/contests/c/for/for_myanmar/z_for0/z_for0_c.xml
+Bfor1.xml -> /home/ejudge/contests/c/for/for_myanmar/z_for1/z_for_1.xml
+Bfor2.html -> /home/ejudge/contests/c/for/for_myanmar/z_for2/z_for2.html
+Bfor3.html -> /home/ejudge/contests/c/for/for_myanmar/z_for3/z_for3.html
+Bfor4.html -> /home/ejudge/contests/c/for/for_myanmar/z_for4/z_for4.html
+Bfor40.xml -> /home/ejudge/contests/c/for/for_myanmar/z_for40/z_for40.xml
+Bfor5.html -> /home/ejudge/contests/c/for/for_myanmar/z_for5/z_for5.html
+Bfor6.html -> /home/ejudge/contests/c/for/for_myanmar/z_for6/z_for6.html
+Bfor7.html -> /home/ejudge/contests/c/for/for_myanmar/z_for7/z_for7.html
+Bloop_money1.html -> /home/ejudge/contests/c/for/for_myanmar/loop_money1/loop_money1.html
+Bloop_money2.html -> /home/ejudge/contests/c/for/for_myanmar/loop_money2/loop_money2.html
+Bloop_money3.html -> /home/ejudge/contests/c/for/for_myanmar/loop_money3/loop_money3.html
+Bloop_path1.xml -> /home/ejudge/contests/c/for/for_myanmar/loop_path1/loop_path1_c.xml
+
+for_5.html -> /home/ejudge/contests/c/for/for_homework/for_5/for_5.html
+for_7.html -> /home/ejudge/contests/c/for/for_homework/for_7/for_7.html
+for_8.html -> /home/ejudge/contests/c/for/for_homework/for_8/for_8.html
+for_9.html -> /home/ejudge/contests/c/for/for_homework/for_9/for_9.html
+for_div3.xml -> /home/ejudge/contests/c/for/for_homework/for_div3/for_div3.xml
