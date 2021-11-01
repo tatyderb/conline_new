@@ -68,7 +68,7 @@ int main()
     int x, y;
     while(2 == scanf("%d%d", &x, &y)) {     // ПОКА прочитано два числа
         if (x*x + y*y > R2)
-            printf("%d %d\n, x, y);
+            printf("%d %d\n", x, y);
     }
     return 0;
 }
