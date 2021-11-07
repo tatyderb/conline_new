@@ -30,6 +30,7 @@ R_kupec.xml -> /home/ejudge/contests/c/arr/arr_ovsyannikova/kupec-1/kupec-1.xml
 arr_counter.xml -> /home/ejudge/contests/c/arr/arr_homework/arr_counter/arr_counter.xml
 arr_log_uniq.xml -> /home/ejudge/contests/c/arr/arr_log/arr_log_bet_client_uniq/arr_log_bet_client_uniq.xml
 R_arr_pascal.xml -> /home/ejudge/ovs500009/check/ready/statements/arr_6.xml
+решето эратосфена
 
 
 структуры:
