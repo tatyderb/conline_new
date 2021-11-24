@@ -58,3 +58,4 @@ L_2Darr_8.xml -> /home/ejudge/contests/c/arr/arr_m/arr_m_lesson3/arr_m3_8/arr_m3
 R_arr_sudoku.xml -> /home/ejudge/contests/c/arr/arr_homework/arr_sudoku/arr_sudoku.xml
 Подумать:
 ? Z_arr_sudoku_zone.html -> /home/ejudge/contests/c/arr/arr_homework/arr_sudoku_zone/arr_sudoku_zone.html
+
