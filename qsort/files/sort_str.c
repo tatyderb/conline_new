@@ -12,6 +12,14 @@ int cmp_str(const void * p1, const void * p2)
     
     return strcmp(a, b);
 }
+int cmp_char_array(const void * p1, const void * p2)
+{
+    // p1 и p2 это указатели на char[20] 
+    // но указатель на массив передается как указатель на его первый элемент
+    // таким образом в p1 и p2 лежит char * - указатель на строку
+    // ее можно сравнить strcmp
+    return strcmp(p1, p2);
+}
 
 int main()
 {
@@ -55,5 +63,10 @@ int main()
         printf("%s\n", text1[i]);
     
     free(text1);
+    
+    qsort(text, n, N, cmp_char_array);
+    for(i = 0; i < n; i++)
+        printf("%s\n", text[i]);
+    
     return 0;
 }
