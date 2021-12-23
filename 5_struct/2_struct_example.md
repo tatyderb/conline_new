@@ -465,7 +465,7 @@ int is_equal(Point p1, Point p2)
 ```cpp
     Point p1, p2;
     p1 = readPoint();   // возвращаем новую точку, = копирует структуру
-    scanPoint(&t2);     // заполняем значения полей уже существующей
+    scanPoint(&p2);     // заполняем значения полей уже существующей
     
     printPoint(p1);
     printPoint(p2);

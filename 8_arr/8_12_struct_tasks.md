@@ -175,6 +175,7 @@ int main()
     assert(0 == check(hand2));
     
     return 0;
+}
 ```
 HEADER
 #include <stdio.h>
