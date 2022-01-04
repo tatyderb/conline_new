@@ -1,6 +1,7 @@
 # Чтение и запись строк и слов
 
 lesson = 275992
+lang = c_valgrind
 
 ## VIDEO
 
@@ -165,7 +166,7 @@ $./a.out < data.txt
 
 **Чтобы завершить ввод текста с клавиатуры нажмите Ctrl+D (UNIX, Mac) или Ctrl+Z (Windows)**
 
-## Задача (про капитана Флинта)
+## TASKINLINE flint Задача про капитана Флинта
 
 Капитан Флинт зарыл клад на Острове сокровищ. Он оставил описание, как найти клад. Описание состоит из строк вида: `North 5`, где первое слово – одно из "North", "South", "East", "West", а второе число – количество шагов, необходимое пройти в этом направлении.
 
@@ -204,6 +205,127 @@ if (0 == strcmp(s, "Treasure!"))
 ```cpp
 scanf("%d", &steps);
 ```
+TEST
+North 5
+East 3
+South 1
+Treasure!
+----
+3 4
+====
+North 5
+Treasure!
+----
+0 5
+====
+East 8
+Treasure!
+----
+8 0
+====
+South 19
+Treasure!
+----
+0 -19
+====
+West 12
+Treasure!
+----
+-12 0
+====
+North 1
+North 2
+North 3
+North 4
+North 5
+North 6
+North 7
+North 8
+North 9
+North 10
+Treasure!
+----
+0 55
+=====
+North 1
+East 3
+North 5
+South 7
+West 4
+North 2
+North 3
+East 2
+West 4
+South 3
+North 3
+West 2
+East 5
+South 4
+Treasure!
+----
+0 0
+====
+North 1
+East 1
+North 1
+East 1
+North 1
+East 1
+North 1
+East 1
+North 1
+East 1
+North 1
+East 1
+North 1
+East 1
+North 1
+East 1
+North 1
+East 1
+North 1
+East 1
+North 10
+East 10
+North 10
+East 10
+North 10
+East 10
+North 10
+East 10
+North 10
+East 10
+North 10
+East 10
+North 10
+East 10
+North 10
+East 10
+North 10
+East 10
+North 100
+East 100
+North 100
+East 100
+North 100
+East 100
+North 100
+East 100
+North 100
+East 100
+North 100
+East 100
+North 100
+East 100
+North 100
+East 100
+North 100
+East 100
+Treasure!
+----
+1000 1000
+====
+
 
 ## Чтение слова с выделением динамической памяти
 

@@ -1,6 +1,7 @@
 # replace
 
 lesson = 341699
+lang = c_valgrind
 
 ## Постановка задачи
 
@@ -218,3 +219,37 @@ void replace(char * src)
     memcpy(p, "watermelon");
 }
 ```
+
+## TASKINLINE str_bomb5 Заменим все бомбы
+
+Напечатать текст, заменив **все** подстроки `bomb` на `watermelon`.
+
+Напишите эффективный код. Если заменили одну `bomb`, то не надо начинать поиск бомб с начала строки.
+
+TEST
+i have a bomb.
+---
+i have a watermelon.
+====
+i have a bomb. you have a bomb.
+---
+i have a watermelon. you have a watermelon.
+====
+Mumbai (also known as Bombay) is the capital city of the Indian state of Maharashtra. 
+---
+Mumbai (also known as Bombay) is the capital city of the Indian state of Maharashtra. 
+====
+The seven islands that came to constitute 
+Mumbai were home to communities of fishing colonies
+---
+The seven islands that came to constitute 
+Mumbai were home to communities of fishing colonies
+====
+bomb? bomb! bomb!!!
+---
+watermelon? watermelon! watermelon!!!
+====
+BOMB
+---
+BOMB
+====

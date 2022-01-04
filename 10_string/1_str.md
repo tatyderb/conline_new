@@ -1,6 +1,7 @@
 # Хранение строк
 
 lesson = 275922
+lang = c_valgrind
 
 ## VIDEO
 
@@ -138,3 +139,99 @@ D. `strcmp(s, p)`
 E. `strcmp(s, p) == 0`
 
 ANSWER: A
+
+## TASKINLINE elong_set Задаем большие числа
+
+Для хранения больших чисел объявили структуру
+```cpp
+#define N 100
+typedef struct {
+    char a[N];       // number is a[0]*10^0 + a[1]*10^1 + ..+ a[n]*10^n
+    unsigned int n;  // наибольшая степень десяти
+}Decimal;
+```
+
+Реализуйте функцию записи значения большого числа **res** из строки **str**.
+
+**void elong_set (Decimal * res, const char str[ ]);**
+
+В проверяющую систему посылать только реализацию требуемой функции `elong_set`.
+
+Проверять функцию можно так:
+```cpp
+int main(){
+    Decimal res;
+    elong_set(&res, "12345678901234567890");  // res = 12345678901234567890
+    
+    elong_print(res);                         // print 12345678901234567890
+    
+    return 0;
+}
+```
+Функцию [elong_print](https://stepik.org/lesson/607327/step/3?unit=602468) вы написали раньше.
+
+HEADER
+#include <stdio.h>
+#include <ctype.h>
+
+#define N 100
+typedef struct {
+    char a[N];   // number is a[0]*10^0 + a[1]*10^1 + ..+ a[n]*10^n
+    unsigned int n;       // наибольшая степень десяти
+} Decimal;
+
+void elong_print (Decimal * p);
+void elong_set(Decimal * res, const char str[]);
+void elong_check(Decimal *p);
+
+int main(){
+    Decimal a;
+    char s[N+1];
+    scanf("%100s", s); // set \0 after all digits
+    elong_set(&a, s);
+    
+    elong_print(&a);
+    elong_check(&a);
+
+    return 0;
+}
+
+void elong_print (Decimal * p)
+{
+    int i;
+    for (i = (unsigned int)p->n; i>=0; i--)
+        printf("%d", p->a[i]);
+    printf("\n");
+}
+void elong_check(Decimal * p)
+{
+    unsigned int i;
+    for (i=0; i <= p->n; i++)
+        if (p->a[i] > 9 || p->a[i] < 0) {
+            printf("ERROR: a[%d]=%d\n", i, p->a[i]);
+        }
+}
+#line 10001
+TEST
+1234567890
+----
+1234567890
+====
+12345678901234567890
+----
+12345678901234567890
+====
+37019345927304957203945029374952874307529438759837459827340752304
+----
+37019345927304957203945029374952874307529438759837459827340752304
+====
+0
+----
+0
+====
+1
+----
+1
+====
+
+

@@ -1,0 +1,24 @@
+Темы:
+
+1_str.md - хранение строк, сравнение строк
+2_scanf.md - печать и чтение строк, в том числе с выделением памяти
+3_stringh.md - strlen, strcmp
+3_stringh2.md - strcpy, strcat, strchr, strstr, strtok,
+3a_strtasks.md - str_len	str_bomb1	str_bomb2	str_bomb3	str_bomb4
+4_strtol.md
+5_const.md - const
+6_replace.md - replace, str_bomb5
+7_unicode.md - names
+add_str_tasks.md - BeadsPandS, Maya
+
+Задачи:
+
+str_1 - strlen реализация (выкидываем)
+str_2 - strcpy реализация (выкидываем)
+str_4 - strcat реализация (выкидываем?)
+flint - Флинт (2_scanf.md)
+names	
+Maya	
+elong_set	
+str_len	str_bomb1	str_bomb2	str_bomb3	str_bomb4	str_bomb5	
+BeadsPandS
