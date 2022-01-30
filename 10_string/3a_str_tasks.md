@@ -15,7 +15,7 @@ lang = c_valgrind
 ```cpp
 char * my_strcat (char *dest, const char *src);
 ```
-которая работает так же, как стандартная функция языка С
+которая работает так же, как [стандартная функция](https://stepik.org/lesson/282782/step/7) языка С
 ```cpp
 char *strcat(char *dest, const char *src)
 ```
