@@ -165,7 +165,7 @@ char *strncat(char *dest, const char *src, size_t n);
 
 Функция strncat() работает аналогичным образом, но добавляет к dest только первые n символов строки src (и **дописывает в конец еще и '\0'** ).
 
-Функции strcat() и strncat() возвращают указатель на строку, получившуюся в результате объединения dest.
+Функции strcat() и strncat() **возвращают указатель на строку**, получившуюся в результате объединения dest.
 
 <p style="text-align:center">
 <img src="https://stepik.org/media/attachments/lesson/276442/strcat.png" alt="strcat"/>
@@ -181,19 +181,22 @@ char *strncat(char *dest, const char *src, size_t n);
 
 int main() {
     char a[100];           // нужно место куда копировать
+    char * b;              // сюда будем записывать что вернули функции
     
     strcpy(a, "abc");
     printf("%s\n", a);     // abc
-    strcat(a, "world");
+    b = strcat(a, "world");
     printf("%s\n", a);     // abcworld
+    printf("%s\n", b);     // abcworld
     
     strcpy(a, "abc");
     strcat(a, "hello");
     printf("%s\n", a);    // abchello
     strncat(a, "xyz", 2); // \0 дописывает
     printf("%s\n", a);    // abchelloxy
-    strncat(a, "END", 10);
+    b = strncat(a, "END", 10);
     printf("%s\n", a);    // abchelloxyEND
+    printf("%s\n", b);    // abchelloxyEND
     
     return 0;
 }
