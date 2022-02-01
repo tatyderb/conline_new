@@ -215,8 +215,92 @@ delete [] a;            // это С++
 
 В курсе рассказывается как использовать [valgrind](https://stepik.org/lesson/311879/step/1) для проверки.
 
+## TASKINLINE str_bomb5_mem Замена подстроки в строке
 
+Вы [уже решали](https://stepik.org/lesson/341699/step/6) эту задачу, но без выделения динамической памяти.
 
+Напечатать текст, заменив все подстроки **bomb** на **watermelon**.
+
+Для замены подстроки напишите функцию
+
+`char *` **replace** `(const char * src);`
+
+которая выделяет память для новой строки, копирует туда `src`, заменяя `bomb` на `watermelon` и возвращает получившуюся строку.
+
+В проверяющую систему пошлите только реализацию функции `replace`.
+
+Проверить функцию можно так:
+```cpp
+#include <stdio.h>                                                        
+#include <stdlib.h>                                                       
+
+#define N 1000
+
+int main()
+{
+    char s[N];   // нужно объявить переменную - место для читаемой строки
+    char * d;    // указатель на динамический массив, память еще не выделена
+    
+    while (NULL != fgets(s, N, stdin)) {  // пока можем прочитать строку
+        d = replace(s);                   // тут память выделяем
+        printf("+++%s+++\n", d);
+        free(d);                          // тут память освобождаем
+    }
+    return 0;
+}
+```
+HEADER
+#include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+#include <stdlib.h>
+
+#define N 1000
+
+char * replace(const char * src);
+
+int main() {
+    char s[N+1];
+    
+    while (NULL != fgets(s, N, stdin)) {
+        char * str = replace( s);
+        printf(str);
+        free(str);
+    }
+    return 0;
+}
+#line 10000
+TEST
+i have a bomb. you have few bombs.
+----
+i have a watermelon. you have few watermelons.
+====
+i have a bomb.
+---
+i have a watermelon.
+====
+i have a bomb. you have a bomb.
+---
+i have a watermelon. you have a watermelon.
+====
+Mumbai (also known as Bombay) is the capital city of the Indian state of Maharashtra. 
+---
+Mumbai (also known as Bombay) is the capital city of the Indian state of Maharashtra. 
+====
+The seven islands that came to constitute 
+Mumbai were home to communities of fishing colonies
+---
+The seven islands that came to constitute 
+Mumbai were home to communities of fishing colonies
+====
+bomb? bomb! bomb!!!
+---
+watermelon? watermelon! watermelon!!!
+====
+BOMB
+---
+BOMB
+====
     
     
 
