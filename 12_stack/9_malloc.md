@@ -223,6 +223,7 @@ void test0()
     Stack * sp = stack_create(3);
 
     printf("is_empty=%d\n", stack_is_empty(sp));    // is_empty=1
+    printf("size=%d\n", stack_size(sp));            // size=0
 
     stack_push(sp, 5);
     stack_push(sp, 19);
@@ -233,6 +234,7 @@ void test0()
     stack_print(sp);                                // 5 19 -2 27
 
     printf("is_empty=%d\n", stack_is_empty(sp));    // is_empty=0
+    printf("size=%d\n", stack_size(sp));            // size=4
 
     x = stack_pop(sp);
     printf("x=%d\n", x);                            // x=27
@@ -285,6 +287,7 @@ void test0()
     Stack * sp = stack_create(3);
 
     printf("is_empty=%d\n", stack_is_empty(sp));    // is_empty=1
+    printf("size=%d\n", stack_size(sp));            // size=0
 
     stack_push(sp, 5);
     stack_push(sp, 19);
@@ -295,6 +298,7 @@ void test0()
     stack_print(sp);                                // 5 19 -2 27
 
     printf("is_empty=%d\n", stack_is_empty(sp));    // is_empty=0
+    printf("size=%d\n", stack_size(sp));            // size=4
 
     x = stack_pop(sp);
     printf("x=%d\n", x);                            // x=27
@@ -382,9 +386,11 @@ test0
 ----
 test0
 is_empty=1
+size=0
 5 19 -2
 5 19 -2 27
 is_empty=0
+size=4
 x=27
 x=-2
 5 19
@@ -474,10 +480,13 @@ push 10
 print
 push 23
 is_empty
+size
 print
 pop
 print
+size
 clear
+size
 print
 is_empty
 end
@@ -509,13 +518,19 @@ push
 23
 is_empty
 0
+size
+11
 print
 1 2 3 4 5 6 7 8 9 10 23
 pop
 23
 print
 1 2 3 4 5 6 7 8 9 10
+size
+10
 clear
+size
+0
 print
 
 is_empty
