@@ -120,9 +120,9 @@ char * p = strchr(bra_open, c);
 
 `t - bra_open` - это 2.
 
-### while((c = getchar()) - читаем по 1 символу
+### while((c = getchar()) != EOF) - читаем по 1 символу
 
-Не надо так. Это медленно.
+Не надо так. `getchar` - это медленно.
 
 Используйте [getline](https://stepik.org/lesson/275992/step/12?unit=257133) и прочитайте сразу всю строку.
 
