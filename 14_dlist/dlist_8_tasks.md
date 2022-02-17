@@ -64,7 +64,99 @@ void list_clear(struct Node * list);
 
 *Гарантируется, что набор тестов удовлетворяет следующим требованиям: все команды remove и delete корректны, то есть при их исполнении в списке содержится хотя бы один элемент.*
 
-Тут нужно привести код тестов. Если вы не видите его, напишите.
+```cpp
+void test_non_alloc(int n)
+{
+	struct Node * x = malloc(11*sizeof(struct Node));
+	struct Node * a = x+10;
+	
+	list_init(a);
+	assert(list_is_empty(a));
+    if(n == 1) 
+        goto END;
+	
+	for(int i = 0; i < 10; i++) {
+		x[i].data = i;
+		list_insert(a, &x[i]);
+	}
+	list_print(a);              // 9 8 7 6 5 4 3 2 1 0
+	assert(!list_is_empty(a));
+    if(n == 2) 
+        goto END;
+    
+	list_remove(&x[5]);
+	list_print(a);              // 9 8 7 6 4 3 2 1 0
+	list_remove(&x[0]);
+	list_print(a);              // 9 8 7 6 4 3 2 1
+	list_remove(&x[9]);
+	list_print(a);              // 8 7 6 4 3 2 1
+    if(n == 3) 
+        goto END;
+    
+	list_insert_before(a, &x[0]);
+	list_print(a);              // 8 7 6 4 3 2 1 0
+	list_insert(a, &x[9]);
+	list_print(a);              // 9 8 7 6 4 3 2 1 0
+	list_insert(&x[6], &x[5]);
+	list_print(a);              // 9 8 7 6 5 4 3 2 1 0
+    if(n == 4) 
+        goto END;
+
+	while(!list_is_empty(a))
+		list_remove(a->next);
+    if(n == 5) 
+        goto END;
+    
+END:
+    free(x);
+}
+
+void test_alloc(int n)
+{
+	struct Node a0, b0;
+	struct Node * a = &a0;
+	struct Node * b = &b0;
+	
+	list_init(a);
+	list_init(b);
+    
+    int i;
+	for(i=0; i<10; i++)
+		list_push_back(a, i);
+	list_print(a);              // 0 1 2 3 4 5 6 7 8 9
+	assert(list_is_empty(b));
+	if (n == 6)
+        goto END;
+	
+	for(i=0; i<10; i++)
+		list_push_front(b, list_pop_back(a));
+	list_print(b);              // 0 1 2 3 4 5 6 7 8 9
+	assert(list_is_empty(a));
+	if (n == 7)
+        goto END;
+	
+	for(i=0; i<10; i++) {
+		list_push_front(a, i); 
+		list_pop_front(b);
+	}
+	list_print(a);              // 9 8 7 6 5 4 3 2 1 0
+	assert(list_is_empty(b));
+	if (n == 8)
+        goto END;
+
+	for(i=0; i<10; i++)
+		list_push_back(b, list_pop_front(a));
+	list_print(b);              // 9 8 7 6 5 4 3 2 1 0
+	assert(list_is_empty(a));
+	if (n == 9)
+        goto END;
+
+END:	
+	list_clear(a);
+	list_clear(b);
+}
+```
+**Если ваш код содержит ошибку, но тесты проходят, пришлите ваш код с указанием ошибки и особая благодарность, если вы придумаете тест, который ошибку ловит.**
 
 HEADER
 #include <stdio.h>
@@ -114,11 +206,8 @@ int  list_is_empty(struct Node * list);
 void list_print(struct Node * list);
 
 // tests:
-void test1();
-void test2();
-void test3();
-void test4();
-void test5();
+void test_alloc(int test_number);
+void test_non_alloc(int test_number);
 
 int main()
 {
@@ -126,11 +215,19 @@ int main()
     scanf("%d", &n);
     
     switch(n){
-        case 1:
-            test1();
+        case 1:         // init + is_empty
+        case 2:         // insert + print
+        case 3:         // remove
+        case 4:         // insert_before + insert_after
+        case 5:         // remove all
+            test_non_alloc(n);
             break;
-        case 2:
-            test2();
+        case 6:         // push_back
+        case 7:         // push_front + pop_back
+        case 8:         // push_back
+        case 9:         // push_back
+        case 10:         // push_back
+            test_alloc(n);
             break;
         default:
             fprintf(stderr, "Test %d not implemented yet!\n", n);
@@ -140,22 +237,15 @@ int main()
     return 0;
 }
 
-void test1()
-{
-    // init + is_empty
-    
-	struct Node a;
-		
-	list_init(&a);
-	assert(list_is_empty(&a));
-}
-void test2()
+void test_non_alloc(int n)
 {
 	struct Node * x = malloc(11*sizeof(struct Node));
 	struct Node * a = x+10;
 	
 	list_init(a);
 	assert(list_is_empty(a));
+    if(n == 1) 
+        goto END;
 	
 	for(int i = 0; i < 10; i++) {
 		x[i].data = i;
@@ -163,12 +253,79 @@ void test2()
 	}
 	list_print(a);              // 9 8 7 6 5 4 3 2 1 0
 	assert(!list_is_empty(a));
+    if(n == 2) 
+        goto END;
     
+	list_remove(&x[5]);
+	list_print(a);              // 9 8 7 6 4 3 2 1 0
+	list_remove(&x[0]);
+	list_print(a);              // 9 8 7 6 4 3 2 1
+	list_remove(&x[9]);
+	list_print(a);              // 8 7 6 4 3 2 1
+    if(n == 3) 
+        goto END;
+    
+	list_insert_before(a, &x[0]);
+	list_print(a);              // 8 7 6 4 3 2 1 0
+	list_insert(a, &x[9]);
+	list_print(a);              // 9 8 7 6 4 3 2 1 0
+	list_insert(&x[6], &x[5]);
+	list_print(a);              // 9 8 7 6 5 4 3 2 1 0
+    if(n == 4) 
+        goto END;
+
+	while(!list_is_empty(a))
+		list_remove(a->next);
+    if(n == 5) 
+        goto END;
+    
+END:
     free(x);
 }
 
-void test3()
+void test_alloc(int n)
 {
+	struct Node a0, b0;
+	struct Node * a = &a0;
+	struct Node * b = &b0;
+	
+	list_init(a);
+	list_init(b);
+    
+    int i;
+	for(i=0; i<10; i++)
+		list_push_back(a, i);
+	list_print(a);              // 0 1 2 3 4 5 6 7 8 9
+	assert(list_is_empty(b));
+	if (n == 6)
+        goto END;
+	
+	for(i=0; i<10; i++)
+		list_push_front(b, list_pop_back(a));
+	list_print(b);              // 0 1 2 3 4 5 6 7 8 9
+	assert(list_is_empty(a));
+	if (n == 7)
+        goto END;
+	
+	for(i=0; i<10; i++) {
+		list_push_front(a, i); 
+		list_pop_front(b);
+	}
+	list_print(a);              // 9 8 7 6 5 4 3 2 1 0
+	assert(list_is_empty(b));
+	if (n == 8)
+        goto END;
+
+	for(i=0; i<10; i++)
+		list_push_back(b, list_pop_front(a));
+	list_print(b);              // 9 8 7 6 5 4 3 2 1 0
+	assert(list_is_empty(a));
+	if (n == 9)
+        goto END;
+
+END:	
+	list_clear(a);
+	list_clear(b);
 }
 
 #line 10000
@@ -184,6 +341,202 @@ end
 ====
 3
 ----
+9 8 7 6 5 4 3 2 1 0 
+9 8 7 6 4 3 2 1 0 
+9 8 7 6 4 3 2 1 
+8 7 6 4 3 2 1 
+end
+====
+4
+----
+9 8 7 6 5 4 3 2 1 0 
+9 8 7 6 4 3 2 1 0 
+9 8 7 6 4 3 2 1 
+8 7 6 4 3 2 1 
+8 7 6 4 3 2 1 0 
+9 8 7 6 4 3 2 1 0 
+9 8 7 6 5 4 3 2 1 0 
+end
+====
+5
+----
+9 8 7 6 5 4 3 2 1 0 
+9 8 7 6 4 3 2 1 0 
+9 8 7 6 4 3 2 1 
+8 7 6 4 3 2 1 
+8 7 6 4 3 2 1 0 
+9 8 7 6 4 3 2 1 0 
+9 8 7 6 5 4 3 2 1 0 
+end
+====
+6
+----
+0 1 2 3 4 5 6 7 8 9
+end
+====
+7
+----
+0 1 2 3 4 5 6 7 8 9
+0 1 2 3 4 5 6 7 8 9
+end
+====
+8
+----
+0 1 2 3 4 5 6 7 8 9
+0 1 2 3 4 5 6 7 8 9
+9 8 7 6 5 4 3 2 1 0
+end
+====
+9
+----
+0 1 2 3 4 5 6 7 8 9
+0 1 2 3 4 5 6 7 8 9
+9 8 7 6 5 4 3 2 1 0
+9 8 7 6 5 4 3 2 1 0
+end
+====
+10
+----
+0 1 2 3 4 5 6 7 8 9
+0 1 2 3 4 5 6 7 8 9
+9 8 7 6 5 4 3 2 1 0
+9 8 7 6 5 4 3 2 1 0
+end
+====
 
 
+## TASKINLINE list_3 Пьяница
+
+В игре в пьяницу карточная колода раздается поровну двум игрокам. Далее они вскрывают по одной верхней карте, и тот, чья карта старше, забирает себе обе вскрытые карты, которые кладутся под низ его колоды (сначала кладется карта от первого игрока, потом - от второго). Тот, кто остается без карт – проигрывает.
+
+Для простоты будем считать, что все карты различны по номиналу, а также, что самая младшая карта побеждает самую старшую карту ("шестерка берет туза").
+
+Игрок, который забирает себе карты, сначала кладет под низ своей колоды карту первого игрока, затем карту второго игрока (то есть карта второго игрока оказывается внизу колоды).
+
+Напишите программу, которая моделирует игру в пьяницу и определяет, кто выигрывает. В игре участвует 10 карт, имеющих значения от 0 до 9, большая карта побеждает меньшую, карта со значением 0 побеждает карту 9.
+
+### Входные данные
+
+Программа получает на вход две строки: первая строка содержит 5 карт первого игрока, вторая – 5 карт второго игрока. Карты перечислены сверху вниз, то есть каждая строка начинается с той карты, которая будет открыта первой.
+
+### Выходные данные
+
+Программа должна определить, кто выигрывает при данной раздаче, и вывести слово **first** или **second**, после чего вывести количество ходов, сделанных до выигрыша. 
+
+Если на протяжении $10^6$ ходов игра не заканчивается, программа должна вывести слово **botva**.
+
+Реализовать колоды игроков через очереди на основе двухсвязных списков.
+
+Условия задачи взяты из [дистанционной подготовки по информатике для школьников](http://informatics.mccme.ru/moodle/mod/statements/view3.php?id=206&chapterid=50), автор не указан
+
+Отладочная печать на каждой итерации цикла для раздачи карт из примера:
+```cpp
+1 3 5 7 9
+2 4 6 8 0
+---
+3 5 7 9
+4 6 8 0 1 2
+---
+5 7 9
+6 8 0 1 2 3 4
+---
+7 9
+8 0 1 2 3 4 5 6
+---
+7 9
+8 0 1 2 3 4 5 6
+---
+9
+0 1 2 3 4 5 6 7 8
+---
+
+0 1 2 3 4 5 6 7 8
+second 5
+```
+
+### Алгоритм решения (для совсем слабых духом)
+
+Для написания этой программы достаточно реализовать структуру "очередь" и дальше смоделировать все то, о чём написано в условии. А именно:
+
+* Задаём цикл for(i: 0 .. N) на N = 10^6 итераций.
+* При каждом заходе в цикл берём по первому элементу из очередей, эмулирующих колоды первого и второго игроков.
+    * Сравниваем их согласно описанной в условии методике.
+    * Добавляем две взятые карты к конец колоды-очереди игрока выигравшего на данном сравнении.
+    * Если при очередной итерации одна из очередей оказывается пуста, то выводим победителя и количество совершённых итераций (i).
+* Если все 10^6 итераций успешно выполнились - выводим "botva".
+
+**Теста на botva нет. Если кто-то найдет входную последовательность, чтобы у нас был тест на ботву, мы будем очень благодарны. А пока лучше сделаем еще одну задачу. Свою.**
+
+TEST
+1 3 5 7 9
+2 4 6 8 0
+----
+second 5
+====
+2 4 6 8 0
+1 3 5 7 9
+----
+first 5
+====
+1 4 5 8 9
+2 3 6 7 0
+----
+first 31
+====
+1 4 5 8 0
+2 3 6 7 9
+----
+first 9
+====
+1 3 4 7 8
+0 2 5 6 9
+----
+second 101
+====
+
+## TASKINLINE Акулина
+
+**Два игрока** `Gamer0` и `Gamer1` играют в карточную игру Акулина (Witch).
+
+Дана [колода карт](https://stepik.org/lesson/607327/step/1?unit=602468)
+
+Из колоды по очереди каждому игроку раздается по 1 карте, пока не закончатся карты в колоде.
+
+Дальше игроки сбрасывают парные карты по правилам:
+
+* Пиковую даму `Qs` сбрасывать нельзя.
+* Любую другую даму можно сбрасывать одну.
+* Остальные карты сбрасываются **парой** одинакового достоинства без учета масти, например, `6h` и `6s`.
+
+После сброса карт игрок отдает первую карту следующему игроку. Получивший карту игрок сбрасывает карты с руки, если есть пары.
+Начинает отдавать `Gamer0`. (Если бы игроков было больше 2, то они отдавали бы карты по кругу).
+Когда у одно игрока осталась единственная карта `Qs` (Акулина, ведьма), то игра заканчивается. Этот игрок проиграл.
+
+При этом печатается отладочная печать. 
+
+* Сначала печатается номер игрока (от 0) по формату `Gamer%d`, его рука.
+    * потом сброс карт, пара ищется с начала, сбрасывается первая парная комбинация. Если на руке `JsJhJc`, то сброшена будет `Js` и `Jh`.
+* Игрок передает **первую** карту в руке другому игроку.
+    * печатается рука обоих игроков, кто отдал и кто получил карту.
+    * печатается сброс игрока, который получил карту (если есть).
+* в конце печатается какой игрок проиграл.  
+
+TEST
+AsAcJhTd6sThQdQs6d7cJc7h
+----
+Gamer0: AsJh6sQd6dJc
+drop Jh Jc: As6sQd6d
+drop 6s 6d: AsQd
+drop Qd: As
+Gamer1: AcTdThQs7c7h
+drop Td Th: AcQs7c7h
+drop 7c 7h: AcQs
+Get card As from Gamer0 to Gamer1
+Gamer0:
+Gamer1: AcQsAs
+drop Ac As: Qs
+Gamer1 is witch!
+====
+As8hQs8dAc
+----
 
