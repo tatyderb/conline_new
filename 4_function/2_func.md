@@ -1,6 +1,7 @@
 # Функции
 
 lesson = 406083
+lang = c
 
 ## Пример. Движение тела, брошенного под углом к горизонту
 
@@ -475,7 +476,7 @@ int main()
 ```cpp
 #include <assert.h>
 
-float fahr()
+float fahr(int cel)
 {
     return (cel * 1.8) + 32;
 }
