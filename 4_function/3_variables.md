@@ -107,7 +107,7 @@ int main() {
     x = 3;
     inc(x);
     inc(x);
-    printf("x=%d\n", x);
+    printf("%d\n", x);
     return 0;
 }
 ```
