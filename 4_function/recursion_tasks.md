@@ -211,7 +211,7 @@ long long int ipow(long long int a, unsigned int n, unsigned int * depth);
 int main()
 {
     long long int a;
-    unsigned int n, depth;
+    unsigned int n, depth = 666;
     
     scanf("%lld%u", &a, &n);
     
