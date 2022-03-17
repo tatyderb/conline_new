@@ -13,7 +13,7 @@ void foo   (int a[])   { printf("foo   : %zu\n", sizeof(a)); }
 void foop  (int * a)   { printf("foop  : %zu\n", sizeof(a)); }
 
 int main(){
-    int b[10];
+    int a[10];
     printf("main : %zu\n", sizeof(a));      // main : 40 
     printf("int* : %zu\n", sizeof(int*));   // int* : 8
 

@@ -1,6 +1,7 @@
 # Циклы: задачи для продолжающих
 
 lesson = 603569
+lang = c
 
 ## TASKINLINE for_4 n!
 
