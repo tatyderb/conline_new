@@ -1,6 +1,7 @@
 # Циклы: задачи на "подумать"
 
 lesson = 603570
+lang = c
 
 ## TASKINLINE Aknights Рыцари и лжецы
 
