@@ -56,7 +56,7 @@ typedef struct Vec
 int main()
 {
 	Vector vec;
-	Vector * pvec
+	Vector * pvec;
 	int x, y;
 	pvec = &vec;
 	pvec.x = x;
