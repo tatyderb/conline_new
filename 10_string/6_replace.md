@@ -216,7 +216,7 @@ void replace(char * src)
     if (p == NULL)
         return;
     memmove(p + len_bomb, p + lenwater, strlen(p + lenbomb));
-    memcpy(p, "watermelon");
+    memcpy(p, "watermelon", lenwater);
 }
 ```
 
