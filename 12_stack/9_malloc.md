@@ -197,7 +197,7 @@ void stack_print(Stack * s);
 int  stack_size(Stack * s);
 int  stack_is_empty(Stack * s);
 void stack_clear(Stack * s);
-void stack_destroy(Stack * s);
+Stack * stack_destroy(Stack * s);
 Stack * stack_create(int size);
 ```
 
@@ -209,7 +209,7 @@ Stack * stack_create(int size);
 * `void` **stack_print** `(Stack * s);`	- распечатывает через пробел числа, лежащие в стеке. С самого первого до верхнего. В конце переводит строку.
 * `int` **stack_size** `(Stack * s);` - возвращает количество элементов, лежащих в стеке.
 * `void` **stack_clear** `(Stack * s);` - очищает стек, не разрушая его.
-* `void` **stack_destroy** `(Stack * s);` - освобождает память. Всю память, занятую стеком, а не часть памяти.
+* `Stack *` **stack_destroy** `(Stack * s);` - освобождает память. Всю память, занятую стеком, а не часть памяти. **Возвращает NULL**.
 
 Посылать только реализацию функций.
 
@@ -254,8 +254,8 @@ void test0()
                                                     // x=5
                                                     // пустая строка
 
-    stack_destroy(sp);
-    printf("end\n");                                // end
+    if (NULL == stack_destroy(sp))
+        printf("end\n");                           // end
 }
 ```
 HEADER
@@ -279,7 +279,7 @@ void stack_print(Stack * s);
 int  stack_size(Stack * s);
 int  stack_is_empty(Stack * s);
 void stack_clear(Stack * s);
-void stack_destroy(Stack * s);
+Stack *stack_destroy(Stack * s);
 
 void test0()
 {
@@ -318,8 +318,8 @@ void test0()
                                                     // x=5
                                                     // пустая строка
 
-    stack_destroy(sp);
-    printf("end\n");                                // end
+    if (NULL == stack_destroy(sp))
+        printf("end\n");                            // end
 }
 
 int main()
@@ -334,7 +334,7 @@ int main()
 			continue;
 		
 		if (strcmp("end", str)==0) {
-			stack_destroy(ps);
+			ps = stack_destroy(ps);
 			break;
 		}
 		else if (strcmp("create", str)==0) {
