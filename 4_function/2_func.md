@@ -259,7 +259,6 @@ float fahr(int cel)
 float fahr(int cel)
 {
     float res;
-    // тут нужно написать код
     res = (cel * 1.8) + 32;
     return res;
 }
@@ -280,7 +279,6 @@ float fahr(int cel)
 float fahr(int cel)
 {
     float res;
-    // тут нужно написать код
     res = (cel * 1.8) + 32;
     return res;
 }
