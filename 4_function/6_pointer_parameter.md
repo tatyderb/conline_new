@@ -60,7 +60,7 @@ int main() {
 Функция ничего не возвращает.
 
 ```cpp
-void knat2money(int t, int * pg, int * ps, int * pk) {
+void knat2money(int t0, int * pg, int * ps, int * pk) {
     // объявим локальные переменные g0, s0, k0 для простой записи формул
     int g0, s0, k0;
     
