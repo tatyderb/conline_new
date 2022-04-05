@@ -47,6 +47,7 @@ Data list_pop (List * plist);
 Data list_get(List list); 
 void list_print (List list); 
 int list_size(List list); 
+int  list_is_empty(List list);
 void list_clear(List * plist);
 ```
 
