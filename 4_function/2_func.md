@@ -327,7 +327,7 @@ float fahr(int cel);
 ```cpp
 #include <stdio.h>
 
-float fahr(int faren);
+float fahr(int cel);
 
 int main()
 {
@@ -364,7 +364,7 @@ TEST
 HEADER
 #include <stdio.h>
 
-float fahr(int faren);
+float fahr(int cel);
 
 int main()
 {
