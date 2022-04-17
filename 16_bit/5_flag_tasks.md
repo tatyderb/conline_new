@@ -132,6 +132,8 @@ else
 | 2 | цвет волос | 00 - blonde, 01 - red, 10 - brown, 11 - black | bn, rd, bw,bk |
 | 2 | цвет глаз | 00 - blue, 01 - green, 10 - gray, 11 - dark | bu, ge, gy, da |
 
+CONFIG
+score: 5
 TEST
 a3
 ----
@@ -222,6 +224,8 @@ else
 | 2 | цвет волос | 00 - blonde, 01 - red, 10 - brown, 11 - black | bn, rd, bw,bk |
 | 2 | цвет глаз | 00 - blue, 01 - green, 10 - gray, 11 - dark | bu, ge, gy, da |
 
+CONFIG
+score: 5
 TEST
 6b
 ----
@@ -282,6 +286,8 @@ ha
 | 2 | цвет волос | 00 - blonde, 01 - red, 10 - brown, 11 - black | bn, rd, bw, bk |
 | 2 | цвет глаз | 00 - blue, 01 - green, 10 - gray, 11 - dark | bu, ge, gy, da |
 
+CONFIG
+score: 5
 TEST
 6b
 ----
