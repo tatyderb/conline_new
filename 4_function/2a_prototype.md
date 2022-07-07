@@ -17,7 +17,7 @@ int main()
     void hi() {
         printf("Здравствуйте!\n");
     }
-    hi()
+    hi();
     return 0;
 }
 ```
@@ -30,7 +30,7 @@ void hi() {
 // отдельно main
 int main()
 {
-    hi()
+    hi();
     return 0;
 }
 ```
