@@ -1,6 +1,6 @@
 # float
 
-lesson = 738834
+lesson = 403576
 lang = c
 
 ## Дробные и целые числа
