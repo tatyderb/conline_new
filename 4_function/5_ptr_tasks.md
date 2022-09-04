@@ -1,14 +1,17 @@
 # Задачи на указатели
 
 lesson = 590385
+lang = c
 
 ## TASKINLINE mirror_dot Отобразить точку
 
 Написать и использовать функцию 
 ```cpp
-void mirror(int * px, int * py);
+void mirror(int *px, int *py);
 ```
 которая отображает точку с координатами (x,y) относительно оси Y.
+
+**Послать всю программу, и функцию mirror, и функцию main.**
 
 Input format: 2 целых числа через пробел - x и y координаты точки до отображения.
 
@@ -40,13 +43,13 @@ TEST
 
 Написать и использовать функцию 
 ```cpp
-void mirror_seg(int * px1, int * py1, int * px2, int * py2);
+void mirror_seg(int *px1, int *py1, int *px2, int *py2);
 ```
 которая отображает отрезок с концами (x1,y1) и (x2,y2) относительно оси X.
 
 Input format: 4 целых числа через пробел - `x1 y1 x2 y2` - координаты концов отрезка до отображения.
 
-Input format: 4 целых числа через пробел - `x1 y1 x2 y2` - координаты концов отрезка после отображения.
+Output format: 4 целых числа через пробел - `x1 y1 x2 y2` - координаты концов отрезка после отображения.
 
 TEST
 3 2 7 -1
@@ -74,7 +77,7 @@ TEST
 
 Написать и использовать функцию 
 ```cpp
-void move(int * px, int * py, int dx, int dy);
+void move(int *px, int *py, int dx, int dy);
 ```
 которая сдвигает точку с координатами (x,y) на dx и dy.
 
@@ -112,7 +115,7 @@ TEST
 
 Написать и использовать функцию, которая по координатам левой верхней и правой нижней точки находит координаты центра.
 ```cpp
-void center(int xlt, int ylt, int xrb, int yrb, int * pxc, int * pyc);
+void center(int xlt, int ylt, int xrb, int yrb, int *pxc, int *pyc);
 ```
 Input format: 4 целых числа через пробел - `xlt ylt xrb yrb` - координаты вершин прямоугольника.
 
@@ -138,7 +141,7 @@ TEST
 
 Написать и использовать функцию 
 ```cpp
-void rotateC(int * x1, int * y1, int * x2, int * y2);
+void rotateC(int *x1, int *y1, int *x2, int *y2);
 ```
 которая поворачивает прямоугольник на 90 градусов вокруг его центра (пересечения диагоналей).
 
