@@ -1,6 +1,7 @@
 # Массив
 
 lesson = 606719
+lang = c_valgrind
 
 ## Массив
 

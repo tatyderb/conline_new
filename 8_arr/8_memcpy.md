@@ -1,6 +1,7 @@
 # Копирование массива
 
 lesson = 618366
+lang = c_valgrind
 
 ## a = b
 

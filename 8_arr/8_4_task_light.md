@@ -1,6 +1,7 @@
 # Легкие задачи на массивы
 
 lesson = 607325
+lang = c_valgrind
 
 ## TASKINLINE L_arr_01 Четные и нечетные
 

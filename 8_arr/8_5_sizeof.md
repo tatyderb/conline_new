@@ -1,6 +1,7 @@
 # sizeof
 
 lesson = 614623
+lang = c_valgrind
 
 ## sizeof
 
