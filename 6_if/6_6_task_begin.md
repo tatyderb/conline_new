@@ -1,6 +1,7 @@
 # if: задачи для начинающих
 
 lesson = 600086
+lang = c
 
 
 
@@ -449,7 +450,7 @@ NO
 YES
 ====
 
-## TOC
+## SKIP TOC
 
 * + Хватит денег на обед https://stepik.org/lesson/408293/step/5?unit=397594
 * + if_1 - минимум из двух чисел
