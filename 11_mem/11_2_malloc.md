@@ -26,11 +26,11 @@ lang = c_valgrind
     
 ### Копирование и заполнение данными string.h
 
-* `void *` **memcpy** `(void *dest, const void *src, size_t n);`
+* `void *` **memcpy** `(void *dst, const void *src, size_t n);`
     * копировать `n` байт из `src` в `dst`
     * возвращает указатель на `dst`
     * **нельзя использовать на перекрывающихся участках памяти**
-* `void *` **memmove** `(void *dest, const void *src, size_t n);`
+* `void *` **memmove** `(void *dst, const void *src, size_t n);`
     * копировать `n` байт из `src` в `dst`
     * возвращает указатель на `dst`
     * **можно использовать на перекрывающихся участках памяти**, так как сначала идет копирование `src` во временный дополнительный массив, а потом из него в `dst`.

@@ -420,7 +420,7 @@ int main(){
     Decimal res;
     
     res = add(x, y);             // res = x+y = 147+13 = 160
-    elong_print(d);              // print 160
+    elong_print(res);            // print 160
     
     return 0;
 }
