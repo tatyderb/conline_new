@@ -37,7 +37,7 @@ int main();
 ```
 На самом деле у нее есть аргументы 
 ```cpp
-int main(char argc, char * argv[]);
+int main(int argc, char * argv[]);
 ```
 * **argc** - *argument counter* количество аргументов командной строки, включая саму программу
 * **argv** - *argument vector* - массив аргументов командной строки, это массив указателей на строки.
