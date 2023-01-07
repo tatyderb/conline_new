@@ -1,6 +1,7 @@
 # break, continue, goto
 
 lesson = 264320
+lang = c
 
 ## Вернемся к яблоням
 

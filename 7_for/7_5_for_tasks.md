@@ -1,6 +1,7 @@
 # Задачи на for для начинающих
 
 lesson = 603870
+lang = c
 
 ## TASKINLINE Bfor_sum_even Сумма четных чисел
 

@@ -1,6 +1,7 @@
 # Оператор do .. while
 
 lesson = 603568
+lang = c
 
 ## Оператор do .. while
 
