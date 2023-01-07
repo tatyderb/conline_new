@@ -336,7 +336,7 @@ void hello()
 {
 	static int counter;
 	counter++;
-	print("Я сказал Hello уже %d раз.\n", counter);
+	printf("Я сказал Hello уже %d раз.\n", counter);
 }
 int main()
 {
