@@ -226,7 +226,7 @@ int main()
 
 Написать рекурсивную функцию для печати простых сомножителей числа a по степеням.
 ```cpp
-void simpleFactors(long long a, int last, int n);
+void simpleFactors(unsigned int a, unsigned int last, unsigned int n);
 ```
 
 * **a** - положительное целое число, ( 2 ≤ a ≤ $10^9$), которое раскладывается на простые сомножители, 
