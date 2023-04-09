@@ -495,7 +495,8 @@ int main()
 * Если выражение ложно, то печатается диагностика и программа останавливается
 
 ```cpp
-#include <assert.h>
+#include <stdio.h>      // чтобы работали scanf и printf
+#include <assert.h>     // чтобы работал assert
 
 float fahr(int cel)
 {
@@ -546,8 +547,10 @@ Aborted (core dumped)
 "Равно?" для дробных чисел. Как это работает разберем в модуле про условные операторы.
 
 ```cpp
-#include <math.h>   // чтобы работало fabs
-#define EPS 0.0001  // требуемая точность сравнения
+#include <stdio.h>      // чтобы работали scanf и printf
+#include <assert.h>     // чтобы работал assert
+#include <math.h>       // чтобы работало fabs
+#define EPS 0.0001      // требуемая точность сравнения
 
 // сравнивает числа a и b с точностью до EPS
 // как это работает, поймем позже
