@@ -185,6 +185,10 @@ TEST
 ----
 4
 ====
+28 1
+----
+4
+====
 
 ## TASKINLINE float_int_run Бегуны
 
