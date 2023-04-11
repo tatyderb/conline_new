@@ -289,9 +289,11 @@ wood 1
 Такая структура данных называется **лес**.
 
 ```cpp
+struct Node;
 struct Letter {
     char c;             // очередная буква слова
     unsigned int count; // счетчик
+    struct Node * next; // указатель на следующую букву в слове
 };
 struct Node {
     struct Letter let[26];  // 33 буквы для русского языка
