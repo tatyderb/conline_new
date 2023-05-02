@@ -116,7 +116,7 @@ p сначала указывает на a и переходит на следу
 
 ```cpp
 // печать списка
-void print(Node * list) {
+void list_print(Node * list) {
     for (Node * p = list->next; p != list; p = p->next) {
         printf("%d ", p->data);
     }
@@ -124,13 +124,13 @@ void print(Node * list) {
 }
 ```
 
-## print_back
+## list_print_back
 
 Так как в двусвязном списке нужно поддерживать правильную связь не только полей next, но и prev, для тестирования полезно иметь функцию, которая печатает список, используя поля prev. То есть в обратном порядке.
 
 ```cpp
 // печать списка в обратном порядке
-void print_back(Node * list) {
+void list_print_back(Node * list) {
     for (Node * p = list->prev; p != list; p = p->prev) {
         printf("%d ", p->data);
     }
@@ -146,7 +146,7 @@ void print_back(Node * list) {
 Напишем такую функцию:
 ```cpp
 // отладочная печать с адресами
-void print_dbg(Node * list) {
+void list_print_dbg(Node * list) {
     printf("--------\n");       // обозначим начало печати
     Node * p = list;
     // печатаем замочек

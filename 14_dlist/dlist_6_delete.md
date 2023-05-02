@@ -19,16 +19,16 @@ lesson = 308801
 void test_alloc() {
     Node * list = malloc(sizeof(Node));
     list_init(list);
-    print(list);                    // пустой список
+    list_print(list);               // пустой список
     
     еще тесты, которые мы описали раньше
     
-    print(list);                    // 3 17 21 10 8
+    list_print(list);               // 3 17 21 10 8
     
     Node * t = list->next->next;    // узел с числом 17
     Data res = list_delete(t);
     printf("deleted %d: ", res);    // deleted 17:
-    print(list);                    // 3 21 10 8
+    list_print(list);               // 3 21 10 8
     
     free(list);
 }
@@ -86,26 +86,26 @@ list_pop_back - аналогичная, но удаляет последний �
 void test_alloc() {
     Node * list = malloc(sizeof(Node));
     list_init(list);
-    print(list);                    // пустой список
+    list_print(list);               // пустой список
     
     еще тесты, которые мы описали раньше
     
-    print(list);                    // 3 17 21 10 8
+    list_print(list);               // 3 17 21 10 8
     
     Node * t = list->next->next;    // узел с числом 17
     Data res = list_delete(t);
     printf("deleted %d: ", res);    // deleted 17:
-    print(list);                    // 3 21 10 8
+    list_print(list);               // 3 21 10 8
     
     res = list_pop_front(list);
     printf("pop front %d: ", res);  // 3:
-    print(list);                    // 21 10 8
+    list_print(list);               // 21 10 8
     
     res = list_pop_back(list);
     printf("pop back %d: ", res);  // 8:
-    print(list);                    // 21 10
+    list_print(list);              // 21 10
     
-    list_clear();
+    list_clear(list);
     
     free(list);
 }
@@ -168,7 +168,7 @@ void test_alloc() {
 // создает пустой список, готовый к работе
 Node * list_create() {
     Node * z = malloc(sizeof(Node));    // создали замочек
-    list_init(&z);                      // проинициализировали его
+    list_init(z);                       // проинициализировали его
     return z;                           // список - это указатель на замочек
 }
 

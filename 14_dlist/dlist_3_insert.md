@@ -2,6 +2,8 @@
 
 lesson = 308798
 
+lang = c_valgrind
+
 
 ##  VIDEO
 
@@ -24,14 +26,18 @@ lesson = 308798
 ```cpp
 Node u = {10};
 
-print(list);    // 3 17 21
+list_print(list);    // 3 17 21
 
 u.prev = &a;    // перед узлом u будет узел а (стрелка 1)
 u.next = &b;    // после узла u будет узел b (стрелка 2)
 a.next = &u;    // после узла a будет узел u (стрелка 3)
 b.prev = &u;    // перед узлом b будет узел u (стрелка 4)
 
-print(list);    // 3 10 17 21
+list_print(list);    // 3 10 17 21
+```
+Рекомендуем, однако, использовать формат инициализации структуры с указанием имени поля. Этот синтаксис может не работать на старых компиляторах.
+```cpp
+Node u = {.data = 10};
 ```
 
 ## От имен узлов к указателям
@@ -91,7 +97,7 @@ Node z;
 Node * list = &z;
 list_init(list);    // готовим список к работе
 printf("Empty: %s\n", list_is_empty(list) ? "YES" : "NO");  // YES
-print(list);        // пустой список
+list_print(list);        // пустой список
 ```
 
 Такой лист нужно подготовить к работе, сделав его циклическим. Получим хоровод из одного танцора. Нужно чтобы после замочка стоял замочек, и перед замочком тоже замочек.
@@ -150,17 +156,17 @@ int main() {
     
     list_init(list);    // готовим список к работе
     printf("Empty: %s\n", list_is_empty(list) ? "YES" : "NO");  // YES
-    print(list);        // пустой список
+    list_print(list);   // пустой список
     
     list_insert(list, &c);
-    print(list);            // 21                
+    list_print(list);            // 21                
     printf("Empty: %s\n", list_is_empty(list) ? "YES" : "NO");  // NO
 
     list_insert(list, &b);
-    print(list);            // 17 21                
+    list_print(list);            // 17 21                
 
     list_insert(list, &a);
-    print(list);            // 3 17 21                
+    list_print(list);            // 3 17 21                
     
     list_insert(&a, &u);
     print(list);            // 3 10 17 21                
@@ -184,11 +190,11 @@ int main() {
     Node * list = &z;
     list_init(list);    // готовим список к работе
     printf("Empty: %s\n", list_is_empty(list) ? "YES" : "NO");  // YES
-    print(list);        // пустой список
+    list_print(list);   // пустой список
 
     for (int i = 0; i < n; i++) {
         list_insert(list, &test_nodes[i]);
-        print(list);
+        list_print(list);
     }
     
     return 0;
@@ -204,9 +210,9 @@ int main() {
 Node w;
 w.data = 8;
 
-print(list);    // 3 10 17 21
+list_print(list);    // 3 10 17 21
 list_insert_before(&u, &w);
-print(list);    // 3 8 10 17 21
+list_print(list);    // 3 8 10 17 21
 ```
 ![Вставка узла в двусвязный список](https://stepik.org/media/attachments/lesson/308798/dlist_insert.png)
 

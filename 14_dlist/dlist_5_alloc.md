@@ -16,12 +16,12 @@ lesson = 308800
 void test_alloc() {
     Node * list = malloc(sizeof(Node));
     list_init(list);
-    print(list);                    // пустой список
+    list_print(list);                    // пустой список
     
     Node * t;
     t = list_push_front(list, 21);
     printf("push %d: ", t->data);
-    print(list);                    // 21
+    list_print(list);                    // 21
     
     free(list);
 }
@@ -54,7 +54,7 @@ Node * list_push_front(Node * list, Data d) {
 
 Проверяем программу под valgrind. Пока не обращаем внимание на утечки памяти, так как в тестах память выделяется, но не освобождается.
 
-## Тесты на push_front и push_before
+## Тесты на push_front и push_back
 
 Напишем тесты и определим ожидаемый вывод.
 ```cpp
@@ -64,20 +64,20 @@ void test_alloc() {
     
     Node * list = malloc(sizeof(Node));
     list_init(list);
-    print(list);                    // пустой список
+    list_print(list);                    // пустой список
     
     Node * t;
     for(size_t i = 0; i < sizeof(test_data1)/sizeof(test_data1[0]); i++) {
         t = list_push_front(list, test_data1[i]);
         printf("push_front %d: ", t->data);
-        print(list);
+        list_print(list);
     }
     // 3 17 21
 
     for(size_t i = 0; i < sizeof(test_data2)/sizeof(test_data2[0]); i++) {
         t = list_push_back(list, test_data2[i]);
         printf("push_back %d: ", t->data);
-        print(list);
+        list_print(list);
     }
     // 3 17 21 10 8
     

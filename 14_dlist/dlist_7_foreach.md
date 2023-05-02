@@ -22,7 +22,7 @@ lesson = 308802
 Рассмотрим уже написанную функцию печати списка:
 
 ```cpp
-void print(Node * list) {
+void list_print(Node * list) {
     for (Node * p = list->next; p != list; p = p->next) {   
     // перебор элементов списка
         printf("%d ", p->data);     // обработка поля data элемента
@@ -35,15 +35,15 @@ void print(Node * list) {
 void print_node(Data d) {
     printf("%d ", d);
 }
-void print(Node * list) {
+void list_print(Node * list) {
     foreach(list, print_node);      // использование foreach
     printf("\n");                   // прочее
 }
 ```
-Что должна делать foreach? Перебрать все элементы и применить функцию func к каждому элементу.
+Что должна делать `foreach`? Перебрать все элементы и применить функцию `func` к каждому элементу.
 
 ```cpp
-void foreach(Node * list, void (*func)(void)) {
+void foreach(Node * list, void (*func)(Data)) {
     for (Node * p = list->next; p != list; p = p->next) {   
     // перебор элементов списка
         func(p->data);     // обработка поля data элемента
@@ -56,33 +56,33 @@ void foreach(Node * list, void (*func)(void)) {
 Предположим, что мы хотим указывать в функции печати, куда именно печатать
 
 ```cpp
-void print(Node * list, FILE * stream) {
+void list_print(Node * list, FILE * stream) {
     for (Node * p = list->next; p != list; p = p->next) {   
     // перебор элементов списка
         fprintf(stream, "%d ", p->data); // обработка поля data элемента
     }
-    printf("\n");                   // прочее
+    fprintf(stream, "\n");               // прочее
 }
 ```
 Как видно, функция печати 1 элемента должна принимать не только поле data этого элемента, но и указатель на поток.
 
-Мы уже видели в функции qsort, что когда не знаем какого типа может быть аргумент, мы передаем его как `void *` и в функции приводим к нужному типу.
+Мы уже видели в функции `qsort`, что когда не знаем какого типа может быть аргумент, мы передаем его как `void *` и в функции приводим к нужному типу.
 
 ```cpp
 void print_node(Data d, void * stream) {
     fprintf((FILE*)stream, "%d ", d);
 }
-void print(Node * list) {
-    foreach(list, print_node, stderr);      // использование foreach
-    printf("\n");                   // прочее
+void list_print(Node * list) {
+    foreach(list, print_node, stderr);  // использование foreach
+    fprintf(stderr, "\n");              // прочее
 }
 ```
 
 Для такого использования нужно изменить foreach:
 ```cpp
-void foreach(Node * list, void (*func)(void *), void * arg) {
+void foreach(Node * list, void (*func)(Data, void *), void * arg) {
     for (Node * p = list->next; p != list; p = p->next) {   
-    // перебор элементов списка
+        // перебор элементов списка
         func(p->data, arg);     // обработка поля data элемента
     }
 }
@@ -100,7 +100,7 @@ Data sum_all(Node * list) {
     return res;
 }
 ```
-Перепишем ее через использование foreach.
+Перепишем ее через использование `foreach`.
 
 В функцию sum_node нужно передать поле data и указатель на переменную res, чтобы можно было добавлять в нее поле data:
 ```cpp
