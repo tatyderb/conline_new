@@ -253,6 +253,14 @@ BOMB
 ---
 NO
 ====
+kabomb word
+----
+YES
+====
+qaz wsxbombe
+----
+YES
+====
 
 ## TASKINLINE str_bomb3 Часть слова bomb без учета регистра
 
