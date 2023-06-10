@@ -24,6 +24,21 @@ lang = c
 ```cpp
 int delim_konfety(int a);
 ```
+CODE
+#include <stdio.h>
+
+int delim_konfety(int a);
+
+int main()
+{
+    int konfet;
+    scanf("%d", &konfet);
+    
+    int detey = delim_konfety(konfet);
+    print("%d\n", detey);
+    
+    return 0;
+}
 
 TEST
 7
