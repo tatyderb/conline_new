@@ -88,11 +88,11 @@ int main()                      // здесь начинается програ�
 /mnt/c/work/stud
 ```
 
-* В Windows с `\` или с имени диска
+* В Windows с имени диска и после имени диска идет `\`
     * Примеры абсолютного пути в Windows:
 ```cpp
 C:\work\stud\conline\1int\hello.c
-\work\stud\conline\1int\hello.c
+D:\games\tetris.exe
 ```
 
 ### Относительный путь 
@@ -120,6 +120,7 @@ conline\1int\hello.c
 .\a.exe
 ..
 ..\..\img
+\work\hello.c
 ```
 
 ## QUIZ Абсолютный и относительный путь
@@ -132,7 +133,8 @@ C. `./bin`
 D. `git.exe`
 E. `/home/tatyder/general_2019.pdf`
 F. `/dev/null`
-G. `\Temp`
+G. `D:\work\hello.c`
+H. `\Temp`
 
 ANSWER: A, E, F, G
 
