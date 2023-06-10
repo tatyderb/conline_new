@@ -42,6 +42,34 @@ void printTic(TicTac a);
 
 Объявление структуры и функцию `main` посылать не нужно. Они уже есть в проверяющей системе.
 
+Для проверки функций используется код:
+```cpp
+int main(){
+    TicTac a,b,c;
+    int mk;
+    
+    scanf("%d:%d", &(a.h), &(a.min));
+    scanf("%d", &mk);
+    scanf("%d:%d", &(b.h), &(b.min));
+    
+    printf("equal: %d\n",isEqualTime(a,b));
+    c = after(a, mk);
+    printf("after: ");
+    printTic(c);
+    
+    c = a;
+    printf("forward: ");
+    forward(&a, b);
+    printTic(a);
+    
+    printf("backward: ");
+    backward(&c, b);
+    printTic(c);
+    
+    return 0;
+}
+```
+
 HEADER
 #include <stdio.h>
 #include <stdlib.h>
@@ -122,7 +150,7 @@ void rotRLine(struct Line * t)
 
 Напечатайте полученный отрезок и его длину с точностью до 3 десятичных знаков.
 
-Посылать на проверку всю программу.
+**Посылать на проверку всю программу.**
 
 Входные данные: 4 целых числа через пробел - x, y координаты точки - целые числа через пробел.
 
@@ -155,6 +183,33 @@ int main() {
     return 0;
 }
 ```
+CODE
+typedef struct {
+    int x;
+    int y;
+} Point;
+
+typedef struct {
+    Point a;    // начало отрезка
+    Point b;    // конец отрезка
+    float len;  // длина отрезка
+} Line;
+
+float distance(Point a, Point b);   // расстояние между точками
+void scanLine(Line * t);
+void printLine(Line t);
+void rotRLine(Line * t);
+
+int main() {
+    Line t;
+    
+    scanLine(&t);
+    // тут должен быть вызов функции rotRLine
+    printLine(t);
+    
+    return 0;
+}
+
 TEST
 3 0 0 4
 ---
