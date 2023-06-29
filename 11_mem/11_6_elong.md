@@ -164,6 +164,10 @@ int main()
 }
 ```
 
+Функция [elong_print](https://stepik.org/lesson/607327/step/3?unit=602468) аналогична той, что вы писали для длинного числа фиксированной длины.
+
+Функция `elong_check` проверяет, что во всех значащих ячейках массива лежат числа от 0 до 9 включительно. Рекомендуем реализовать эти функции самостоятельно и запустить пример.
+
 ## TASKINLINE elong_add2 Сложение чисел
 
 Для хранения больших чисел объявили структуру
@@ -195,6 +199,10 @@ int main(){
     elong_add(&a, &b, &res);   // res = a+b = 147+13 = 160
     
     elong_print(res);          // print 160
+
+    elong_destroy(&a);
+    elong_destroy(&b);
+    elong_destroy(&res);
     
     return 0;
 }
@@ -215,7 +223,7 @@ typedef struct _Decimal Decimal;
 void print (Decimal * p);
 Decimal set(const char * str);
 void elong_add (const Decimal * a, const Decimal * b, Decimal * res);
-void dfree(Decimal * p);
+void elong_destroy(Decimal * p);
 void check(Decimal *p);
 
 int main(){
@@ -235,13 +243,13 @@ int main(){
     printf("\n");
     check(&res);
     
-    dfree(&a);
-    dfree(&b);
-    dfree(&res);
+    elong_destroy(&a);
+    elong_destroy(&b);
+    elong_destroy(&res);
    
     return 0;
 }
-void dfree(Decimal * p){
+void elong_destroy(Decimal * p){
     free(p->a);
 }
 Decimal set(const char * str)
@@ -432,6 +440,10 @@ int main(){
     
     elong_print(res);          // print 160
     
+    elong_destroy(a);
+    elong_destroy(b);
+    elong_destroy(res);
+   
     return 0;
 }
 ```
@@ -452,7 +464,7 @@ typedef struct _Decimal Decimal;
 void print (Decimal * p);
 Decimal * set(const char * str);
 Decimal *elong_add (const Decimal * a, const Decimal * b);
-void dfree(Decimal * p);
+void elong_destroy(Decimal * p);
 void check(Decimal *p);
 
 int main(){
@@ -471,13 +483,13 @@ int main(){
     printf("\n");
     check(res);
     
-    dfree(a);
-    dfree(b);
-    dfree(res);
+    elong_destroy(a);
+    elong_destroy(b);
+    elong_destroy(res);
    
     return 0;
 }
-void dfree(Decimal * p){
+void elong_destroy(Decimal * p){
     free(p->a);
     free(p);
     p = NULL;
