@@ -16,7 +16,7 @@ int main()
 	
 	char c;
 	while((c = fgetc(fin)) != EOF) {
-		putc(c, fout)
+		putc(c, fout);
 	}
 
 	fclose(fin);							// закрываем открытые нами потоки
