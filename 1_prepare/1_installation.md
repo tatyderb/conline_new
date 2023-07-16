@@ -71,6 +71,8 @@ lang = c
 
 **Запишите и запомните свой логин и пароль при установке. Он понадобится на следующем шаге.**
 
+* На Windows 11 (если что, берите гайды по windows-10)
+    * [https://vc.ru/dev/744877-kak-ustanovit-wsl-na-windows-11](https://vc.ru/dev/744877-kak-ustanovit-wsl-na-windows-11) на русском, в картинках с рамочками и стрелочками.
 * На Windows 10 рекомендуем установить **WSL** (Windows Subsystem for Linux) или **WSL2**. На нем можно делать задачи всех курсов МФТИ по С, в том числе курс по IPC. 
     * [Установка WSL на Windows 10](https://docs.microsoft.com/ru-ru/windows/wsl/install-win10)
     * [Установка WSL на Windows 10 еще одна инструкция](https://g-ek.com/kak-zapustit-bash-v-windows-10)
