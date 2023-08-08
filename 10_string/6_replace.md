@@ -146,7 +146,7 @@ void replace(char * dst, const char * src)
 void replace(char * dst, const char * src_original)
 {
     // сделаем копию строки src_original, выделив память динамически
-    char * src = srcdup(src_original);
+    char * src = strdup(src_original);
 
     size_t lenbomb = strlen("bomb");
     
