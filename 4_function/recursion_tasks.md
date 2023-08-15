@@ -35,7 +35,7 @@ int main()
     scanf("%d", &konfet);
     
     int detey = delim_konfety(konfet);
-    print("%d\n", detey);
+    printf("%d\n", detey);
     
     return 0;
 }
