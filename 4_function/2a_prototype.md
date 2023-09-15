@@ -202,7 +202,7 @@ int main()
    
    scanf("%d%d", &x1, &y1);       // прочитали числа 
    scanf("%d%d", &x2, &y2);
-   len = dist(x1, y1, x2, y2);    // вызываем функцию length
+   len = dist(x1, y1, x2, y2);    // вызываем функцию dist
    printf("%.3f\n", len);         // напечатать длину
    return 0;
 }
@@ -221,7 +221,7 @@ int main(){
    
    scanf("%d%d", &x1, &y1);       // прочитали числа 
    scanf("%d%d", &x2, &y2);
-   len = dist(x1, y1, x2, y2);    // вызываем функцию length
+   len = dist(x1, y1, x2, y2);    // вызываем функцию dist
    printf("%.3f\n", len);         // напечатать длину
    return 0;
 }
