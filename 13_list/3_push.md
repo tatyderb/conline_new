@@ -85,16 +85,16 @@ int main() {
     print(list);        // ничего не печатает
     
     push(&list, 21);    // 21
-    print(list)
+    print(list);
     
     push(&list, 17);    // 17 21
-    print(list)
+    print(list);
     
     push(&list, 3);     // 3 17 21
-    print(list)
+    print(list);
     
     push(&list, 10);    // 10 3 17 21
-    print(list)
+    print(list);
     
     return 0;
 }
