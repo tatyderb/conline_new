@@ -209,7 +209,7 @@ int main()
 	
 	scanf("%d", &n);
 	i = 0;
-	while(i < 3) {
+	while(i < n) {
 		scanf("%d", &x);
 		sum += x;
 		printf("x is %d and sum is %d\n", x, sum);
