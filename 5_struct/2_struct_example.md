@@ -33,6 +33,8 @@ int main()
     scanf("%d", &m.finish);
                             // печатаем
     printf("m = [%d, %d]\n", m.start, m.finish);
+    
+    return 0;
 }
 ```
 
