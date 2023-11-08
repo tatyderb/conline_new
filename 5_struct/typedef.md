@@ -61,7 +61,7 @@ A. `typedef float Temperature;`
 
 B. `typedef int New Balance;`
 
-C. `typedef long long double Pressure;`
+C. `typedef long double Pressure;`
 
 D. `typedef char int;`
 
