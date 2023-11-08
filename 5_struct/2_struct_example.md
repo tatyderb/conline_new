@@ -198,7 +198,7 @@ int main()
     t2 = add(t1, dt);
     print_time(t2);
     
-    assert(1==is_equal(t2, exp_t2));
+    assert(1==is_equal(t2, expected_res));
     
     return 0;
 }
