@@ -387,6 +387,6 @@ for (int i = 0; i < n; i++)
 
 ```cpp
 for( ; ; )				// бесконечный цикл
-	printf("Hello\n")
+	printf("Hello\n");
 ```
 
