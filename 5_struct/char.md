@@ -179,7 +179,7 @@ int code(int letter, int shift)
     return 'a' + (letter - 'a' + shift) % LEN;
 }
 
-int main(){
+int main()
 {
     // читаем по символу
     char c1, c2, c3, c4;    // ASCII-коды символов
