@@ -41,7 +41,7 @@ struct Card {
 
 ```cpp
 void print_cards(struct Card * hand);
-int read_cards(struct Card * hand);
+void read_cards(struct Card * hand);
 ```
 
 ### Функция печати карт
