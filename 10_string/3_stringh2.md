@@ -286,7 +286,7 @@ for (char * p = strtok(s, delim);   // начинаем разбор, перед
 ```cpp
 a
 bb
-ccc
+cccc
 dd
 ```
 
