@@ -137,7 +137,7 @@ int main()
 }  
 ```
 
-## Пример: Шрифт Цезаря
+## Пример: Шифр Цезаря
 
 Простой [шифр Цезаря](https://en.wikipedia.org/wiki/Caesar_cipher)
 
