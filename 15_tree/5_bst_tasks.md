@@ -77,7 +77,7 @@ struct Node {
 };
 struct Node * tree_add(struct Node * tree, Data x);
 void tree_print(struct Node * tree);
-void tree_destroy(struct Node * tree);
+void tree_destroy(struct Node * tree)
 {
 	if (tree == NULL)
 		return;
