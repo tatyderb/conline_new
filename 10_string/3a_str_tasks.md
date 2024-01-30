@@ -220,6 +220,14 @@ BOMB
 ---
 NO
 ====
+bomb from begin
+---
+YES
+====
+tail bomb
+---
+YES
+====
 
 ## TASKINLINE str_bomb2 Часть слова bomb
 
