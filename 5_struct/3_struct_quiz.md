@@ -15,7 +15,7 @@ struct Vector
 int main()
 {
 	struct Vector vec;
-	int x, y;
+	int x = 2, y = 3;
 	//..... 
 	vec.x = y;
 	vec.y = y;
@@ -57,7 +57,7 @@ int main()
 {
 	Vector vec;
 	Vector * pvec;
-	int x, y;
+	int x = 2, y = 3;
 	pvec = &vec;
 	pvec.x = x;
 	vec.y = y;
@@ -99,7 +99,7 @@ int main()
 {
 	Vector vec;
 	Vector * pvec
-	int x, y;
+	int x = 2, y = 3;
 	pvec->x = x;
 	vec.y = y;
 	printf("x: %f y: %f\n", pvec->x, vec.y);
@@ -141,7 +141,7 @@ int main()
 {
 	Vector vec;
 	Vector * pvec
-	int x, y;
+	int x = 2, y = 3;
 	int *px;
 	pvec = &vec;
 	// необходимо получить адрес атрибута x
