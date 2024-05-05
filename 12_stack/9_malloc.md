@@ -30,8 +30,6 @@ lang = c_valgrind
 ![Изображение структуры стека](https://stepik.org/media/attachments/lesson/308172/stack_darr.png)
 
 ```cpp
-#define N 10
-
 typedef int Data;
 typedef struct {
     Data * a;           // указатель на динамически 
@@ -51,13 +49,17 @@ typedef struct {
 
 Вариант 1. Сразу выделяем память в `init`:
 ```cpp
+#define N 10
+
 void init(Stack * st) {
     st->n = 0;
     st->size = N;
     st->a = malloc(st->size * sizeof(Data));
 }
 ```
-В этом случае можно передавать желаемый размер данных еще одним аргументом функции `init`.
+В этом случае можно передавать желаемый размер данных `n` еще одним аргументом функции: 
+
+`void init(Stack * st, insigned int n);`
 
 Вариант 2. а указывает на `NULL`:
 ```cpp
