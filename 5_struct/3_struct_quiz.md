@@ -98,7 +98,7 @@ typedef struct Vec
 int main()
 {
 	Vector vec;
-	Vector * pvec
+	Vector * pvec;
 	int x = 2, y = 3;
 	pvec->x = x;
 	vec.y = y;
@@ -140,7 +140,7 @@ typedef struct Vec
 int main()
 {
 	Vector vec;
-	Vector * pvec
+	Vector * pvec;
 	int x = 2, y = 3;
 	int *px;
 	pvec = &vec;
