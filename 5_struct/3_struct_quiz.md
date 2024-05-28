@@ -89,6 +89,7 @@ ANSWER: D
 
 Дана структура и код программы:
 ```c
+#include <stdio.h>
 typedef struct Vec
 {
 	float x;
