@@ -142,14 +142,14 @@ int ipow(int x, int n);     // x в степени n
 ```cpp
 double distance(int x, int y)
 {
-    doulbe res = sqrt(x * x + y * y);
+    double res = sqrt(x * x + y * y);
     return res;
 }
 ```
 Плохо (не надо так):
 ```cpp
 double distance(int x,int y) {
-doulbe res=sqrt(x*x+y*y); return res;
+double res=sqrt(x*x+y*y); return res;
 }
 ```
 
