@@ -340,7 +340,7 @@ int main()
 #include <stdio.h>
 int main(){ 
     float fa;
-    printf("%zd\n", sizeof(fa));
+    printf("%zu\n", sizeof(fa));
     
 }
 ```
