@@ -100,7 +100,7 @@ hello.exe > out.txt 2>&1
 ```
 Перенаправь `stderr` и `stdout` программы `hello.exe` в файл `out.txt`
 
-То есть если у нас было напечатана строка Hello на stdout и Good bye на stderr, то в файле `out.txt` мы увидим 
+То есть если у нас были напечатаны строки Hello на stdout и Good bye на stderr, то в файле `out.txt` мы увидим 
 ```cpp
 Hello
 Good bye
