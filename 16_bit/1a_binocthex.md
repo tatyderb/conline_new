@@ -73,7 +73,7 @@ a[2]=7 x=147
 Посылать в проверяющую систему всю программу, вместе с функцией main.
 
 ```cpp
-void print_bin(unsigned char x);
+void print_bin(unsigned char x, char end);
 
 int main()
 {
