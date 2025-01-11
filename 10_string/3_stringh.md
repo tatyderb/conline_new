@@ -2,6 +2,10 @@
 
 lesson = 276442
 
+## SKIP VIDEO
+
+inline stepik video c8_02_1.mp4
+
 ## VIDEO
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-t17-0n0kWA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -36,6 +40,10 @@ int isalnum_l(int c, locale_t locale);
 |----|-----|
 | int toupper(int c); | для буквы возвращает большую букву, иначе не меняет |
 | int tolower(int c); | для буквы возвращает маленькую букву, иначе не меняет |
+
+## SKIP VIDEO
+
+inline stepik video c8_02_2.mp4
 
 ## VIDEO
 
@@ -160,6 +168,10 @@ size_t mystrlen(const char *s) {
     return p - 1 - s;
 }
 ```
+
+## SKIP VIDEO
+
+inline stepik video c8_02_3.mp4
 
 ## VIDEO
 

@@ -3,6 +3,11 @@
 lesson = 275922
 lang = c_valgrind
 
+
+## SKIP VIDEO
+
+inline stepik video c8_01_1.mp4
+
 ## VIDEO
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cT5GELfOwsE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

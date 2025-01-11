@@ -3,6 +3,10 @@
 lesson = 275992
 lang = c_valgrind
 
+## SKIP VIDEO
+
+inline stepik video c8_01_2.mp4
+
 ## VIDEO
 
 <iframe width="560" height="315" src="https://youtu.be/cT5GELfOwsE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -94,6 +98,10 @@ qazxcvbnm wsxedc
 Т.е. для массива `char a[10]` нужно писать `scanf("%9s", a);`
 
 Если в "слове" вводится меньше символов, чем указано в ограничении, то считывается только это "слово". Заметим, что "слово" - это не слово в терминах русского или английского языка, а последовательность символов до пробельного символа. Пробельный символ определяется стандартной функцией **isspace**. В последовательность символов могут входить буквы разных алфавитов, числа, знаки препинания, математические символы - все, кроме пробельных символов.
+
+## SKIP VIDEO
+
+inline stepik video c8_01_3.mp4
 
 ## VIDEO
 

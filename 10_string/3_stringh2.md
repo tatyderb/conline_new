@@ -2,6 +2,10 @@
 
 lesson = 282782
 
+## SKIP VIDEO
+
+inline stepik video c8_02_4.mp4
+
 ## VIDEO
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G0HUky1DRhg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -147,6 +151,10 @@ char * mystrcpy2(char *dest, const char *src) {
 }
 ```
 Заметим, что дополнительное копирование '\0' не нужно, так как этот символ сначала откопируется, а потом результат присвоения (ноль) будет проверен на истинность (ложь) и цикл прервется.
+
+## SKIP VIDEO
+
+inline stepik video c8_02_5.mp4
 
 ## VIDEO
 
