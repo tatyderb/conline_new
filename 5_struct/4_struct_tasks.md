@@ -144,7 +144,7 @@ backward: 03:22
 
 Написать функцию 
 ```cpp
-void rotRLine(struct Line * t)
+void rotRLine(struct Line * t);
 ```
 Она поворачивает отрезок на плоскости XY **на 90 градусов по часовой стрелке вокруг точки (0,0)**.
 
