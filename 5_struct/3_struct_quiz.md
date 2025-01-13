@@ -19,6 +19,8 @@ int main()
 	//..... 
 	vec.x = y;
 	vec.y = y;
+    
+    return 0;
 }
 ```
 При таком написании
@@ -58,9 +60,13 @@ int main()
 	Vector vec;
 	Vector * pvec;
 	int x = 2, y = 3;
+    
 	pvec = &vec;
+    
 	pvec.x = x;
 	vec.y = y;
+    
+    return 0;
 }
 ```
 При таком написании
@@ -101,9 +107,11 @@ int main()
 	Vector vec;
 	Vector * pvec;
 	int x = 2, y = 3;
+    
 	pvec->x = x;
 	vec.y = y;
 	printf("x: %f y: %f\n", pvec->x, vec.y);
+    return 0;
 }
 ```
 При таком написании
