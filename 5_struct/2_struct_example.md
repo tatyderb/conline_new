@@ -508,6 +508,7 @@ Point readPoint()
     Point res;
     scanf("%d%d", &res.x, &res.y);
     return res;
+}
 ```
 * в функции `readPoint` создается структура, заполняется и возвращается эта структура.
 * `Point p1 = readPoint();` - возвращаемая структура *копируется* в `p1`.

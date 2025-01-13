@@ -21,7 +21,7 @@ lesson = 406085
 Этот пример станет понятнее после следующего раздела про условную компиляцию:
 ```cpp
 #ifdef __linux__
-#   define MY_PI_CONTANT 5 
+#   define MY_PI_CONSTANT 5 
 ```
 
 

@@ -548,7 +548,7 @@ struct Rectangle {
 Определяю переменную `rect` "прямоугольник" типа `struct Rectangle`
 
 ```cpp
-struct Rectangle rect = {{0, 0}, {-640, -480}}; // сам прямоугольник
+struct Rectangle rect = {{0, 0}, {640, -480}};  // сам прямоугольник
 struct Rectangle * r = &rect;                   // указатель на прямоугольник
 
 rect.lt.x = 10;
