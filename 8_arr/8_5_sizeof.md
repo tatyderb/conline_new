@@ -18,10 +18,10 @@ lang = c_valgrind
 
 ```cpp
 int x;
-printf("%zd\n", sizeof x);      // 4 в моей системе и на repl.it
-printf("%zd\n", sizeof(1 + 2)); // 4 в моей системе и на repl.it
-printf("%zd\n", sizeof 3.5);    // 8 в моей системе и на repl.it
-printf("%zd\n", sizeof(char));  // 1 всегда
+printf("%zu\n", sizeof x);      // 4 в моей системе и на repl.it
+printf("%zu\n", sizeof(1 + 2)); // 4 в моей системе и на repl.it
+printf("%zu\n", sizeof 3.5);    // 8 в моей системе и на repl.it
+printf("%zu\n", sizeof(char));  // 1 всегда
 ```
 
 Можно писать операнд в скобках `sizeof(x)` или без них `sizeof x`. Тип можно указать только в скобках. Поэтому не думайте, пишите все в скобках.
