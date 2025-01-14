@@ -112,11 +112,13 @@ int sum(int a, int b)
 ```cpp
 #include <stdio.h>
 
-void inc(int x) {
+void inc(int x) 
+{
     x = x + 1;
 }
 
-int main() {
+int main() 
+{
     int x;
     x = 3;
     inc(x);
@@ -133,7 +135,8 @@ ANSWER: 3
 ```cpp
 #include <stdio.h>
 
-void inc(int x) {
+void inc(int x) 
+{
     x = x + 1;
 }
 
@@ -176,11 +179,13 @@ int main() {
 ```cpp
 #include <stdio.h>
 
-void inc (int x) {
+void inc (int x) 
+{
     x = x + 1;      // x++;
     // a = a + 1;   // нельзя, не видно
 }
-int main () {
+int main () 
+{
     int a = 3;
     inc (a);
     inc (a);
@@ -197,11 +202,13 @@ int main () {
 ```cpp
 #include <stdio.h>
 
-int inc (int x) {
+int inc (int x) 
+{
     x = x + 1;
     return x;
 }
-int main () {
+int main () 
+{
     int a = 3;
     a = inc (a);
     a = inc (a);
@@ -210,7 +217,8 @@ int main () {
 ```
 Можно функцию написать короче:
 ```cpp
-int inc (int x) {
+int inc (int x) 
+{
     return x + 1;
 }
 ```
