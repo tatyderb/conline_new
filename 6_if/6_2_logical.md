@@ -71,7 +71,7 @@ int is_leap_year(int year) {
 
 Студент написал: 
 ```python
-int is_leap_year(year)
+int is_leap_year(int year)
 {
 	if (year % 100 == 0)
 		return 0;
