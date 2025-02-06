@@ -357,6 +357,8 @@ YES
 
 <img src="https://stepik.org/media/attachments/lesson/411389/triangle_len_type.JPG"></img>
 
+**В проверяющую систему посылать код всей программы.**
+
 TEST
 3 3 3
 ---
