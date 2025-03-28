@@ -5,6 +5,12 @@ lesson = 308800
 
 ##  VIDEO
 
+<p>Платформа:</p>
+
+<p><iframe allowfullscreen="" height="315" src="https://plvideo.ru/embed/Fw-Fi209dDCX" width="560"></iframe></p>
+
+<p>Youtube:</p>
+
 <p><iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/obY-A7G1YeU" width="560"></iframe></p>
 
 

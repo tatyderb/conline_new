@@ -5,6 +5,12 @@ lesson = 308801
 
 ##  VIDEO
 
+<p>Платформа:</p>
+
+<p><iframe allowfullscreen="" height="315" src="https://plvideo.ru/embed/9vlAzl4cP8Su" width="560"></iframe></p>
+
+<p>Youtube:</p>
+
 <p><iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/QFzIGyG373Y" width="560"></iframe></p>
 
 ## Тестирование list_delete

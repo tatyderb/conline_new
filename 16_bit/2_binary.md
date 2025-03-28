@@ -2,11 +2,15 @@
 
 lesson = 306538
 
+## SKIP VIDEO
+
+https://youtu.be/4iDpVe7gU04	Дербышева Т.Н. Лекция 14-1. Представление чисел в бинарном виде
+
 ##  VIDEO
 
 <iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/4iDpVe7gU04?start=5" width="560"></iframe>
 
-C 
+То же видео, что на 19.1. Для тех студентов, кто пропустил 19.1 и 19.2.
 
 ## Переполнение
 

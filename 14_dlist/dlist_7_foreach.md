@@ -5,6 +5,12 @@ lesson = 308802
 
 ##  VIDEO
 
+<p>Платформа:</p>
+
+<p><iframe allowfullscreen="" height="315" src="https://plvideo.ru/embed/FnIKuWpg2SLn" width="560"></iframe></p>
+
+<p>Youtube:</p>
+
 <p><iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/-kteSgR-x6s" width="560"></iframe></p>
 
 ## Функция foreach

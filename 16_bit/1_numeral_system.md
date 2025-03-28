@@ -12,6 +12,13 @@ lesson = 305204
 * изучим операторы языка Си, которые работают с битами, это поможет нам компактнее хранить информацию.
 * немного поговорим об архитектуре компьютеров и перейдем к следующему курсу - написанию шаг за шагом и отладке большой программы [эмулятора компьютера PDP-11](https://stepik.org/course/65259)
 
+[Презентация](https://stepik.org/media/attachments/lesson/305204/c2019_14_169.pdf)
+
+## SKIP VIDEO embeded
+
+<iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/4iDpVe7gU04?start=5" width="560"></iframe>
+
+
 ## SKIP VIDEO
 
 <iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/4iDpVe7gU04?start=5" width="560"></iframe>

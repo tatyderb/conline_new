@@ -7,6 +7,12 @@ lang = c_valgrind
 
 ##  VIDEO
 
+<p>Платформа:</p>
+
+<p><iframe allowfullscreen="" height="315" src="https://plvideo.ru/embed/59nK2Cl3hjUC" width="560"></iframe></p>
+
+<p>Youtube:</p>
+
 <p><iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/vLKAbAY84qA" width="560"></iframe></p>
 
 ## Модель

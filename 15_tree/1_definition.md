@@ -5,6 +5,29 @@ lesson = 311164
 
 ##  VIDEO
 
+Все видео одним куском.
+
+<p>Платформа:</p>
+
+<p><iframe allowfullscreen="" height="315" src="https://plvideo.ru/embed/_ojEOCmafiNN" width="560"></iframe></p>
+
+<p>Youtube:</p>
+
+<p><iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/FKCToOPxhEg" width="560"></iframe></p>
+
+[Презентация](https://stepik.org/media/attachments/lesson/311164/c2019_13_169.pdf)
+
+##  VIDEO
+
+Дерево. Термины.
+
+<p>Платформа:</p>
+
+<p><iframe allowfullscreen="" height="315" src="https://plvideo.ru/embed/iVnPEC-oedPM" width="560"></iframe></p>
+
+<p>Youtube:</p>
+<p>Пока ссылка на полное видео</a>
+
 <p><iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/FKCToOPxhEg" width="560"></iframe></p>
 
 
@@ -35,6 +58,19 @@ lesson = 311164
 Если у каждого родителя не более 2 детей, то такое дерево называется **бинарным**. Бинарное - не значит, что упорядоченное. На рисунке у бинарного дерева нет никакого порядка.
 
 ![Бинарное дерево](https://stepik.org/media/attachments/lesson/311164/bheap.png)
+
+##  VIDEO
+
+Бинарное дерево поиска.
+
+<p>Платформа:</p>
+
+<p><iframe allowfullscreen="" height="315" src="https://plvideo.ru/embed/c6SQA89Fj-aC" width="560"></iframe></p>
+
+<p>Youtube:</p>
+<p>Пока ссылка на полное видео</a>
+
+<p><iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/FKCToOPxhEg" width="560"></iframe></p>
 
 ## Бинарное дерево поиска
 

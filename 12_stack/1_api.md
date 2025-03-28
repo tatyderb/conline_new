@@ -12,6 +12,8 @@ lesson = 300286
 
 В конце реализуем стек на основе массива фиксированной длины, а потом - на основе динамического массива различными способами.
 
+[Презентация](https://stepik.org/media/attachments/lesson/300286/c2019_11.pdf)
+
 ## VIDEO
 
 <iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/65R5YMxrOzE" width="560"></iframe>

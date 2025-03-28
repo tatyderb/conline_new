@@ -7,6 +7,12 @@ lesson = 308792
 
 Создание модели из 3 узлов и печать односвязного списка
 
+<p>Платформа:</p>
+
+<p><iframe allowfullscreen="" height="315" src="https://plvideo.ru/embed/PRL33grG9mxL" width="560"></iframe></p>
+
+<p>Youtube:</p>
+
 <p><iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/UqQ2dtJVccw" width="560"></iframe></p>
 
 ## Модель односвязного списка

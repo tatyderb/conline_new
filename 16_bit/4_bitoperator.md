@@ -5,6 +5,10 @@ lang = c_valgrind
 
 ## SKIP VIDEO
 
+https://youtu.be/niy4QNITig8	Дербышева Т.Н. Лекция 14-2. Побитовые операции
+
+## SKIP VIDEO
+
 Тут ссылка на видео
 
 ## Побитовые операции

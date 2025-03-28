@@ -3,6 +3,10 @@
 lesson = 308215
 lang = c_valgrind
 
+## SKIP VIDEO
+
+https://youtu.be/-9aycE-B6zY	Дербышева Т.Н. Лекция 11-2-2 Динамический двумерный массив. Классический.
+
 ## SKIP video
 
 тут видео полосы

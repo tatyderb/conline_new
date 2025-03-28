@@ -3,10 +3,14 @@
 lesson = 300284
 lang = c_valgrind
 
+## SKIP VIDEO video
+
+Встроенное видео
 
 ## SKIP video
 
-тут видео полосы
+тут видео полосы https://youtu.be/W9UR_60rjWY
+
 
 ## Уже знаем
 

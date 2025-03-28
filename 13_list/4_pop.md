@@ -5,6 +5,12 @@ lesson = 308794
 
 ##  VIDEO
 
+<p>Платформа:</p>
+
+<p><iframe allowfullscreen="" height="315" src="https://plvideo.ru/embed/W-3wf1DK8ZmJ" width="560"></iframe></p>
+
+<p>Youtube:</p>
+
 <p><iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/X_fUBjYpb0k" width="560"></iframe></p>
 
 ## Сколько элементов в списке

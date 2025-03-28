@@ -3,6 +3,11 @@
 lesson = 308214
 lang = c_valgrind
 
+## SKIP VIDEO 
+
+https://youtu.be/UExqk4Xe7Q8	Дербышева Т.Н. Лекция 11-2-1 Динамический двумерный массив. malloc(n*m*sizeof(Data))
+
+
 ## SKIP video
 
 тут видео полосы

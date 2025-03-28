@@ -5,6 +5,13 @@ lesson = 311537
 
 ##  VIDEO
 
+<p>Платформа:</p>
+
+<p><iframe allowfullscreen="" height="315" src="https://plvideo.ru/embed/71DstQX0Csk0" width="560"></iframe></p>
+
+<p>Youtube:</p>
+<p>Пока ссылка на полное видео</a>
+
 <p><iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/FKCToOPxhEg" width="560"></iframe></p>
 
 ## Модель дерева
@@ -146,6 +153,17 @@ void tree_print(Node * tree) {
 
 Пусть дети сами разбираются со своими детьми. Бабушки не лезут печатать внуков.
 
+## VIDEO
+
+<p>Платформа:</p>
+
+<p><iframe allowfullscreen="" height="315" src="https://plvideo.ru/embed/3F31Fqs6Jt1h" width="560"></iframe></p>
+
+<p>Youtube:</p>
+<p>Пока ссылка на полное видео</a>
+<p><iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/FKCToOPxhEg" width="560"></iframe></p>
+
+
 ## Что будет напечатано R-D-L?
 
 Что будет напечатано, если в функции печати порядок такой:
@@ -195,6 +213,16 @@ void tree_print(Node * tree) {
 }
 ```
 Проверьте себя, запустив код с такой функцией печати. Почему так получилось?
+
+## VIDEO
+
+<p>Платформа:</p>
+
+<p><iframe allowfullscreen="" height="315" src="https://plvideo.ru/embed/05bItoSYRxDY" width="560"></iframe></p>
+
+<p>Youtube:</p>
+<p>Пока ссылка на полное видео</a>
+
 
 ## Обход в глубину и в ширину
 

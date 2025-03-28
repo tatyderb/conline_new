@@ -3,6 +3,11 @@
 lesson = 308216
 lang = c_valgrind
 
+## SKIP VIDEO
+
+https://youtu.be/vK2QpvEnaVs	Дербышева Т.Н. Лекция 11-2-3 Динамический двумерный массив 1 malloc и работает a[i][j]
+
+
 ## SKIP video
 
 тут видео полосы

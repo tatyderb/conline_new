@@ -5,6 +5,12 @@ lesson = 308793
 
 ##  VIDEO
 
+<p>Платформа:</p>
+
+<p><iframe allowfullscreen="" height="315" src="https://plvideo.ru/embed/QELEFPswz1oF" width="560"></iframe></p>
+
+<p>Youtube:</p>
+
 <p><iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/BGaTG_IACXE" width="560"></iframe></p>
 
 ## push возвращает указатель на первый узел

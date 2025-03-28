@@ -8,12 +8,23 @@ lesson = 308791
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AeOCWekAOyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+[Презентация](https://stepik.org/media/attachments/lesson/308791/c2019_12_169.pdf)
+
 
 ##  VIDEO
 
 Определение односвязного списка
 
-<iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/TCgM8GTso3k" width="560"></iframe>
+<p>Платформа:</p>
+
+<p><iframe allowfullscreen="" height="315" src="https://plvideo.ru/embed/jA222XEnCoQt" width="560"></iframe></p>
+
+<p>Youtube:</p>
+
+
+<p><iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/TCgM8GTso3k" width="560"></iframe></p>
+
+
 
 ## Структура данных список
 

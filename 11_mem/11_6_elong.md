@@ -3,6 +3,10 @@
 lesson = 308217
 lang = c_valgrind
 
+## SKIP VIDEO
+
+https://youtu.be/lKtedmlTDCA	Дербышева Т.Н. Лекция 11-2-4 Длинная арифметика и динамическая память
+
 ## SKIP video
 
 тут видео полосы

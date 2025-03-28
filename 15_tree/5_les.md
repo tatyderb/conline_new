@@ -4,7 +4,14 @@ lesson = 311540
 lang = c_valgrind
 
 
-## SKIP VIDEO
+## VIDEO
+
+<p>Платформа:</p>
+
+<p><iframe allowfullscreen="" height="315" src="https://plvideo.ru/embed/uhOmG87npMr1" width="560"></iframe></p>
+
+<p>Youtube:</p>
+<p>Пока ссылка на полное видео</a>
 
 <p><iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/FKCToOPxhEg" width="560"></iframe></p>
 
