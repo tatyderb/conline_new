@@ -202,9 +202,9 @@ int cube_func(int a)
 Можно использовать вложенные макросы. То есть один макрос может использовать другой макрос:
 
 ```cpp
-#define DETERMINANT(a,b,c)  sqrt((b) * (b) - 4 * (a) * (c)) 
-#define QUADP(a, b, c) ((-(b) + DETERMINANT(a,b,c)) / (2 * (a)))
-#define QUADM(a, b, c) ((-(b) - DETERMINANT(a,b,c)) / (2 * (a)))
+#define DISCRIMINANT(a,b,c)  sqrt((b) * (b) - 4 * (a) * (c)) 
+#define QUADP(a, b, c) ((-(b) + DISCRIMINANT(a,b,c)) / (2 * (a)))
+#define QUADM(a, b, c) ((-(b) - DISCRIMINANT(a,b,c)) / (2 * (a)))
 ```
 
 ## Встроенные макросы
