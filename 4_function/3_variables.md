@@ -190,6 +190,8 @@ int main ()
     inc (a);
     inc (a);
     printf("%d\n", a); // ??
+    
+    return 0;
 }
 ```
 
@@ -213,6 +215,8 @@ int main ()
     a = inc (a);
     a = inc (a);
     printf("%d\n", a); // 5
+
+    return 0;
 }
 ```
 Можно функцию написать короче:
