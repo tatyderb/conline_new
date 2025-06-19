@@ -173,20 +173,6 @@ int * p = &y;
 
 ANSWER: 123
 
-## NUMBER `p`
-
-```cpp
-int y = 123;
-int * p = &y;
-```
-Допустим, что переменная `y` лежит по адресу 100, переменная `p` лежит по адресу 200. 
-
-![py](https://stepik.org/media/attachments/lesson/780364/py.png)
-
-Чему равно значение переменной `p`?
-
-ANSWER: 100
-
 ## NUMBER `&y`
 
 ```cpp
@@ -198,6 +184,20 @@ int * p = &y;
 ![py](https://stepik.org/media/attachments/lesson/780364/py.png)
 
 Чему равно значение выражения `&y`?
+
+ANSWER: 100
+
+## NUMBER `p`
+
+```cpp
+int y = 123;
+int * p = &y;
+```
+Допустим, что переменная `y` лежит по адресу 100, переменная `p` лежит по адресу 200. 
+
+![py](https://stepik.org/media/attachments/lesson/780364/py.png)
+
+Чему равно значение переменной `p`?
 
 ANSWER: 100
 
