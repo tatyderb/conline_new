@@ -8,7 +8,7 @@ lesson = 778368
 
 | Приоритет | Оператор | Описание | Описание (Eng) | 
 |---|----|-----|-----|
-| 1 | `++` `--`	| Постфиксный и суфиксный инкремент и декремент | Suffix/postfix increment and decrement |
+| 1 | `++` `--`	| Постфиксный и суффиксный инкремент и декремент | Suffix/postfix increment and decrement |
 | 1 | `()` | Вызов функции | Function call | 
 | 1 | `[]` | Доступ к элементу массива | Array subscripting |
 | 1 | `.` | Доступ к полю структуры или юниона | Structure and union member access |
