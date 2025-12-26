@@ -234,7 +234,7 @@ ANSWER: 7
 
 ## SORT Сортировка
 
-Поставьте в правильном порядке.
+Поставьте следующем порядке: зима, весна, лето, осень.
 
 ![скриншот](https://stepik.org/media/attachments/lesson/308220/sort_widgets.png)
 
