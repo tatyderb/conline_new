@@ -59,7 +59,7 @@ int main()
 }
 ```
 
-Можно написать такую функцю:
+Можно написать такую функцию:
 ```cpp
 void arr_copy1(int * dst, int * src, int n)
 {
