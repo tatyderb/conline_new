@@ -105,7 +105,7 @@ int main()
     for(size_t i = 0; i < sizeof(test_data)/sizeof(test_data[0]); i++) {
         tree = tree_add(tree, test_data[i]);
     }
-    print(tree);    // 1 2 3 4 5 6 7 8 9
+    print(tree);    // 1 2 3 4 5 6 7 9
     return 0;
 }
 ```
