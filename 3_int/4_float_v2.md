@@ -348,8 +348,8 @@ C. 3.5
 D. 4
 E. 4.0
 
-SHUFFLE: false
 ANSWER: A
+SHUFFLE: false
 
 ## NUMBER type cast - 2
 
@@ -367,8 +367,8 @@ A. 3.0
 B. 3.5
 C. 4.0
 
-SHUFFLE: false
 ANSWER: A
+SHUFFLE: false
 
 ## TASKINLINE км/ч в м/с
 

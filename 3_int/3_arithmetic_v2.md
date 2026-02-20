@@ -68,8 +68,8 @@ D. `printf("как %d или %f\n", 22/7, 3.142857);`
 E. `printf("как %f или %f\n", 22/7, 3.142857);`
 F. `printf("как %d/%d или %f\n", 22/7, 3.142857);`
 
-SHUFFLE: False
 ANSWER: A
+SHUFFLE: False
 
 ## Время в пути
 
@@ -516,7 +516,7 @@ int main()
 * легче найти ошибку,
 * быстрее добавляется новый функционал к уже существующему.
 
-Писать хорошо - это писать понятно. Поэтому код оформляют по правилам и называют эти правила **code style** (правила оформления кода). В разных компаниях могут быть разные стили. Наиболее известные [Linux Kernel CS](https://www.kernel.org/doc/html/v4.10/process/coding-style.html), [GNU CS](https://www.gnu.org/prep/standards/html_node/Writing-C.html). Обычно у организации свой Style Guide. Например, style guide [Google](https://github.com/google/styleguide/blob/gh-pages/README.md) определены для многих языков программирования и фреймворков, в том числе [C CS](https://raw.githubusercontent.com/google/styleguide/gh-pages/google-c-style.el) в виде файла настроек для Emax.
+Писать хорошо - это писать понятно. Поэтому код оформляют по правилам и называют эти правила **code style** (правила оформления кода). В разных компаниях могут быть разные стили. Наиболее известные [Linux Kernel CS](https://www.kernel.org/doc/html/v4.10/process/coding-style.html), [GNU CS](https://www.gnu.org/prep/standards/html_node/Writing-C.html). Обычно у организации свой Style Guide. Например, style guide [Google](https://github.com/google/styleguide/blob/gh-pages/README.md) определены для многих языков программирования и фреймворков, в том числе [C CS](https://raw.githubusercontent.com/google/styleguide/gh-pages/google-c-style.el) в виде файла настроек для Emacs.
 
 В некоторых языках программирования правила оформления описываются в стандарте и все программисты стараются их придерживаться. Например, [PEP-8](https://peps.python.org/pep-0008/) для языка Python.
 
