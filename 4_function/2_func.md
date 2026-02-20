@@ -552,14 +552,14 @@ Aborted (core dumped)
 #include <math.h>       // чтобы работало fabs
 #define EPS 0.0001      // требуемая точность сравнения
 
+// тут реализация функции fahr
+
 // сравнивает числа a и b с точностью до EPS
 // как это работает, поймем позже
 int eps(float a, float b)
 {
     return fabs(33.8 - fahr(1)) < EPS;
 }
-
-// тут реализация функции fahr
 
 int main()
 {
