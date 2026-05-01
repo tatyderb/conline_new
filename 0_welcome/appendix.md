@@ -8,7 +8,7 @@ lesson = 778368
 
 | Приоритет | Оператор | Описание | Описание (Eng) | 
 |---|----|-----|-----|
-| 1 | `++` `--`	| Постфиксный и суффиксный инкремент и декремент | Suffix/postfix increment and decrement |
+| 1 | `++` `--`	| Постфиксный (суффиксный) инкремент и декремент | Suffix/postfix increment and decrement |
 | 1 | `()` | Вызов функции | Function call | 
 | 1 | `[]` | Доступ к элементу массива | Array subscripting |
 | 1 | `.` | Доступ к полю структуры или юниона | Structure and union member access |
@@ -39,7 +39,7 @@ lesson = 778368
 | 14 | `+=` `-=` | Присвоение со сложением и вычитанием |	Assignment by sum and difference |
 | 14 | `*=` `/=` `%=` | Присвоение с умножением, делением, остатком от деления |	Assignment by product, quotient, and remainder |
 | 14 | `<<=` `>>=` | Присвоение с побитовым сдвигом |	Assignment by bitwise left shift and right shift |
-| 14 | `&=` `^=` `|=` | Присвоение с побитовыми И, ИЛИ, исключающим ИЛИ |	Assignment by bitwise AND, XOR, and OR |
+| 14 | `&=` `|=` `^=` | Присвоение с побитовыми И, ИЛИ, исключающим ИЛИ |	Assignment by bitwise AND, OR, and XOR |
 | 15 | `,` | Запятая |	Comma	|
 
 Источник: [https://en.cppreference.com/w/c/language/operator_precedence](https://en.cppreference.com/w/c/language/operator_precedence)
