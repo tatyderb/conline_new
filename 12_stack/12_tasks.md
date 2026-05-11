@@ -68,6 +68,9 @@ NO
 ----
 NO
 ====
+----
+YES
+====
 
 ## TASKINLINE stack_postfix Постфиксная запись
 
