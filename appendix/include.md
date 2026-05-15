@@ -872,9 +872,6 @@ int x;
 static char k;
 ```
 
-Поставьте в соответствие коду выражение.
-
-
 MATCH
 `extern double z;`
 ----
