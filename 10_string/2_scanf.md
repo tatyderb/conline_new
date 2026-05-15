@@ -367,7 +367,7 @@ int steps;
 ```cpp
 scanf("%9s", s);
 ```
-Проверяем, что прочитанное слово "Treasure!"
+Проверяем, что прочитанное слово "Treasure!" с помощью функции [strcmp](https://stepik.org/lesson/276442/step/12) (расскажем чуть позже):
 ```cpp
 if (0 == strcmp(s, "Treasure!"))
 ```
