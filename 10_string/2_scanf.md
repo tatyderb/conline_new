@@ -266,7 +266,7 @@ int main(){
 
 ### Используем макросы c fgets
 
-Тут `+1` не нужен.
+Тут `+1` не нужен, количество элементов массива указываем в аргументе функции.
 
 ```cpp
 #include <stdio.h>
@@ -274,17 +274,11 @@ int main(){
 
 #define N 1000
 
-// Затем возьмёт это число в кавычки: _STR(1000) -> "1000"
-#define _STR(X) #X
-
-// Сначала подставит число вместо X: STR(N) -> _STR(1000)
-#define STR(X) _STR(X)
-
 int main(){
     // +1 не нужен, если будем читать через fgets
     char str[N];   
     
-    fgets(str, STR(N), stdin);
+    fgets(str, N, stdin);
         
     printf("%s\n", str);
 
