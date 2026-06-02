@@ -101,7 +101,7 @@ printf("Hello, world!");
 
 ![Run and submit](https://stepik.org/media/attachments/lesson/571830/run.png)
 
-В этой части будет показано, что напечатает программа. Функция `printf` печатает на сюда:
+В этой части будет показано, что напечатает программа. Функция `printf` печатает сюда:
 
 ![output](https://stepik.org/media/attachments/lesson/571830/output.png)
 
