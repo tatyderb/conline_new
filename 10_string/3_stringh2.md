@@ -92,11 +92,11 @@ char * mystrcpy2(char *dest, const char *src) {
 Если запустить эти функции на пересекающемся участке из d+2 в d (такая задача возникает часто, например, нужно убрать лидирующие пробелы или нули), то получим из "world" строку "rld" или строку "d", в зависимости от того, какую функцию использовали:
 ```cpp
 char d[100] = "world";
-mystrscp1(d, d+2);
+mystrcpy1(d, d+2);
 printf("%s\n", d);      // rld
 
 strcpy(d, "world");
-mystrscp2(d, d+2);
+mystrcpy2(d, d+2);
 printf("%s\n", d);      // d
 ```
 
