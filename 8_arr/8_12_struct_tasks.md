@@ -237,12 +237,12 @@ int main()
 
 TEST
 QsAh9d
----
+----
 QsAh9d
 1
 ====
 2s8sAsKsTs
----
+----
 2s8sAsKsTs
 0
 ====

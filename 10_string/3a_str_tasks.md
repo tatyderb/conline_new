@@ -159,30 +159,30 @@ TEST
 a high explosive bomb is one 
 that employs a process called detonation 
 to rapidly release its chemical energy
----
+----
 detonation 10
 ====
 the simplest and oldest type of bombs store energy
 in the form of a low explosive
----
+----
 explosive 9
 ====
 mumbai also known as bombay is 
 the capital city of the indian state of maharashtra
----
+----
 maharashtra 11
 ====
 the seven islands that came to constitute 
 mumbai were home to communities of fishing colonies
----
+----
 communities 11
 ====
 bomb bomb bomb
----
+----
 bomb 4
 ====
 BOMB
----
+----
 BOMB 4
 ====
 
@@ -194,38 +194,38 @@ TEST
 a high explosive bomb is one 
 that employs a process called detonation 
 to rapidly release its chemical energy
----
+----
 YES
 ====
 the simplest and oldest type of bombs store energy
 in the form of a low explosive
----
+----
 NO
 ====
 mumbai also known as bombay is 
 the capital city of the indian state of maharashtra
----
+----
 NO
 ====
 the seven islands that came to constitute 
 mumbai were home to communities of fishing colonies
----
+----
 NO
 ====
 bomb bomb bomb
----
+----
 YES
 ====
 BOMB
----
+----
 NO
 ====
 bomb from begin
----
+----
 YES
 ====
 tail bomb
----
+----
 YES
 ====
 
@@ -235,30 +235,30 @@ YES
 
 TEST
 i have a bomb.
----
+----
 YES
 ====
 dog and cat
 The simplest and oldest type of bombs 
 store energy in the form of a low explosive.
----
+----
 YES
 ====
 Mumbai (also known as Bombay) is the capital city of the Indian state of Maharashtra. 
----
+----
 NO
 ====
 The seven islands that came to constitute 
 Mumbai were home to communities of fishing colonies
----
+----
 NO
 ====
 bomb? bomb! bomb!!!
----
+----
 YES
 ====
 BOMB
----
+----
 NO
 ====
 kabomb word
@@ -285,29 +285,29 @@ s[i] = tolower(s[i]);
 
 TEST
 i have a bomb.
----
+----
 YES
 ====
 The simplest and oldest type of bombs 
 store energy in the form of a low explosive.
----
+----
 YES
 ====
 Mumbai (also known as Bombay) is the capital city of the Indian state of Maharashtra. 
----
+----
 YES
 ====
 The seven islands that came to constitute 
 Mumbai were home to communities of fishing colonies
----
+----
 NO
 ====
 bomb? bomb! bomb!!!
----
+----
 YES
 ====
 BOMB
----
+----
 YES
 ====
 
@@ -317,29 +317,29 @@ YES
 
 TEST
 i have a bomb. you have a bomb.
----
+----
 2
 ====
 The simplest and oldest type of bombs 
 store energy in the form of a low explosive.
----
+----
 1
 ====
 Mumbai (also known as Bombay) is the capital city of the Indian state of Maharashtra. 
----
+----
 0
 ====
 The seven islands that came to constitute 
 Mumbai were home to communities of fishing colonies
----
+----
 0
 ====
 bomb? bomb! bomb!!!
----
+----
 3
 ====
 BOMB
----
+----
 0
 ====
 bombandbomb and cat
