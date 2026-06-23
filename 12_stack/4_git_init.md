@@ -2,6 +2,10 @@
 
 lesson = 301504
 
+## SKIP VIDEO
+
+stepik video
+
 ## VIDEO
 
 <p><iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/5Lu5-y3wwIU" width="560"></iframe></p>
