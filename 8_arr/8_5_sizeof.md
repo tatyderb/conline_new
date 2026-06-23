@@ -14,7 +14,7 @@ lang = c_valgrind
 
 Чему равен `sizeof(int)`? В стандарте языка об этом не говорится. Размер зависит от архитектуры компьютера, от операционной системы и компилятора.
 
-Как правило в gcc  `int` занимает 32 бита, `long long int` 64 бита. В [других комиляторах](https://en.wikipedia.org/wiki/64-bit_computing#64-bit_data_models) `int` и/или `long` может быть 64 бита в зависимости от платформы, но gcc на linux использует x86-64 abi, в котором `int` и `long` имеет размер 4 байта.
+Как правило в gcc  `int` занимает 32 бита, `long long int` 64 бита. В [других компиляторах](https://en.wikipedia.org/wiki/64-bit_computing#64-bit_data_models) `int` и/или `long` может быть 64 бита в зависимости от платформы, но gcc на linux использует x86-64 abi, в котором `int` и `long` имеет размер 4 байта.
 
 ```cpp
 int x;
