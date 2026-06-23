@@ -28,9 +28,9 @@ struct Node {
 * С выделением и освобождением памяти:
     * `struct Node *` **list_push_front** `(struct Node * list, Data d);` - выделяет память под новый элемент, содержащий данные d, и вставляет его в **голову** списка. Возвращает указатель на этот новый элемент или NULL, если произошла ошибка.
     * `struct Node *` **list_push_back** `(struct Node * list, Data d);` - выделяет память под новый элемент, содержащий данные d, и вставляет его в **хвост** списка. Возвращает указатель на этот новый элемент или NULL, если произошла ошибка.
+    * `Data` **list_delete** `(struct Node * t);` - удаляет узел t из списка, возвращает данные из удаленного узла.
     * `Data` **list_pop_front** `(struct Node * list);` - удаляет голову списка, возвращает данные из удаленного узла.
     * `Data` **list_pop_back** `(struct Node * list);` - удаляет хвост списка, возвращает данные из удаленного узла.
-    * `Data` **list_delete** `(struct Node * t);` - удаляет узел t из списка, возвращает данные из удаленного узла.
     * `void` **list_clear** `(struct Node * list);`	опустошает список, освобождая память. После этого можно опять добавлять элементы в список.
 * Прочие функции:    
     * `void` **list_print** `(struct Node * list);`	распечатывает через пробел числа, лежащие в списке. С самого первого до последнего. В конце переводит строку. Полезна для отладки прочих функций.
@@ -50,9 +50,9 @@ void list_remove(struct Node * t);
 struct Node * list_push_front(struct Node * list, Data d);
 struct Node * list_push_back(struct Node * list, Data d);
 
+Data list_delete(struct Node * t);
 Data list_pop_front(struct Node * list);
 Data list_pop_back(struct Node * list);
-Data list_delete(struct Node * t);
 
 void list_print (struct Node * list);
 int list_is_empty(struct Node * list);
@@ -150,6 +150,14 @@ void test_alloc(int n)
 	assert(list_is_empty(a));
 	if (n == 9)
         goto END;
+        
+    // 10. Тест на clear
+    for(i=0; i<10; i++)
+		list_push_back(a, i);
+	list_clear(a);
+    assert(list_is_empty(a));
+	if (n == 10)
+        goto END;
 
 END:	
 	list_clear(a);
@@ -226,7 +234,7 @@ int main()
         case 7:         // push_front + pop_back
         case 8:         // push_back
         case 9:         // push_back
-        case 10:         // push_back
+        case 10:        // clear
             test_alloc(n);
             break;
         default:
@@ -321,6 +329,14 @@ void test_alloc(int n)
 	list_print(b);              // 9 8 7 6 5 4 3 2 1 0
 	assert(list_is_empty(a));
 	if (n == 9)
+        goto END;
+        
+    // 10. Тест на clear
+    for(i=0; i<10; i++)
+		list_push_back(a, i);
+	list_clear(a);
+    assert(list_is_empty(a));
+	if (n == 10)
         goto END;
 
 END:	
