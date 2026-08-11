@@ -56,9 +56,9 @@ void drob(int a, int b)
 }
 int main()
 {
-    //int a, b;
-    //scanf("%d%d", &a, &b);
-    drob(1, 3);
+    int a, b;
+    scanf("%d%d", &a, &b);
+    drob(a, b);
     return 0;
 }
         
