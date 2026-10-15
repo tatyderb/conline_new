@@ -24,7 +24,9 @@ lesson = ???
 
 ![Удалить все нули, заменить первые 111 на 222](https://kpolyakov.spb.ru/prog/images/namwin.gif)
 
-Заметим, что точку ставим в конце правой части. Иногда ставят в начале правой части. (скриншот из лекции)
+Заметим, что точку ставим в конце правой части. Иногда ставят в начале правой части. 
+
+![Скриншот из лекции](https://github.com/tatyderb/conline_new/blob/refactoring/algo/img/markov.png?raw=true)
 
 Что получится в результате применения к строке 11001 правил
 ```
@@ -83,11 +85,11 @@ lesson = ???
     
 **(символ1, состояние1) -> (символ2, движение, состояние2)**
 
-![](https://kpolyakov.spb.ru/prog/images/turwin.gif)
+![https://kpolyakov.spb.ru/prog/nma.htm](https://kpolyakov.spb.ru/prog/images/turwin.gif)
 
 Пример из лекции
 
-![сложение чисел в унарной системе счисления]()
+![сложение чисел в унарной системе счисления](https://github.com/tatyderb/conline_new/blob/refactoring/algo/img/turing.png?raw=true)
 
 ## Машина Поста
 
@@ -107,7 +109,7 @@ lesson = ???
 | `->` | каретку вправо |
 | `? X,Y` | если есть метка, то к правилу Х; если метки нет, к правилу Y |
 
-    
+![](https://github.com/tatyderb/conline_new/blob/refactoring/algo/img/post.png?raw=true)    
 
         
         
