@@ -110,11 +110,11 @@ int fib(int n)
 
 Сколько способов подняться на n-ю ступеньку, если можно шагать на 1 или 2 (следующую ступеньку или перепрыгивать через неё)?
 
-![https://githubusercontent.com/tatyderb/conline_new/refactoring/algo/img/dp_task_locust.png](dp_task_locust.png)
+![https://raw.githubusercontent.com/tatyderb/conline_new/refactoring/algo/img/dp_task_locust.png](dp_task_locust.png)
 
 **Никогда не рисуйте таких схем!** Они только запутают решение задачи. Нас интересует не *куда* можно перейти с текущей ступеньки, а **откуда** можно в нее прийти.
 
-![https://githubusercontent.com/tatyderb/conline_new/refactoring/algo/img/dp_task_locust_ok.png](dp_task_locust_ok.png)
+![https://raw.githubusercontent.com/tatyderb/conline_new/refactoring/algo/img/dp_task_locust_ok.png](dp_task_locust_ok.png)
 
 На ступеньку 3 можно перейти со ступеньки 2 (шаг на +1) или со ступеньки 1 (шаг на +2). То есть на ступеньку `i` можно перейти со ступеньки `i - 1` или `i - 2`. Если на ступеньку `i - 1` мы могли попасть $K_{i-1}$ различными вариантами и на ступеньку `i - 2` мы могли попасть $K_{i-2}$ различными вариантами то на ступеньку `i` мы можем попасть только с этих двух ступенек, значит $K_{i-1} + K_{i-2}$ различными вариантами.
 
@@ -151,7 +151,7 @@ int steps(int n)
 5 2 8 3 6
 ```
 
-![https://githubusercontent.com/tatyderb/conline_new/blob/refactoring/algo/img/dp_task_step_cost.png](dp_task_step_cost.png)
+![https://raw.githubusercontent.com/tatyderb/conline_new/refactoring/algo/img/dp_task_step_cost.png](dp_task_step_cost.png)
 
 *Опять видим, что нарисована схема неверно. Надо рисовать как приходим на ступеньку, а не уходим с неё.*
 
